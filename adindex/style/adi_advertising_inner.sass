@@ -1,0 +1,588 @@
+@import "settings"
+@media (min-width: 1598px)
+  .adi-adv
+    .container
+      max-width: 1530px
+
+.adi-adv
+  &.inner-page
+    padding: 120px 0 0 0
+@media (max-width: 991px)
+  .adi-adv
+    .container
+      max-width: 100%
+@media (max-width: 767px)
+  .adi-adv
+    &.inner-page
+      padding: 74px 0 0 0
+
+.adi-header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+  padding: 40px 0 0 0
+  background: #E00000
+  height: 122px
+  .container
+    @extend %after-clear
+
+.header-adv-link
+  float: right
+  margin: 10px 0 0 0
+  .link
+    color: #fff !important
+    text-decoration: none !important
+    @include fonts(20px, 22px, 500)
+
+.header-adv-logo-list-inner
+  @extend %after-clear
+  float: left
+  .list
+    float: left
+    padding: 0 30px
+    position: relative
+    font-size: 0
+    a
+      display: inline-block
+      vertical-align: top
+    &:first-child
+      padding-left: 0
+    &:last-child
+      padding-right: 0
+    &:last-child
+      &:after
+        display: none
+    &:after
+      content: ""
+      background: rgba(255,255,255,0.7)
+      width: 2px
+      height: 28px
+      position: absolute
+      right: 0
+      top: 9px
+
+@media (max-width: 991px)
+  .header-adv-logo-list-inner
+    margin: 5px 0 0 0
+    .list
+      img
+        max-height: 18px
+      &:last-child
+        padding-top: 2px
+
+      &:after
+        top: 5px
+        height: 12px
+@media (max-width: 767px)
+  .adi-header
+    height: 74px
+    padding: 15px 0 0 0
+
+  .header-adv-logo-list-inner
+    float: none
+    margin: 0 0 10px 0
+    text-align: center
+    font-size: 0
+
+    .list
+      padding: 0 9px
+      display: inline-block
+      vertical-align: top
+      float: none
+      &:first-child
+        padding-right: 12px
+      img
+  .header-adv-link
+    margin: 0 0
+    float: none
+    text-align: center
+    font-size: 0
+
+    .link
+      @include fonts(14px, 16px, 500)
+
+@media (max-width: 575px)
+  .adi-header
+    padding: 12px 0 0 0
+  .header-adv-logo-list-inner
+    .list
+      &:after
+        top: 2px
+        height: 10px
+      &:last-child
+        padding-top: 1px
+      img
+        max-height: 12px
+
+
+.adi-banner-inner
+  padding: 45px 0 150px 0
+  .img
+    text-align: center
+    margin: 35px 0 0 0
+.link-back
+  text-decoration: none !important
+  color: #363636 !important
+  @include fonts(20px, 22px, 500)
+  padding: 0 0 0 40px
+  position: relative
+  &:before
+    transform: rotate(180deg)
+    content: ""
+    width: 34px
+    height: 15px
+    background: url(../img/arrow-link.svg) no-repeat
+    position: absolute
+    top: 5px
+    left: 0
+
+@media (max-width: 767px)
+  .adi-banner-inner
+    padding: 32px 0 32px 0
+    .link-back
+      display: none
+    .img
+      margin: 0 0
+
+.adi-speakers
+  background: #FF6666
+
+  .row
+    margin-left: -30px
+    margin-right: -30px
+    position: relative
+    z-index: 2
+    >div
+      padding-left: 30px
+      padding-right: 30px
+  .container
+    position: relative
+    padding-bottom: 150px
+    &:after
+      width: 830px
+      height: 825px
+      background: url(../img/bg-speaker.svg)  no-repeat
+      -webkit-background-size: 100% 100%
+      background-size: 100% 100%
+      position: absolute
+      top: 40px
+      right: 60px
+      content: ""
+
+
+.adi-speakers-title
+  background: url(../img/title-speakers.svg) center -92px no-repeat
+  padding: 50px 0 95px 0
+  @include fonts(70px, 70px)
+  color: #333333
+  font-family: $ff
+  text-align: center
+  margin: 0 0 120px 0
+  position: relative
+  z-index: 2
+.adi-speaker-card
+  background: #fff
+  +border-radius(30px)
+  padding: 38px 38px 55px
+  .img
+    margin: 0 0 30px 0
+    img
+      width: 100%
+      +border-radius(20px)
+      overflow: hidden
+  .title
+    color: #000
+    @include fonts(16px, 20px, 500)
+    margin: 0 0 15px 0
+    text-transform: uppercase
+    text-align: center
+  .text
+    @include fonts(16px, 20px)
+    text-align: center
+
+@media (max-width: 1597px)
+  .adi-speakers
+    .container
+      padding-bottom: 125px
+    .row
+      margin-left: -15px
+      margin-right: -15px
+      >div
+        padding-left: 15px
+        padding-right: 15px
+
+@media (max-width: 1199px)
+  .adi-speakers
+    .container
+      &:after
+        width: 600px
+        height: 600px
+  .adi-speakers-title
+    font-size: 50px
+    line-height: 50px
+    -webkit-background-size: 500px auto
+    background-size: 500px auto
+    padding: 40px 0 70px 0
+    margin: 0px 0 90px 0
+  .adi-speaker-card
+    padding: 32px 32px 30px
+
+@media (max-width: 991px)
+
+  .adi-speaker-card
+    margin: 0 0 30px 0
+
+@media (max-width: 767px)
+  .adi-speakers
+    overflow: hidden
+    .container
+      padding-bottom: 25px
+      &:after
+        width: 363px
+        height: 363px
+        right: -183px
+
+  .adi-speakers-title
+    font-size: 24px
+    line-height: 24px
+    background-position: center -34px
+    -webkit-background-size: 218px auto
+    background-size: 218px auto
+    padding: 20px 0 32px 0
+    margin: 0px 0 40px 0
+@media (max-width: 575px)
+  .adi-speakers
+    .container
+      &:before
+        content: ""
+        background: url(../img/bg-speaker.svg) no-repeat
+        -webkit-background-size: 100% 100%
+        background-size: 100% 100%
+        width: 363px
+        height: 363px
+        left: -183px
+        position: absolute
+        bottom: 235px 
+.adi-pt-100
+  padding-top: 100px
+
+.adi-section-text-inner
+  @include fonts(18px, 30px)
+  color: #000000
+
+  .img
+    margin-bottom: 65px
+  .container
+    max-width: 1140px
+    position: relative
+  .bg-circle
+    width: 427px
+    height: 427px
+    background: url(../img/bg-circle.svg) no-repeat
+    position: absolute
+    top: 0
+    right: -135px
+  .adi-bg-yellow-circle
+    background: url(../img/bg-circle-yellow.svg) no-repeat
+    width: 155px
+    height: 355px
+    position: absolute
+    bottom: -90px
+    right: -180px
+    z-index: 1
+  .bg-circle-left-yellow
+    width: 427px
+    height: 427px
+    background: url(../img/bg-circle-left-yellow.svg) no-repeat
+    position: absolute
+    top: 200px
+    left: -215px
+  h2
+    color: #363636
+    margin: 0 0 40px 0
+    @include fonts(35px, 40px, 600)
+  p
+    @include fonts(18px, 30px)
+    color: #000000
+    margin: 0 0 25px 0
+
+.adi-pt-140
+  padding-top: 140px
+.adi-pb-140
+  padding-bottom: 140px
+.adi-pt-60
+  padding-top: 60px
+@media (max-width: 1650px)
+  .adi-section-text-inner
+    .bg-circle-left-yellow
+      left: 0
+@media (max-width: 1560px)
+  .adi-section-text-inner
+
+    .adi-bg-yellow-circle
+      display: none
+@media (max-width: 1520px)
+  .adi-section-text-inner
+    .bg-circle
+      right: 15px
+@media (max-width: 1199px)
+  .adi-section-text-inner
+    .bg-circle-left-yellow
+      transform: rotate(180deg)
+      width: 165px
+      height: 296px
+      -webkit-background-size: 296px 296px
+      background-size: 296px 296px
+      top: 50px
+    .bg-circle
+      right: 0
+      width: 215px
+  .adi-pt-100
+    padding-top: 50px
+  .adi-pt-140
+    padding-top: 50px
+  .adi-pb-140
+    padding-bottom: 50px
+  .adi-pt-60
+    padding-top: 60px
+
+  .adi-bg-yellow-circle
+    display: none
+@media (max-width: 767px)
+  .adi-section-text-inner
+    br
+      display: none
+
+@media (max-width: 575px)
+  .adi-sm-mb-0
+    p
+      &:last-child
+        margin-bottom: 0
+  .adi-sm-pt-0
+    padding-top: 0 !important
+  .adi-sm-pb-0
+    padding-bottom: 0 !important
+  .adi-pb-140
+    padding-bottom: 40px
+  .adi-pt-140
+    padding-top: 40px
+  .adi-pt-60
+    padding-top: 40px
+  .adi-pt-100
+    padding-top: 40px
+  .adi-section-text-inner
+    font-size: 18px
+    line-height: 26px
+    .container
+      >div:last-child
+        p
+          &:last-child
+            margin-bottom: 0
+    .img
+      margin-bottom: 30px
+    h2
+      font-size: 24px
+      line-height: 28px
+      margin-bottom: 20px
+    p
+      font-size: 18px
+      line-height: 26px
+      margin-bottom: 35px
+
+
+.adi-reviews
+  .container
+    max-width: 1140px
+  .ic-quote
+    background: url(../img/bloq.svg) no-repeat
+    width: 57px
+    height: 37px
+    margin: 0 0 25px 0
+  .text-block
+    padding: 0 110px 0 30px
+  h2
+    @include fonts(25px, 30px, 600)
+    margin: 0 0 25px 0
+  .text
+    @include fonts(18px, 30px)
+    margin: 0 0 30px 0
+  h3
+    @include fonts(16px, 30px, 600)
+    font-style: italic
+    margin-bottom: 15px
+
+.adi-mw-730
+  max-width: 730px
+.adi-pb-50
+  padding-bottom: 50px
+
+@media (max-width: 1199px)
+  .adi-reviews
+    .text-block
+      padding: 0 0 0 0
+
+@media (max-width: 575px)
+  .adi-reviews
+    .img
+      text-align: center
+    .ic-quote
+      margin-bottom: 20px
+    h2
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 20px
+    .text
+      font-size: 16px
+      line-height: 26px
+      margin-bottom: 20px
+    h3
+      font-size: 16px
+      line-height: 20px
+  .adi-pb-50
+    padding-bottom: 40px
+
+.adi-bg-red-text
+  background: #FF6666
+  padding: 50px 0 50px 0
+  .container
+    max-width: 1140px
+  h2
+    @include fonts(35px, 40px, 600)
+    margin-bottom: 45px
+    color: #fff
+  p
+    @include fonts(18px, 30px)
+    margin-bottom: 25px
+    color: #fff
+
+@media (max-width: 767px)
+  .adi-bg-red-text
+    .container
+      >div
+        &:last-child
+          p:last-child
+            margin-bottom: 0
+    br
+      display: none
+@media (max-width: 575px)
+  .adi-bg-red-text
+    font-size: 18px
+    line-height: 26px
+    padding: 25px 0 25px 0
+    p
+      font-size: 18px
+      line-height: 26px
+      margin-bottom: 25px
+    h2
+      font-size: 24px
+      line-height: 28px
+      margin-bottom: 20px
+
+
+
+.adi-tips-block
+  background: #FF6666
+  overflow: hidden
+  position: relative
+  padding: 0 0 95px 0
+  &:after
+    width: 670px
+    height: 840px
+    content: ""
+    position: absolute
+    top: 225px
+    right: 0
+    background: url(../img/bg-tips.svg) no-repeat
+  &:before
+    width: 574px
+    height: 160px
+    content: ""
+    position: absolute
+    bottom: 310px
+    left: 15px
+    background: url(../img/bg-left-tips.svg) no-repeat
+  .container
+    max-width: 1360px
+  .adi-btn-yellow
+    margin-top: 100px
+.tips-speakers-title
+  background: url(../img/title-speakers.svg) center -92px no-repeat
+  padding: 50px 0 95px 0
+  font-size: 70px
+  line-height: 70px
+  font-weight: 400
+  color: #333333
+  font-family: "Bebas Neue"
+  text-align: center
+  margin: 0 0 120px 0
+
+.adi-tips-title
+  @include fonts(35px, 40px, 600)
+  font-style: italic
+  margin-bottom: 30px
+  color: #fff
+
+.adi-tips-text
+  @include fonts(18px, 30px)
+  color: #fff
+  margin-bottom: 40px
+
+.adi-btn-yellow
+  @include fonts(20px, 60px)
+  background: #FED32B
+  +border-radius(10px)
+  padding: 0 25px
+  display: inline-block
+  vertical-align: top
+  @include transition-dr(300ms)
+  color: #333 !important
+  &:hover
+    background: #EBC01A
+
+@media (max-width: 1199px)
+  .tips-speakers-title
+    font-size: 50px
+    line-height: 50px
+    -webkit-background-size: 500px auto
+    background-size: 500px auto
+    padding: 40px 0 70px 0
+    margin: 0px 0 90px 0
+  .adi-tips-block
+    &:after
+      top: 430px
+      right: 0
+      width: 210px
+      height: 350px
+      -webkit-background-size: 350px 350px
+      background-size: 350px 350px
+    &:before
+      display: none
+@media (max-width: 767px)
+  .adi-tips-block
+    padding: 0 0 30px 0
+    .adi-btn-yellow
+      margin-top: 0
+  .adi-btn-yellow
+    height: 55px
+    line-height: 55px
+    font-size: 16px
+  .adi-tips-title
+    font-size: 18px
+    line-height: 25px
+    margin-bottom: 20px
+  .adi-tips-text
+    font-size: 18px
+    line-height: 26px
+    margin-bottom: 40px
+  .tips-speakers-title
+    font-size: 24px
+    line-height: 24px
+    background-position: center -34px
+    -webkit-background-size: 218px auto
+    background-size: 218px auto
+    padding: 20px 0 32px 0
+    margin: 0px 0 40px 0
+  .adi-tips-block
+    &:after

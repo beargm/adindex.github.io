@@ -1,0 +1,346 @@
+.header-adv-logo-list:after, .adi-card-content:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both; }
+
+@media (min-width: 1598px) {
+  .adi-adv .container {
+    max-width: 1530px; } }
+@media (max-width: 991px) {
+  .adi-adv .container {
+    max-width: 100%; } }
+.adi-header-transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 40px 0 0 0; }
+
+.header-adv-logo-list .list {
+  float: left;
+  padding: 0 30px;
+  position: relative;
+  font-size: 0; }
+  .header-adv-logo-list .list a {
+    display: inline-block;
+    vertical-align: top; }
+  .header-adv-logo-list .list:first-child {
+    padding-left: 0; }
+  .header-adv-logo-list .list:last-child {
+    padding-right: 0; }
+  .header-adv-logo-list .list:last-child:after {
+    display: none; }
+  .header-adv-logo-list .list:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.7);
+    width: 2px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 9px; }
+
+@media (max-width: 991px) {
+  .header-adv-logo-list .list img {
+    max-height: 25px; }
+
+  .header-adv-logo-list .list:last-child {
+    padding-top: 3px; }
+  .header-adv-logo-list .list:after {
+    top: 5px;
+    height: 20px; } }
+@media (max-width: 767px) {
+  .header-adv-logo-list {
+    text-align: center; }
+    .header-adv-logo-list .list {
+      padding: 0 9px;
+      display: inline-block;
+      vertical-align: top;
+      float: none; }
+      .header-adv-logo-list .list:first-child {
+        padding-right: 12px; } }
+@media (max-width: 575px) {
+  .adi-header-transparent {
+    padding: 12px 0 0 0; }
+
+  .header-adv-logo-list .list:after {
+    top: 2px;
+    height: 10px; }
+  .header-adv-logo-list .list:last-child {
+    padding-top: 1px; }
+  .header-adv-logo-list .list img {
+    max-height: 12px; } }
+.adi-adv-banner {
+  background: #E00000 url(../img/banner-bg.svg) center top no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 140px 0 45px 0;
+  position: relative;
+  overflow-x: hidden; }
+  .adi-adv-banner:before {
+    content: "";
+    width: 234px;
+    height: 468px;
+    position: absolute;
+    top: 212px;
+    left: 0;
+    background: url(../img/banner_left.svg) no-repeat;
+    z-index: 5; }
+  .adi-adv-banner:after {
+    content: "";
+    width: 82px;
+    height: 250px;
+    position: absolute;
+    top: 255px;
+    right: 60px;
+    background: url(../img/banner_right.svg) no-repeat;
+    z-index: 5; }
+
+.adi-adv-container {
+  position: relative;
+  z-index: 5; }
+
+.adi-banner-title {
+  color: #fff;
+  font-size: 140px;
+  line-height: 127px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Bebas Neue";
+  margin: 0 0 20px 0; }
+
+.adi-banner-text {
+  color: #fff;
+  font-size: 32px;
+  line-height: 22px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.adi-banner-img {
+  text-align: center;
+  position: relative; }
+
+@media (max-width: 1199px) {
+  .adi-banner-title {
+    font-size: 85px;
+    line-height: 90px; } }
+@media (max-width: 991px) {
+  .adi-adv-banner:before {
+    width: 115px;
+    height: 235px;
+    -webkit-background-size: 100%;
+    background-size: 100%; }
+  .adi-adv-banner:after {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    right: 30px;
+    width: 45px;
+    height: 145px; } }
+@media (max-width: 767px) {
+  .adi-adv-banner:before {
+    background: url(../img/banner_left_mob.svg) no-repeat;
+    width: 78px;
+    height: 78px; }
+  .adi-adv-banner:after {
+    display: none; }
+
+  .adi-banner-title {
+    font-size: 45px;
+    line-height: 55px; }
+
+  .adi-banner-text {
+    font-size: 22px;
+    line-height: 26px; } }
+@media (max-width: 575px) {
+  .adi-adv-banner {
+    padding: 45px 0 30px 0; }
+    .adi-adv-banner:before {
+      top: 65px; }
+
+  .adi-banner-title {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 12px; }
+
+  .adi-banner-text {
+    font-size: 12px;
+    line-height: 15px; } }
+.adi-section-title {
+  color: #E00000;
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.adi-section-text {
+  max-width: 1135px;
+  margin: 0 auto;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 400; }
+
+.adi-pt-180 {
+  padding-top: 180px; }
+
+.adi-pb-80 {
+  padding-bottom: 80px; }
+
+@media (max-width: 1199px) {
+  .adi-pt-180 {
+    padding-top: 50px; }
+
+  .adi-section-text {
+    font-size: 22px;
+    line-height: 32px; } }
+@media (max-width: 991px) {
+  .adi-section-title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px; }
+
+  .adi-section-text {
+    font-size: 20px;
+    line-height: 30px; } }
+@media (max-width: 575px) {
+  .adi-pt-180 {
+    padding-top: 40px; }
+
+  .adi-pb-80 {
+    padding-bottom: 30px; }
+
+  .adi-section-title {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 25px; }
+
+  .adi-section-text {
+    font-size: 18px;
+    line-height: 26px; } }
+.adi-card-list .row {
+  margin-right: -50px;
+  margin-left: -50px; }
+  .adi-card-list .row > div {
+    padding-left: 50px;
+    padding-right: 50px; }
+
+.adi-card {
+  position: relative;
+  -webkit-border-radius: 89px;
+  -moz-border-radius: 89px;
+  -ms-border-radius: 89px;
+  border-radius: 89px;
+  overflow: hidden;
+  margin: 0 0 50px 0; }
+  .adi-card:hover .adi-card-link:after {
+    right: -10px; }
+  .adi-card .img img {
+    display: block;
+    margin: 0 auto; }
+
+.adi-card-link-full {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.adi-card-content {
+  background: #FED32B;
+  padding: 90px 35px 55px; }
+
+.adi-card-title {
+  color: #363636;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin: 0 0 35px 0;
+  min-height: 95px;
+  overflow: hidden; }
+
+.adi-card-text {
+  color: #363636;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0 0 40px 0; }
+
+.adi-card-link {
+  color: #363636;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 500;
+  float: right;
+  display: inline-block;
+  position: relative;
+  padding: 0 45px 0 0;
+  cursor: pointer;
+  margin: 0 60px 0 0; }
+  .adi-card-link:after {
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -ms-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    content: "";
+    background: url(../img/arrow-link.svg) no-repeat;
+    width: 34px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+@media (max-width: 1199px) {
+  .adi-card-list .row {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .adi-card-list .row > div {
+      padding-left: 15px;
+      padding-right: 15px; }
+
+  .adi-card-content {
+    padding: 35px 25px 45px; }
+
+  .adi-card-title {
+    font-size: 22px;
+    line-height: 25px;
+    min-height: 75px; } }
+@media (max-width: 991px) {
+  .adi-card {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px; } }
+@media (max-width: 575px) {
+  .adi-card {
+    margin: 0 0 30px 0; }
+
+  .adi-card-link {
+    margin: 0 0 0 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500; }
+
+  .adi-card-content {
+    padding: 25px 15px 30px; }
+
+  .adi-card-title {
+    min-height: 1px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 20px; }
+
+  .adi-card-text {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0 0 20px 0; } }
+
+/*# sourceMappingURL=adi_advertising.css.map */
