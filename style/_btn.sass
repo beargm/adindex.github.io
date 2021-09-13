@@ -1,0 +1,51 @@
+.btn
+  background: #931008
+  color: #ffffff
+  @include fonts(18px, 58px, 400)
+  text-transform: uppercase
+  position: relative
+  padding: 0 30px
+  height: 60px
+  letter-spacing: 0
+  border: none
+  +border-radius(7px)
+  @include transition-dr(300ms)
+  z-index: 1
+  overflow: hidden
+  &:before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 0
+    @include transition-dr(300ms)
+    background: #E31E12
+    z-index: -1
+  &:hover
+    background: none
+    color: #fff
+    &:before
+      height: 100%
+  input
+    box-shadow: none !important
+    background: none !important
+    border: none !important
+    display: block
+    color: #ffffff
+    cursor: pointer
+  &.btn-submit
+    padding: 0
+    input
+      display: block
+      text-align: center
+      padding: 0 0
+      width: 100%
+      background: none
+      border: none
+      text-shadow: none
+      @include transition-dr(300ms)
+
+
+.btn.focus, .btn:focus, btn:active
+  box-shadow: none !important

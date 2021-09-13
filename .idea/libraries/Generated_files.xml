@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/common.min.js" />
+        <item url="file://$PROJECT_DIR$/js/common.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/ion.range-slider/ion.rangeSlider.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/ion.range-slider/js/ion.rangeSlider.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/ion.range-slider/js/ion.rangeSlider.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/ion.range-slider/js/ion.rangeSlider.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/jquery/jquery.validate.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/lazy_load/jquery.lazy.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/parallax/jquery.parallaxmouse.min.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/common.min.js" />
+      <root url="file://$PROJECT_DIR$/js/common.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/ion.range-slider/ion.rangeSlider.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/ion.range-slider/js/ion.rangeSlider.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/ion.range-slider/js/ion.rangeSlider.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/ion.range-slider/js/ion.rangeSlider.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/jquery/jquery.validate.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/lazy_load/jquery.lazy.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/parallax/jquery.parallaxmouse.min.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
