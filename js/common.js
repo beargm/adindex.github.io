@@ -68,7 +68,7 @@ $(function () {
             },
             color: {
                 required: true,
-                minlength: 6,
+                minlength: 3,
             },
             characteristic: {
                 required: true,
@@ -134,8 +134,7 @@ $(function () {
     });
     $(".field-number2").inputmask( "decimal", {
         rightAlign: false,
-        minlength: 1,
-        maxlength: 9
+        mask: "9" 
     });
 
     var profileBlock = $(".profile-block");

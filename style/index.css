@@ -746,7 +746,7 @@ label.error {
       position: absolute;
       top: 0;
       min-width: 155px;
-      max-height: 365px !important;
+      max-height: 195px !important;
       background: #fff;
       border: none;
       padding: 0 0;
@@ -1521,6 +1521,14 @@ header.header {
     padding-right: 10px; }
 .form-profile .form-control {
   width: 100%; }
+.form-profile textarea.form-control {
+  overflow: hidden;
+  height: 45px;
+  padding: 5px 15px;
+  min-height: 45px;
+  max-height: 45px;
+  font-size: 16px;
+  line-height: 17px; }
 .form-profile .jq-selectbox {
   width: 100%; }
 .form-profile .form-bottom {
@@ -1555,7 +1563,10 @@ header.header {
 .modal {
   background: url(../img/bg-modal.png) center top no-repeat;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  max-width: 1000px;
+  margin: 0 auto;
+  right: 0; }
   .modal:before {
     content: "";
     position: absolute;
@@ -1565,7 +1576,8 @@ header.header {
     height: 358px;
     background: url(../img/modal-left.svg) no-repeat;
     -webkit-background-size: 100% auto;
-    background-size: 100% auto; }
+    background-size: 100% auto;
+    margin: -358px 0 0 0; }
   .modal:after {
     content: "";
     position: absolute;
