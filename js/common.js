@@ -130,11 +130,12 @@ $(function () {
     });
 
     $(".field-number").inputmask( "decimal", {
-        rightAlign: false
+        rightAlign: false,
+        mask: "999"
     });
     $(".field-number2").inputmask( "decimal", {
         rightAlign: false,
-        mask: "9" 
+        mask: "9"
     });
 
     var profileBlock = $(".profile-block");
