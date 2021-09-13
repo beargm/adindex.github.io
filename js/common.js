@@ -131,7 +131,7 @@ $(function () {
 
     $(".field-number").inputmask( "decimal", {
         rightAlign: false,
-        mask: "999"
+        //mask: "999" 
     });
     $(".field-number2").inputmask( "decimal", {
         rightAlign: false,
