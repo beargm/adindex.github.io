@@ -1,0 +1,81 @@
+.itg-mob-header:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both; }
+
+.itg-header {
+  height: 92px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: "HelveticaNeueCyr"; }
+  .itg-header .container {
+    position: relative; }
+
+.itg-header-left {
+  position: absolute;
+  left: 15px;
+  top: 32px;
+  z-index: 2; }
+
+.itg-header-right {
+  position: absolute;
+  top: 32px;
+  right: 15px;
+  z-index: 2; }
+
+.itg-header-text {
+  text-align: center;
+  color: #808080;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  padding: 37px 0 0 0; }
+
+.itg-overflow {
+  overflow: hidden; }
+
+.itg-logo {
+  width: 184px;
+  margin: 32px auto; }
+
+.itg-mob-header {
+  display: none; }
+
+@media (max-width: 767px) {
+  .itg-logo {
+    width: 168px;
+    margin: 40px auto; } }
+@media (max-width: 575px) {
+  .itg-header {
+    height: 85px;
+    margin: 0 15px; }
+
+  .itg-mob-header {
+    display: block;
+    font-size: 0;
+    text-align: center; }
+    .itg-mob-header .link {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 5px 0 0; }
+      .itg-mob-header .link:last-child {
+        margin-right: 0; }
+    .itg-mob-header a, .itg-mob-header span {
+      display: inline-block;
+      vertical-align: top;
+      text-decoration: none !important;
+      color: #808080 !important;
+      font-size: 16px;
+      line-height: 16px; }
+
+  .itg-header-left, .itg-header-right {
+    display: none; }
+
+  .itg-header-text {
+    padding: 35px 0 5px 0;
+    font-size: 16px;
+    line-height: 16px; } }
+
+/*# sourceMappingURL=itg_header.css.map */
