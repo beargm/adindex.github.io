@@ -1,5 +1,5 @@
 $(function () {
-    $('.lazy').lazy(); 
+    $('.lazy').lazy();
     AOS.init({
         disable: 'mobile',
         startEvent: 'DOMContentLoaded',

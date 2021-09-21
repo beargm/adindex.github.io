@@ -4,7 +4,9 @@
     <list default="true" id="0fc8f554-888b-434d-a17a-d40df325b7df" name="Default" comment="asd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/adi_itg.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/adi_itg.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/adi_itg.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/adi_itg.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/adi_itg.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style/adi_itg.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -636,7 +638,7 @@
       <workItem from="1631531704257" duration="1437000" />
       <workItem from="1631539187824" duration="11000" />
       <workItem from="1632231245615" duration="1079000" />
-      <workItem from="1632232377171" duration="26000" />
+      <workItem from="1632232377171" duration="204000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1632232028435</created>
