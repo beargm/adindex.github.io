@@ -16,7 +16,12 @@
     display: block;
     z-index: 2; }
   .itg-video-item .img {
-    position: relative; }
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden; }
     .itg-video-item .img img {
       width: 100%;
       -webkit-border-radius: 10px;
@@ -27,7 +32,7 @@
       overflow: hidden;
       display: block; }
   .itg-video-item.blur .img img {
-    filter: blur(3px); }
+    filter: blur(10px); }
 
 .itg-video-item-title {
   font-size: 16px;
