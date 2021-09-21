@@ -158,6 +158,8 @@
     .itg-video-block .play:after {
       content: "";
       background: url(../img/play.svg) no-repeat;
+      -webkit-background-size: 29px 34px;
+      background-size: 29px 34px;
       width: 29px;
       height: 34px;
       position: absolute;
@@ -199,6 +201,14 @@
     right: 0;
     width: auto;
     animation: animatedBackgroundLeft 10s linear infinite; }
+  .icontext.style-2:before {
+    background: url(../img/bgicontext3.svg) repeat-x; }
+  .icontext.style-2:after {
+    background: url(../img/bgicontext3.svg) repeat-x; }
+  .icontext.style-3:before {
+    background: url(../img/bgicontext4.svg) repeat-x; }
+  .icontext.style-3:after {
+    background: url(../img/bgicontext4.svg) repeat-x; }
   .icontext .img {
     text-align: center; }
 
@@ -348,8 +358,8 @@ ul {
         margin: -9px 0 0 -7px;
         width: 16px;
         height: 18px;
-        -webkit-background-size: 100% 100%;
-        background-size: 100% 100%; }
+        -webkit-background-size: 16px 18px;
+        background-size: 16px 18px; }
 
   .icontext, .icontext-2 {
     margin: 15px 0 20px 0;

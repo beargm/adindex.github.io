@@ -129,6 +129,8 @@
     &:after
       content: ""
       background: url(../img/play.svg) no-repeat
+      -webkit-background-size: 29px 34px
+      background-size: 29px 34px 
       width: 29px
       height: 34px
       position: absolute
@@ -173,6 +175,17 @@
     right: 0
     width: auto
     animation: animatedBackgroundLeft 10s linear infinite
+  &.style-2
+    &:before
+      background: url(../img/bgicontext3.svg) repeat-x
+    &:after
+      background: url(../img/bgicontext3.svg) repeat-x
+  &.style-3
+    &:before
+      background: url(../img/bgicontext4.svg) repeat-x
+    &:after
+      background: url(../img/bgicontext4.svg) repeat-x
+
   .img
     text-align: center
 .icontext-2
@@ -300,8 +313,8 @@ ul
         margin: -9px 0 0 -7px
         width: 16px
         height: 18px
-        -webkit-background-size: 100% 100%
-        background-size: 100% 100%
+        -webkit-background-size: 16px 18px
+        background-size: 16px 18px 
   .icontext, .icontext-2
     margin: 15px 0 20px 0
     padding: 30px 0 35px 0
