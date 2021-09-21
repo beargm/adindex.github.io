@@ -348,8 +348,8 @@ ul {
   .itg-video-block {
     margin: 0 -15px; }
     .itg-video-block .play {
-      width: 64px;
       height: 64px;
+      width: 64px;
       left: auto;
       right: 15px;
       top: auto;
