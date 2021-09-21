@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc8f554-888b-434d-a17a-d40df325b7df" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/adi_itg.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style/adi_itg.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -634,7 +635,7 @@
       <workItem from="1631529921248" duration="1427000" />
       <workItem from="1631531704257" duration="1437000" />
       <workItem from="1631539187824" duration="11000" />
-      <workItem from="1632231245615" duration="77000" />
+      <workItem from="1632231245615" duration="227000" />
     </task>
     <servers />
   </component>
