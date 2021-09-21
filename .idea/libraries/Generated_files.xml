@@ -9,19 +9,20 @@
         <item url="file://$PROJECT_DIR$/libs/ion.range-slider/js/ion.rangeSlider.min.min.min.js" />
         <item url="file://$PROJECT_DIR$/libs/jquery/jquery.validate.min.min.js" />
         <item url="file://$PROJECT_DIR$/libs/lazy_load/jquery.lazy.min.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/examples/jquery.hashchange.min.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/examples/jquery.hashchange.min.min.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/examples/jquery.hashchange.min.min.min.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.min.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.js" />
-        <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.js" />
         <item url="file://$PROJECT_DIR$/libs/parallax/ScrollMagic.min.min.js" />
         <item url="file://$PROJECT_DIR$/libs/parallax/ScrollMagic.min.min.min.js" />
         <item url="file://$PROJECT_DIR$/libs/parallax/rellax.min.min.js" />
         <item url="file://$PROJECT_DIR$/libs/parallax/rellax.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/examples/jquery.hashchange.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/examples/jquery.hashchange.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/examples/jquery.hashchange.min.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/examples/jquery.hashchange.min.min.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/jquery.malihu.PageScroll2id.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/jquery.malihu.PageScroll2id.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/js/minified/jquery.malihu.PageScroll2id.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/js/minified/jquery.malihu.PageScroll2id.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/scrolltoid/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -32,19 +33,20 @@
       <root url="file://$PROJECT_DIR$/libs/ion.range-slider/js/ion.rangeSlider.min.min.min.js" />
       <root url="file://$PROJECT_DIR$/libs/jquery/jquery.validate.min.min.js" />
       <root url="file://$PROJECT_DIR$/libs/lazy_load/jquery.lazy.min.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/examples/jquery.hashchange.min.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/examples/jquery.hashchange.min.min.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/examples/jquery.hashchange.min.min.min.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.min.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.js" />
-      <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.js" />
       <root url="file://$PROJECT_DIR$/libs/parallax/ScrollMagic.min.min.js" />
       <root url="file://$PROJECT_DIR$/libs/parallax/ScrollMagic.min.min.min.js" />
       <root url="file://$PROJECT_DIR$/libs/parallax/rellax.min.min.js" />
       <root url="file://$PROJECT_DIR$/libs/parallax/rellax.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/examples/jquery.hashchange.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/examples/jquery.hashchange.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/examples/jquery.hashchange.min.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/examples/jquery.hashchange.min.min.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/jquery.malihu.PageScroll2id.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/jquery.malihu.PageScroll2id.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/js/minified/jquery.malihu.PageScroll2id.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/js/minified/jquery.malihu.PageScroll2id.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/scrolltoid/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.min.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

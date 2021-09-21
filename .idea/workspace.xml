@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fc8f554-888b-434d-a17a-d40df325b7df" name="Default" comment="">
+    <list default="true" id="0fc8f554-888b-434d-a17a-d40df325b7df" name="Default" comment="asd">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.min.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/page-scroll-to-id-master/readme.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -636,8 +648,16 @@
       <workItem from="1631529921248" duration="1427000" />
       <workItem from="1631531704257" duration="1437000" />
       <workItem from="1631539187824" duration="11000" />
-      <workItem from="1632231245615" duration="761000" />
+      <workItem from="1632231245615" duration="881000" />
     </task>
+    <task id="LOCAL-00001" summary="asd">
+      <created>1632232028435</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632232028435</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -669,6 +689,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="asd" />
+    <option name="LAST_COMMIT_MESSAGE" value="asd" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/product_view.html" />
