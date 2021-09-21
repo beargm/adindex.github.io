@@ -1,5 +1,5 @@
 $(function () {
-
+    $('.lazy').lazy(); 
     AOS.init({
         disable: 'mobile',
         startEvent: 'DOMContentLoaded',
@@ -9,7 +9,7 @@ $(function () {
         once: true
     });
 
-    $('.lazy').lazy();
+
 
     $(window).on("load",function(){
         $(".itg-video-scroll .itg-video-item a").mPageScroll2id({
