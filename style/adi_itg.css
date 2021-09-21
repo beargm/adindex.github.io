@@ -16,12 +16,12 @@
     display: block;
     z-index: 2; }
   .itg-video-item .img {
+    overflow: hidden;
     position: relative;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    border-radius: 10px;
-    overflow: hidden; }
+    border-radius: 10px; }
     .itg-video-item .img img {
       width: 100%;
       -webkit-border-radius: 10px;
