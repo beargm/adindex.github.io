@@ -18,6 +18,10 @@
         <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.js" />
         <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.js" />
         <item url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/parallax/ScrollMagic.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/parallax/ScrollMagic.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/parallax/rellax.min.min.js" />
+        <item url="file://$PROJECT_DIR$/libs/parallax/rellax.min.min.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -37,6 +41,10 @@
       <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.js" />
       <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.js" />
       <root url="file://$PROJECT_DIR$/libs/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/parallax/ScrollMagic.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/parallax/ScrollMagic.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/parallax/rellax.min.min.js" />
+      <root url="file://$PROJECT_DIR$/libs/parallax/rellax.min.min.min.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

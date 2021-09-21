@@ -156,8 +156,8 @@
     -o-transition-duration: 300ms;
     transition-duration: 300ms; }
     .itg-video-block .play:after {
-      display: block;
       content: "";
+      display: block;
       background: url(../img/play.svg) no-repeat;
       -webkit-background-size: 29px 34px;
       background-size: 29px 34px;
