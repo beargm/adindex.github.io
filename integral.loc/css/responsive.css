@@ -1,0 +1,132 @@
+@media(max-width: 2560px){
+    .layout{
+        max-width: 100%;
+    }
+    .header__mobile-burger{
+        display: none;
+    }
+}
+@media(max-width: 1470px){
+    .layout{
+        max-width: 1440px;
+    }
+}
+@media(max-width: 770px){
+    .header__navs{
+        display: none;
+    }
+    .header__mobile-burger{
+        display: block;
+    }
+    .header{
+        padding: 13px 15px 13px 15px;
+    }
+    .header__logo{
+        margin: 0 20px 0 0;
+    }
+    .header__nav-item{
+        margin: 0 20px 0 0;
+    }
+    .auth__order-btn{
+        margin: 0 20px 0 0;
+    }
+    .dictionary {
+        padding: 40px 18px 216px 18px;
+    }
+}
+@media(max-width: 500px){
+    .header{
+        padding: 17px 18px 0 18px;
+        justify-content: space-between;
+    }
+    .header__navs{
+        display: none;
+    }
+    .header__mobile-burger{
+        display: block;
+    }
+    .header__logo{
+        margin: 0 25px 0 0;
+    }
+    .auth__order-btn {
+        margin: 0 43px 0 0;
+    }
+    .auth__sign-btn{
+        margin: 0 43px 0 0;
+    }
+    .dictionary__title {
+        font: 700 18px 'Monseratt';
+        line-height: 19px;
+        max-width: 340px;
+        margin: 0 0 43px 0;
+        text-transform: uppercase;
+    }
+    .dictionary__search input{
+        max-width: inherit;
+    }
+    .dictionary__list-item {
+        /*padding: 23px 16px 16px 23px;*/
+        padding: 16px;
+        line-height: 19px;
+    }
+    .auth__order-btn{
+        /*padding: 17px 8px 17px 8px;*/
+        padding: 8px 17px 8px 18px;
+        font: 500 12px 'Monseratt';
+        line-height: 13px;
+    }
+    .auth__modal{
+        background: white;
+        width: 100%;
+        max-width: inherit;
+    }
+    .auth__modal--show{
+        top: 100px;
+        /*padding: 24px 50px 0 50px;*/
+    }
+    .modal__title {
+        font: 400 14px 'Monseratt';
+        line-height: 19px;
+    }
+    .modal__icon{
+        justify-content: space-between;
+    }
+    .header {
+        justify-content: inherit;
+        /*padding: 46px 50px 0 50px;*/
+    }
+    .header__sign--show{
+        padding: 46px 50px 0 50px;
+    }
+    .header__mobile-burger {
+        /*margin-left: auto;*/
+    }
+    .header__mobile-modal{
+        /*display: block;*/
+        overflow: hidden;
+    }
+}
+@media(max-width: 320px){
+    .auth__order-btn{
+        font: 500 10px 'Monseratt';
+        margin: 0 20px 0 0;
+    }
+}
+/*@media(max-width: 490px){*/
+/*    .header{*/
+/*        justify-content: space-between;*/
+/*    }*/
+/*    .header__navs{*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
+/*разметка для моделей iPhone – iPhone X, iPhone Xs, iPhone 11 Pro и iPhone 12/12 Pro.*/
+/*@media only screen*/
+/*and (device-width: 375px)*/
+/*and (device-height: 812px)*/
+/*and (-webkit-device-pixel-ratio: 3) {*/
+/*    .header {*/
+/*        padding: 48px 15px 13px 15px;*/
+/*    }*/
+/*}*/
