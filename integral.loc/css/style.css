@@ -355,14 +355,15 @@ input:checked + .modal__slider:before {
 .footer{
     padding: 10px 0px 9px 48px;
     border-top: 1px solid #CCDFFF;
-}
-.footer.fixed{
     position: fixed;
     bottom: 0;
-    left: 0;
     right: 0;
+    left: 0;
     z-index: 500;
     background: #fff;
+}
+.footer.fixed{
+
 }
 .footer__info{
     font: 400 14px 'Monseratt';
