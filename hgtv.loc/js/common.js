@@ -17,40 +17,33 @@ $(function () {
             $(this).html("Cвернуть ↑");
         }
     });
+    const slider = $(".slider-speakers");
+    slider
+        $('.slider-speakers').slick({
+            //lazyLoad: 'ondemand',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            fade: false,
+            autoplay: false,
+            infinite: false,
+            //swipeToSlide: true
 
-    $('.slider-speakers').slick({
-        //lazyLoad: 'ondemand',
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        arrows: false,
-        dots: true,
-        fade: false,
-        autoplay: false,
-        //infinite: false
-        /*responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]*/
-    });
+        });
+
+    slider.on('wheel', (function(e) {
+        e.preventDefault();
+
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickPrev');
+
+        } else {
+            $(this).slick('slickNext');
+        }
+    }));
+
+
 
     $(".accordion-conference .accordion-item:first-child .accordion-menu-title").addClass("active");
     $(".accordion-conference .accordion-item:first-child .accordion-sub-block").show();
