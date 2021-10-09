@@ -349,7 +349,7 @@ label.error {
       right: 0;
       margin: 0 auto; }
 
-  h1 {
+  h1, h2 {
     font-size: 24px;
     line-height: 29px;
     font-weight: 600;
@@ -1378,6 +1378,9 @@ header.header {
     font-weight: 500; }
 
 @media (max-width: 991px) {
+  .broadcast-block h2 {
+    margin-bottom: 25px; }
+
   .broadcast-step-1 {
     height: 162px; }
     .broadcast-step-1 .btn-reg {
@@ -1668,6 +1671,13 @@ header.header {
   margin-bottom: 40px; }
 
 @media (max-width: 991px) {
+  .speakers-block {
+    padding: 25px 0 5px 0; }
+    .speakers-block .btn {
+      margin-top: 0; }
+    .speakers-block h2 {
+      margin-bottom: 25px; }
+
   .block-btn-back {
     text-align: center; }
 
@@ -1764,6 +1774,11 @@ header.header {
     font-family: "Gotham Pro"; }
 
 @media (max-width: 991px) {
+  .conference-program {
+    padding: 45px 0 50px 0; }
+    .conference-program h2 {
+      margin-bottom: 25px; }
+
   .accordion-item .column-left {
     float: none;
     width: auto; }
