@@ -1,0 +1,106 @@
+.modal
+  background: rgba(68,64,79,0.9)
+  .modal-dialog
+    max-width: 920px
+  .modal-content
+    border: none
+    +border-radius(5px)
+    background: #fff
+    box-shadow: 0 3px 68px 0 rgba(0, 0, 0, 0.19)
+  .jq-selectbox
+    .jq-selectbox__dropdown
+      ul
+        max-height: 180px !important
+.modal-dialog
+  .modal-header
+    position: relative
+    z-index: 10
+    +border-radius(0)
+    display: block
+    padding: 0 0 0 0
+    border-bottom: none
+    margin-bottom: 0
+    border-bottom: none
+  .modal-body
+    padding: 0 0 0
+  .modal-title
+    @include fonts(30px, 35px, 500)
+    color: #000
+    text-align: left
+    padding-top: 0
+    padding-bottom: 0
+    margin-bottom: 0
+    display: block
+    position: relative
+
+  .close
+    width: 40px
+    height: 40px
+    background: url(../img/close.svg) center center no-repeat
+    -webkit-background-size: 20px
+    background-size: 20px
+    padding: 0
+    margin: 0
+    position: absolute
+    right: 20px
+    top: 20px
+    font-size: 35px
+    font-weight: 400
+    color: #fff
+    @include transition-dr(300ms)
+    transform: rotate(0deg)
+    opacity: 1
+    text-shadow: none
+    span
+      display: none
+      height: 20px
+      line-height: 15px
+
+
+
+  .btn.btn-submit
+    &:after
+      display: none
+    input
+      padding: 0 25px
+.modal
+  .btn.btn-submit
+    width: 100%
+    height: 60px
+    display: block
+    input
+      height: 60px
+      @include fonts(23px, 60px, 500)
+      text-align: center
+      width: 100%
+
+.modal
+  &.modal-login
+    .modal-dialog
+      max-width: 600px
+.modal-login
+  .modal-header
+    padding: 25px 30px
+  .modal-body
+    padding: 0 30px 30px
+  .form-style
+    padding: 0 0
+    box-shadow: none
+  .form-group
+    margin-bottom: 20px
+  .btn-submit
+    margin-top: 30px
+
+
+@media (max-width: 991px)
+  .modal
+    padding-left: 15px !important
+    padding-right: 15px !important
+
+@media (max-width: 767px)
+  .modal-login
+    .modal-header
+      padding: 25px 15px
+    .modal-body
+      padding: 0 15px 30px
+

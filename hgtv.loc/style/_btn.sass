@@ -1,0 +1,261 @@
+.btn
+  background: #3CB9D2
+  color: #ffffff
+  @include fonts(16px, 50px, 500)
+  text-transform: none
+  position: relative
+  padding: 0 30px
+  height: 50px
+  letter-spacing: 0
+  +border-radius(5px)
+  @include transition-dr(300ms)
+  z-index: 1
+  overflow: hidden
+  text-align: center
+  border: 1px solid #3CB9D2
+  //&:before
+  //  content: ""
+  //  position: absolute
+  //  bottom: 0
+  //  left: 0
+  //  right: 0
+  //  height: 0
+  //  @include transition-dr(300ms)
+  //  background: #5AAEBF
+  //  z-index: -1
+  &:hover
+    background: #fff
+    color: $color1
+    &:before
+      height: 100%
+  input
+    box-shadow: none !important
+    background: none !important
+    border: none !important
+    display: block
+    color: #ffffff
+    cursor: pointer
+  &.btn-submit
+    padding: 0
+    input
+      display: block
+      text-align: center
+      padding: 0 0
+      width: 100%
+      background: none
+      border: none
+      text-shadow: none
+      @include transition-dr(300ms)
+
+  &.black
+    background: #000
+    &:before
+      display: none
+    &:hover
+      background: #fff
+      color: #000
+      input
+        color: #000
+
+.btn-outline
+  text-align: center
+  background: #fff
+  height: 50px
+  display: inline-block
+  vertical-align: top
+  @include fonts(16px, 48px, 500)
+  @include transition-dr(300ms)
+  +border-radius(5px)
+  padding: 0 30px
+  color: #000
+  position: relative
+  text-decoration: none !important
+  border: 1px solid #282828
+  z-index: 1
+  overflow: hidden
+  &:hover
+    background: #000
+    color: #fff
+
+
+.btn-login
+  height: 54px
+  @include fonts(18px, 50px, 600)
+  +border-radius(40px)
+  padding: 0 10px
+  min-width: 180px
+@-webkit-keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+
+@-moz-keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+
+@-ms-keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+
+@-o-keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+@keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+
+@-webkit-keyframes slideme
+  0%
+    left: -30px
+    margin-left: 0
+
+  30%
+    left: 110%
+    margin-left: 80px
+
+  100%
+    left: 110%
+    margin-left: 80px
+
+
+
+@keyframes slideme
+  0%
+    left: -30px
+    margin-left: 0
+
+  30%
+    left: 110%
+    margin-left: 80px
+
+  100%
+    left: 110%
+    margin-left: 80px
+
+
+.btn-move
+  &:after
+    margin-left: -30px
+    content: " "
+    width: 30px
+    height: 300px
+    background: #fff
+    -webkit-animation-delay: .05s
+    animation-delay: .05s
+    position: absolute
+    left: -40px
+    top: -150px
+    top-animation-timing-function: ease-in-out
+    -webkit-transition: all .1s
+    -o-transition: all .1s
+    transition: all .1s
+    -webkit-animation-name: slideme
+    animation-name: slideme
+    -webkit-animation-duration: 3.5s
+    animation-duration: 3.5s
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+
+.btn-effect-1
+  overflow: hidden
+  position: relative
+  &:after
+    content: ""
+    display: block
+    width: 30px
+    height: 100%
+    position: absolute
+    opacity: .3
+    top: 0
+    left: 0
+    background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%)
+    -webkit-transform: skew(-10deg,0)
+    -moz-transform: skew(-10deg,0)
+    -ms-transform: skew(-10deg,0)
+    -o-transform: skew(-10deg,0)
+    transform: skew(-10deg,0)
+    -webkit-animation: move 5s linear infinite
+    -moz-animation: move 5s linear infinite
+    -ms-animation: move 5s linear infinite
+    -o-animation: move 5s linear infinite
+    animation: move 5s linear infinite
+
+
+input.btn.btn-grey
+  &:hover
+    background: #697177
+
+.btn.focus, .btn:focus, btn:active
+  box-shadow: none !important
+
+.link-view
+  color: #666
+  text-decoration: none
+  @include fonts(18px, 22px, 600)
+  border-bottom: 1px solid transparent
+  display: inline-block
+  @include transition-dr(300ms)
+  position: relative
+  &:hover
+    color: #666
+    border-color: #666
+    text-decoration: none
+
+.read-more
+  color: $yellow
+  text-decoration: none
+  @include fonts(23px, 25px, 500)
+  font-style: italic
+  border-bottom: 1px solid $yellow
+  display: inline-block
+  @include transition-dr(300ms)
+  position: relative
+  &:hover
+    color: $yellow
+    border-color: transparent
+    text-decoration: none
+
+
+.link-dashed
+  text-decoration: none
+  color: $black
+  border-bottom: 1px dashed #000
+  &:hover
+    border-color: transparent
+
+@media (max-width: 991px)
+  .btn-outline
+    color: #000 !important
+    &:before
+      display: none
+
+
+@media (max-width: 575px)
+  .btn
+    &.sm-2-line
+      height: auto
+      @include fonts(18px, 22px)
+      padding: 15px 15px 13px 15px
