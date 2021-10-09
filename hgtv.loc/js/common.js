@@ -112,6 +112,7 @@ $(function () {
         }
     });
     $(".menu-fixed-block .link a").click(function(e){
+        $(".mobile-menu-trigger").removeClass("active");
         $(".banner-link-box").removeClass("active");
         $(".menu-fixed-block .ic-close").removeClass("active");
     });
