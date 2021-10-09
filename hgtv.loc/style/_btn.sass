@@ -76,7 +76,19 @@
   &:hover
     background: #000
     color: #fff
-
+@media (max-width: 991px)
+  .btn
+    &:hover
+      background: #3CB9D2
+      color: #ffffff 
+  .btn-outline
+    color: #000 !important
+    &:hover
+      background: #fff
+      color: #fff
+      border: 1px solid #282828
+    &:before
+      display: none
 
 .btn-login
   height: 54px
@@ -246,11 +258,7 @@ input.btn.btn-grey
   &:hover
     border-color: transparent
 
-@media (max-width: 991px)
-  .btn-outline
-    color: #000 !important
-    &:before
-      display: none
+
 
 
 @media (max-width: 575px)

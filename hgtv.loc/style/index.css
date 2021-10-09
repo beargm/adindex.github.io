@@ -487,6 +487,19 @@ label.error {
     background: #000;
     color: #fff; }
 
+@media (max-width: 991px) {
+  .btn:hover {
+    background: #3CB9D2;
+    color: #ffffff; }
+
+  .btn-outline {
+    color: #000 !important; }
+    .btn-outline:hover {
+      background: #fff;
+      color: #fff;
+      border: 1px solid #282828; }
+    .btn-outline:before {
+      display: none; } }
 .btn-login {
   height: 54px;
   font-size: 18px;
@@ -655,11 +668,6 @@ input.btn.btn-grey:hover {
   .link-dashed:hover {
     border-color: transparent; }
 
-@media (max-width: 991px) {
-  .btn-outline {
-    color: #000 !important; }
-    .btn-outline:before {
-      display: none; } }
 @media (max-width: 575px) {
   .btn.sm-2-line {
     height: auto;
