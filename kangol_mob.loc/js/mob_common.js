@@ -4,28 +4,68 @@ $(function () {
     $('.lazy').lazy();
 
     if($(this).scrollTop() > 250) {
+        $('.mob-header-bottom').css({"display" : ""});
+        $('.catalog-trigger').removeClass("active");
         $('.mob-header').addClass("fixed");
+        $(".mob-header").removeClass("fixed-important");
     } else {
+        $(".mob-header").addClass("fixed-important");
+        $('.catalog-trigger').addClass("active");
+        $('.mob-header-bottom').css({"display" : "block"});
         $('.mob-header').removeClass("fixed");
     }
+
     $(window).scroll(function() {
         if($(this).scrollTop() > 250) {
+            $('.mob-header-bottom').css({"display" : ""});
+            $('.catalog-trigger').removeClass("active");
             $('.mob-header').addClass("fixed");
+            $(".mob-header").removeClass("fixed-important");
+
         } else {
+            $(".mob-header").addClass("fixed-important");
+            $('.catalog-trigger').addClass("active");
+            $('.mob-header-bottom').css({"display" : "block"});
             $('.mob-header').removeClass("fixed");
-            $('.mob-header-category').css({"display" : ""});
-            $('.btn-open-catalog').css({"display" : ""});
-            $(".mob-header").removeClass("open");
         }
 
 
     });
 
-    $(".btn-open-catalog").click(function () {
+    $(".product-card .ic-fav, .product-card-2 .ic-fav").click(function(e){
+        e.stopPropagation();
 
-        $(".mob-header").addClass("open");
-        $(".mob-header-category").show();
-        $(".btn-open-catalog").hide();
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+        }
+    });
+
+    $(".tag-list .tag").click(function(e){
+        e.stopPropagation();
+
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+        }
+    });
+
+    $(".catalog-trigger").click(function(e){
+        e.stopPropagation();
+
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+            $(".mob-header-bottom").hide();
+
+        } else {
+            $(".mob-header-bottom").show();
+
+            $(this).addClass("active");
+
+
+        }
     });
 
 

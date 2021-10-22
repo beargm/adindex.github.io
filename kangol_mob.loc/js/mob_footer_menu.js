@@ -13,7 +13,7 @@ $(function () {
             // $(".footer-icon-view").removeClass("active");
             $(".mob-modal-view").hide();
             $(".mob-modal").hide();
-            $(".footer-menu .icon-block").removeClass("active");
+            $(".modal-icon-block").removeClass("active");
 
             $(this).addClass("active");
             $(".modal-cart").show();
@@ -33,7 +33,7 @@ $(function () {
             // $(".footer-icon-view").removeClass("active");
             $(".mob-modal-view").hide();
             $(".mob-modal").hide();
-            $(".footer-menu .icon-block").removeClass("active");
+            $(".modal-icon-block").removeClass("active");
 
             $(this).addClass("active");
             $(".modal-fav").show();
@@ -41,7 +41,7 @@ $(function () {
     });
 
     $(".mob-modal .modal-bg").click(function() {
-        $(".footer-menu .icon-block").removeClass("active");
+        $(".modal-icon-block").removeClass("active");
         $(".mob-modal").hide();
 
     });
@@ -56,7 +56,7 @@ $(function () {
             $(".modal-shops").hide();
             $(".modal-sort").hide();
             $(".mob-modal").hide();
-            $(".footer-menu .icon-block").removeClass("active");
+            $(".modal-icon-block").removeClass("active");
             $(this).addClass("active");
 
             $(".mob-modal-view").show();
@@ -73,7 +73,7 @@ $(function () {
             $(".modal-shops").hide();
             $(".mob-modal-view").hide();
             $(".mob-modal").hide();
-            $(".footer-menu .icon-block").removeClass("active");
+            $(".modal-icon-block").removeClass("active");
             $(this).addClass("active");
 
             $(".modal-sort").show();
@@ -92,7 +92,7 @@ $(function () {
             $(".footer-icon-view").removeClass("active");
             $(".mob-modal-view").hide();
             $(".mob-modal").hide();
-            $(".footer-menu .icon-block").removeClass("active");
+            $(".modal-icon-block").removeClass("active");
 
             $(this).addClass("active");
             $(".modal-shops").show();
@@ -111,7 +111,7 @@ $(function () {
             $(".footer-icon-view").removeClass("active");
             $(".mob-modal-view").hide();
             $(".mob-modal").hide();
-            $(".footer-menu .icon-block").removeClass("active");
+            $(".modal-icon-block").removeClass("active");
 
             $(this).addClass("active");
             $(".modal-filter").show();
@@ -130,7 +130,7 @@ $(function () {
             $(".footer-icon-view").removeClass("active");
             $(".mob-modal-view").hide();
             $(".mob-modal").hide();
-            $(".footer-menu .icon-block").removeClass("active");
+            $(".modal-icon-block").removeClass("active");
 
             $(this).addClass("active");
             $(".modal-size").show();
@@ -150,6 +150,12 @@ $(function () {
             $(this).addClass("active");
             $(this).next().slideDown();
         }
+    });
+
+    $(".mob-filter-item.selected").click(function(e){
+        e.stopPropagation();
+        $(this).removeClass("selected");
+
     });
 
 
