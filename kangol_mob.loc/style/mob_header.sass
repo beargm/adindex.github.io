@@ -6,12 +6,8 @@
   right: 0
   background: #fff
   z-index: 900
-  height: 173px
-  &.fixed-important
-    .catalog-trigger .text:before
-      opacity: 0 !important
-    .mob-header-bottom
-      display: block !important
+  height: 60px
+
   .btn
     display: block
     margin: 10px auto 0
@@ -20,20 +16,18 @@
     padding: 0 0
   &.fixed
     height: auto
-    .mob-header-bottom
-      display: none
-    &.open
-      height: 173px
-
-    .btn-open-catalog
-      display: block
     .mob-header-top
       box-shadow: none
-    .mob-header-box
+  &.fixed + .mob-header-bottom
+    display: none
 
-  &.open
-    .mob-header-bottom
-      padding: 5px 0 5px 0
+
+.fixed-important
+  .mob-header
+    .catalog-trigger .text:before
+      opacity: 0 !important
+  .mob-header-bottom
+    display: block !important
 .mob-header-top
   position: relative
   height: 60px
@@ -122,6 +116,16 @@
 .mob-header-bottom
   padding: 15px 0 5px 0
   display: none
+  position: absolute
+  top: 60px
+  left: -15px
+  right: -15px
+  background: #ffffff
+  z-index: 800
+  &.active
+    position: fixed
+
+
 .mob-header-category
   padding: 0 15px 10px 15px
   border-bottom: 1px solid #ddd
