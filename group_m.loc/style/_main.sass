@@ -1,0 +1,588 @@
+.banner-main
+  position: relative
+  padding: 0 0 96px 0
+  @extend %after-clear
+  .img
+    position: absolute
+    bottom: 0
+    right: 0
+  .text-big
+    color: #ffffff
+    text-transform: uppercase
+    @include fonts(168px, 132px, 900)
+    font-family: $ff2
+    span
+      color: #00FFB4
+  .text
+    @include fonts(46px, 50px)
+    font-family: $ff2
+    text-transform: uppercase
+    margin: 0 0 20px 0
+    color: #fff
+  .text-big
+    padding: 50px 0 0 0
+    margin: 0 0 15px 0
+    .top
+      padding: 5px 0 0 0
+    span
+      display: inline-block
+      vertical-align: top
+
+@media (max-width: 1300px)
+  .banner-main
+    .img
+      max-width: 600px
+
+@media (max-width: 1100px)
+  .banner-main
+    .text-big
+      font-size: 120px
+      line-height: 80%
+    .text
+      font-size: 35px
+      line-height: 100%
+
+@media (max-width: 991px)
+
+  .banner-main
+    padding: 0 0 20px 0
+    .img
+      position: relative
+      float: right
+      padding: 0 0 0 15px
+    .text-big
+      padding: 15px 0 0 0
+      z-index: 20
+      position: relative
+    .btn
+      margin: 0 auto
+      display: block
+@media (max-width: 767px)
+  .banner-main
+    .text-big
+      font-size: 108px
+    .text
+      font-size: 24px
+      line-height: 32px
+
+.nav-img-link-box
+  background: linear-gradient(92.68deg, #0A2756 47.77%, #0E387B 71.15%)
+  +border-radius(26px)
+  padding: 25px 0
+
+.nav-img-link
+  position: relative
+  z-index: 2
+  .img
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    float: left
+    margin: 0 50px
+
+    img
+      max-height: 100%
+  .img-list
+    max-width: 950px
+    margin: 0 auto
+    @extend %after-clear
+
+@media (max-width: 991px)
+  .mob-circle-blue
+    display: block
+    background: radial-gradient(50% 50% at 50% 50%, #0080FF 0%, rgba(0, 128, 255, 0) 100%)
+    width: 800px
+    height: 800px
+    position: absolute
+    top: 0
+    right: -500px
+  .nav-img-link-box
+    padding: 0 0
+  .nav-img-link
+    padding: 0 0
+    .img
+      height: 70px
+      width: 33.3333%
+      margin: 0 0
+      padding: 0 15px
+
+@media (max-width: 575px)
+
+  .nav-img-link
+    .img
+      height: 50px
+
+
+.about-event
+  padding: 90px 0 80px 0
+
+.about-event-box
+  padding: 0 0 0 400px
+  .text-formatted
+    margin: 0 0 0 0
+    &.hidden
+      display: none
+  .btn-outline
+    margin-top: 40px
+
+@media (max-width: 991px)
+  .about-event
+    padding: 50px 0 20px 0
+  .about-event-box
+    padding: 0 0
+
+
+.main
+  position: relative
+  overflow: hidden
+
+.bg-snake
+  background: url(../img/bg-snake.png) 0px 0px no-repeat
+  position: relative
+.circle-blue
+  background: radial-gradient(50% 50% at 50% 50%, #0080FF 0%, rgba(0, 128, 255, 0) 100%)
+  position: absolute
+  top: 300px
+  right: -598px
+  width: 1196px
+  height: 1196px
+
+
+.circle-green
+  background: radial-gradient(50% 50% at 50% 50%, #00FFB4 0%, rgba(0, 255, 180, 0) 100%)
+  width: 1454px
+  height: 1454px
+  position: absolute
+  top: 980px
+  left: -727px
+  opacity: 0.7
+.wrap
+  position: relative
+  overflow: hidden
+.circle-blue2
+  background: radial-gradient(50% 50% at 50% 50%, #0080FF 0%, rgba(0, 128, 255, 0) 100%)
+  width: 1200px
+  height: 1200px
+  top: 200px
+  left: 0
+  right: 0
+  position: absolute
+  margin: 0 auto
+.circle-bottom
+  background: radial-gradient(50% 50% at 50% 50%, #00FFB4 0%, rgba(0, 255, 180, 0) 100%)
+  opacity: 0.3
+  width: 1300px
+  height: 1300px
+  position: absolute
+  bottom: -650px
+  right: -500px
+.mob-circle-bottom
+  display: none
+@media (max-width: 991px)
+  .mob-circle-bottom
+    display: block
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 128, 255, 0.5) 0%, rgba(0, 128, 255, 0) 100%)
+    position: absolute
+    bottom: -230px
+    left: -120px
+    right: 0
+    width: 756px
+    height: 755px
+    margin: 0 auto
+  .jq-selectbox
+    .jq-selectbox__select
+      .jq-selectbox__select-text
+        text-align: center
+  .bg-snake, .circle-bottom, .circle-blue2, .circle-green, .circle-blue
+    background: none
+
+
+.blockquote-box
+  background: linear-gradient(90deg, #00FFB4 3%, #00D1FF 100%)
+  +border-radius(26px)
+  padding: 40px 235px 30px 50px
+  position: relative
+  overflow: hidden
+  &:after
+    content: ""
+    position: absolute
+    top: 20px
+    right: 0
+    background: url(../img/snake-blockquote.png) no-repeat
+    width: 208px
+    height: 67px
+  h4
+    color: #0A2756
+    font-family: $ff
+    @include fonts(24px, 120%, 900)
+  .text-formatted
+    padding: 0 0 0 20px
+    color: #0A2756
+    @include fonts(22px, 120%, 600)
+@media (max-width: 991px)
+  .blockquote-block
+    margin: 30px 0 0 0
+  .blockquote-box
+    padding: 30px 15px 120px 15px
+    &:after
+      bottom: 10px
+      top: auto
+      width: 172px
+      height: 92px
+      background: url(../img/mob-snake-blockquote.png) no-repeat
+    h4
+      font-size: 18px
+      line-height: 24px
+    .text-formatted
+      font-size: 16px
+      line-height: 24px
+      padding: 0 0
+
+.accordion-programs
+  padding: 90px 0
+  position: relative
+.accordion-item
+  border-bottom: 1px solid #fff
+  padding: 40px 0 0 0
+  &:last-child
+    border-bottom: none
+    padding-bottom: 0
+  .text-formatted
+    margin: 0 0 30px 0
+  .block-btn
+    @extend %after-clear
+  .btn-outline
+    float: left
+    margin: 0 20px 10px 0
+
+  .btn-ppt
+    float: left
+  .time
+    float: left
+    color: rgba(255,255,255,0.5)
+    @include fonts(24px, 24px, 900)
+    font-family: $ff
+    width: 100px
+  .title
+    max-width: 800px
+    margin: 0 0 0 100px
+    padding: 0 75px 0 0
+    @include fonts(24px, 120%, 900)
+    color: #fff
+.accordion-sub-block
+  padding: 10px 0 30px 0
+  display: none
+  .img
+    float: right
+.accordion-menu-title
+  @extend %after-clear
+  position: relative
+  cursor: pointer
+  &.active
+    .arrow
+      transform: rotate(180deg)
+  .arrow
+    position: absolute
+    top: 0
+    right: 0
+    width: 50px
+    height: 50px
+    +border-radius(50%)
+    background: url(../img/arrow-acc.svg) center no-repeat
+    border: 1px solid #fff
+    cursor: pointer
+
+
+.card-user
+  @extend %after-clear
+  margin: 0 0 40px 0
+  .img
+    width: 82px
+    height: 82px
+    float: left
+    img
+      width: 100%
+      height: 100%
+      +border-radius(50%)
+      overflow: hidden
+  .right
+    margin: 0 0 0 100px
+  .name
+    @include fonts(16px, 19px, 900)
+    color: #ffffff
+    font-family: $ff
+    margin: 0 0 12px 0
+  .text
+    @include fonts(16px, 25px)
+    color: #fff
+.card-user-list
+  margin: 35px 0 0 0
+
+.btn-ppt
+  +border-radius(50%)
+  overflow: hidden
+  width: 60px
+  height: 60px
+  display: inline-block
+  vertical-align: top
+  border: 1px solid #fff
+  .center
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+.read-more-acc
+  display: none
+.mob-circle-green
+  display: none
+
+@media (max-width: 991px)
+  .read-more-acc
+    display: block
+    @include fonts(16px, 22px, 900)
+    color: #8493aa
+    text-align: center
+    &.active
+      span
+        &:after
+          transform: rotate(180deg)
+    span
+      display: inline-block
+      vertical-align: top
+      padding: 0 30px 0 0
+      position: relative
+      &:after
+        width: 25px
+        height: 25px
+        +border-radius(50%)
+        position: absolute
+        top: 0
+        right: 0
+        border: 1px solid #8493aa
+        background: url(../img/arrow-acc.svg) center no-repeat
+        -webkit-background-size: 12px
+        background-size: 12px  
+        content: ""
+  .mob-circle-green
+    background: radial-gradient(50% 50% at 50% 50%, #00FFB4 0%, rgba(0, 255, 180, 0) 100%)
+    width: 1338px
+    height: 1338px
+    position: absolute
+    right: 0
+    top: 0
+    display: block
+  .accordion-programs
+    padding: 50px 0 45px 0
+  .accordion-sub-block
+    padding: 10px 0 60px 0
+    .block-btn
+      margin: 0 0 30px 0
+  .accordion-menu-title
+    position: static
+    .arrow
+      display: none
+  .accordion-item
+    padding: 20px 0
+    position: relative
+    &:first-child
+      padding-top: 0
+    .read-more-acc
+      &.active
+        position: absolute
+        bottom: 15px
+        left: 0
+        right: 0
+    .time
+      @include fonts(18px, 20px, 900)
+      float: none
+      width: auto
+      margin: 0 0 15px 0
+    .title
+      padding: 0 0
+      margin: 0 0
+      @include fonts(18px, 24px, 900)
+
+  .card-user
+    margin: 0 0 30px 0
+    .img
+      width: 65px
+      height: 65px
+    .right
+      margin: 0 0 0 80px
+    .name
+      @include fonts(16px, 22px, 900)
+    .text
+      @include fonts(16px, 22px, 400)
+
+
+.speaker
+  position: relative
+  z-index: 2
+.speaker-box
+  padding: 50px 50px 125px 50px
+  background: linear-gradient(105deg, #00FFB4 2%, #00D1FF 52%)
+  +border-radius(26px)
+  h2
+    color: #0A2756
+.margin-45
+  margin-right: -45px
+  margin-left: -45px
+.slider-speaker
+  .card-speaker
+    margin: 0 45px
+
+.card-speaker
+  .img
+    width: 180px
+    height: 180px
+    margin: 0 0 30px 0
+    img
+      width: 100%
+      height: 100%
+      +border-radius(50%)
+      overflow: hidden
+  .name
+    @include fonts(16px, 19px, 900)
+    color: #000
+    margin: 0 0 15px 0
+    font-family: $ff
+  .text
+    @include fonts(16px, 25px)
+    color: #000
+@media (max-width: 991px)
+  .slider-speaker
+    .card-speaker
+      margin-right: 15px
+      margin-left: 15px
+  .speaker-box
+    margin: 0 -15px
+    +border-radius(0)
+    padding: 35px 30px 95px
+    .margin-45
+      margin-left: -15px
+      margin-right: -15px
+    h2
+      text-align: center
+
+@media (max-width: 575px)
+  .card-speaker
+    .img
+      margin: 0 auto 30px
+    .name
+      text-align: center
+    .text
+      text-align: center
+
+
+.partners
+  padding: 80px 0 50px 0
+  position: relative
+  z-index: 2
+  h2
+    text-align: center
+    color: #fff
+.partner-line
+  margin-bottom: 25px
+  .title
+    margin-bottom: 20px
+    color: #fff
+    @include fonts(24px, 28px, 900)
+    font-family: $ff
+    text-align: center
+  .img-list
+    margin-bottom: 20px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    .img
+      margin: 0 15px
+      height: 50px
+      display: flex
+      align-items: center
+      img
+        max-width: 100%
+        max-height: 100%
+
+@media (max-width: 991px)
+  .partners
+    padding: 55px 0 0 0
+    h2
+      margin-bottom: 35px
+  .partner-line
+    margin-bottom: 15px
+    .title
+      font-size: 18px
+      line-height: 20px
+      margin-bottom: 10px
+
+.broadcast
+  margin: 0 0 40px 0
+  position: relative
+  .jq-selectbox
+    position: absolute
+    bottom: 0
+    left: 0
+  .right-block
+    position: relative
+    height: 100%
+    padding: 0 0 40px 0
+  h2
+    text-align: center
+    color: #fff
+  .title
+    @include fonts(16px, 19px, 900)
+    color: #fff
+    margin-bottom: 15px
+  .text-formatted
+
+.p-relative
+  position: relative
+.broadcast-box
+  padding: 50px
+  background: linear-gradient(65deg, #0A2756 29%, #1147A1 67%)
+  +border-radius(26px)
+.video
+  position: relative
+  .ic-play
+    width: 72px
+    height: 72px
+    background: linear-gradient(68.97deg, #0A2756 37.4%, #0E387B 59.54%)
+    z-index: 5
+    +border-radius(50%)
+    position: absolute
+    top: 50%
+    left: 50%
+    margin: -36px 0 0 -36px
+    cursor: pointer
+    @include transition-dr(300ms)
+    &:hover
+      opacity: 0.8
+    &:after
+      background: url(../img/play.svg) center no-repeat
+      content: ""
+      position: absolute
+      top: 0
+      left: 2px
+      width: 100%
+      height: 100%
+@media (max-width: 767px)
+  .broadcast-box
+    padding: 0
+    background: none
+      +border-radius(0px)
+  .broadcast
+    margin: 0 -15px
+    +border-radius(26px)
+    padding: 35px 15px
+    background: linear-gradient(86.03deg, #0A2756 -91.32%, #0E387B 63%)
+    .jq-selectbox
+      min-width: 290px
+    .video
+      margin: 25px 0 20px 0
+@media (max-width: 575px)
+  .broadcast
+    .jq-selectbox
+      min-width: 100%
