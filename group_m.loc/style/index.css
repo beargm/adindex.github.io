@@ -2031,6 +2031,7 @@ footer {
   .image-banner .img {
     display: none; }
     .image-banner .img img {
+      display: block !important;
       width: 100%; }
 
 @media (max-width: 1500px) {
