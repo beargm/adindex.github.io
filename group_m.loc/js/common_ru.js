@@ -36,9 +36,8 @@ $(function () {
         }
     });
 
-    // modal banner
+    // modal b 
     setTimeout(function () {
-        //$(".modal-banner").css({"display" : ""});
         $("body").addClass("no-scroll");
         $(".modal-banner").addClass("open");
 
@@ -53,7 +52,7 @@ $(function () {
         $("body").removeClass("no-scroll");
         $(".modal-custom").removeClass("open");
     });
-    // modal banner
+    // modal b
 
 
 });

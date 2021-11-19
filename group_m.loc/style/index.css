@@ -2019,18 +2019,18 @@ footer {
   position: relative;
   margin: 0 auto; }
 
-.image-banner {
+.image-b {
   position: relative; }
-  .image-banner .link {
+  .image-b .link {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-  .image-banner .img {
+  .image-b .img {
     display: none; }
-    .image-banner .img img {
+    .image-b .img img {
       display: block !important;
       width: 100%; }
 
@@ -2051,25 +2051,25 @@ footer {
   .modal-custom .modal-custom-boxx {
     max-width: 100%; }
 
-  .image-banner .w-320-100 {
+  .image-b .w-320-100 {
     display: block; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .modal-custom .modal-custom-boxx {
     max-width: 600px; }
 
-  .image-banner .w-600-240 {
+  .image-b .w-600-240 {
     display: block; } }
 @media (min-width: 768px) and (max-width: 1200px) {
   .modal-custom .modal-custom-boxx {
     max-width: 768px; }
 
-  .image-banner .w-768-400 {
+  .image-b .w-768-400 {
     display: block; } }
 @media (min-width: 1201px) {
   .modal-custom .modal-custom-boxx {
     max-width: 1900px; }
 
-  .image-banner .w-1900-300 {
+  .image-b .w-1900-300 {
     display: block; } }
 .container {
   max-width: 1230px; }
