@@ -16,22 +16,6 @@ $(function () {
         }
     });
 
-    $(".accordion-programs .read-more-acc").click(function(e){
-        e.stopPropagation();
-        if($(this).hasClass("active")){
-            $(this).removeClass("active");
-            $(this).parent().next().slideUp();
-            $(this).html("<span>Подробнее</span>");
-        } else {
-            $(".accordion-programs .accordion-menu-title").removeClass("active");
-            $(".accordion-programs .accordion-sub-block").slideUp();
-
-            $(this).addClass("active");
-            $(this).parent().next().slideDown();
-            $(this).html("<span>Скрыть</span>");
-        }
-    });
-
     $('.slider-speaker').slick({
         lazyLoad: 'ondemand',
         slidesToShow: 4,
@@ -68,19 +52,7 @@ $(function () {
 
     $(".select-player").styler();
 
-    $(".about-event .btn-outline").click(function(e){
-        e.stopPropagation();
 
-        if($(this).hasClass("active")){
-            $(this).prev().slideUp();
-            $(this).removeClass("active");
-            $(this).html("Читать дальше");
-        } else {
-            $(this).prev().slideDown();
-            $(this).addClass("active");
-            $(this).html("Скрыть");
-        }
-    });
 
     $(window).on("load",function(){
         $(".nav-page-scroll a").mPageScroll2id({
@@ -88,21 +60,6 @@ $(function () {
             //highlightClass:"highlighted-menu-item"
         });
     });
-
-
-
-    /*$(window).scroll(function() {
-        if($(this).scrollTop() > 200) {
-            $('#goTop').fadeIn();
-        } else {
-            $('#goTop').fadeOut();
-        }
-    });
-    $('#goTop').click(function() {
-        $('body,html').animate({scrollTop : 0}, 800);
-    });*/
-
-
 
 
     //start mob menu
@@ -126,10 +83,6 @@ $(function () {
     //end mob menu
 
 
-
-
-
-    
 
 
 });

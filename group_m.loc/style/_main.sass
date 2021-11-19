@@ -248,10 +248,14 @@
   &:last-child
     border-bottom: none
     padding-bottom: 0
+
   .text-formatted
     margin: 0 0 30px 0
   .block-btn
     @extend %after-clear
+    margin: 0 0 40px 0
+    &.margin-b-0
+      margin-bottom: 0
   .btn-outline
     float: left
     margin: 0 20px 10px 0
@@ -278,10 +282,6 @@
 .accordion-menu-title
   @extend %after-clear
   position: relative
-  cursor: pointer
-  &.active
-    .arrow
-      transform: rotate(180deg)
   .arrow
     position: absolute
     top: 0
@@ -292,7 +292,8 @@
     background: url(../img/arrow-acc.svg) center no-repeat
     border: 1px solid #fff
     cursor: pointer
-
+    &.active
+      transform: rotate(180deg)
 
 .card-user
   @extend %after-clear
@@ -415,7 +416,14 @@
       @include fonts(16px, 22px, 900)
     .text
       @include fonts(16px, 22px, 400)
+@media (max-width: 400px)
 
+  .accordion-item
+    .block-btn
+      margin-bottom: 15px
+    .btn-outline
+      max-width: 210px
+      font-size: 15px
 
 .speaker
   position: relative

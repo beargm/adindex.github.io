@@ -1,0 +1,181 @@
+.modal
+  background: rgba(196, 196, 196, 0.57)
+  top: auto
+  bottom: 0
+  .modal-dialog
+    max-width: 920px
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    display: block
+    margin: 0 auto
+  .modal-content
+    border: none
+    +border-radius(5px)
+    background: #0c0b0b
+    box-shadow: none
+
+.modal-dialog
+  .modal-header
+    position: relative
+    z-index: 10
+    +border-radius(0)
+    display: block
+    padding: 0 60px
+    border-bottom: none
+    border-bottom: none
+    height: 50px
+    background: #0C0B0B
+    margin-bottom: 30px
+  .modal-body
+    padding: 0 0 0 0
+
+  .close
+    z-index: 5
+    width: 35px
+    height: 35px
+    background: url(../img/close.svg) center center no-repeat
+    -webkit-background-size: 20px
+    background-size: 20px
+    padding: 0
+    margin: 0
+    position: absolute
+    right: 10px
+    top: 10px
+    font-size: 35px
+    font-weight: 400
+    color: #fff
+    @include transition-dr(300ms)
+    transform: rotate(0deg)
+    opacity: 1
+    text-shadow: none
+    span
+      display: none
+      height: 20px
+      line-height: 15px
+
+
+.modal-custom
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(196, 196, 196, 0.57)
+  z-index: -1
+  opacity: 0
+  visibility: hidden
+  &.open
+    z-index: 900
+    opacity: 1
+    visibility: visible
+    .modal-custom-box
+      bottom: 0
+      opacity: 1
+.modal-custom-backdrop
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 9
+  cursor: pointer
+
+.modal-custom-close
+  cursor: pointer
+  z-index: 5
+  width: 35px
+  height: 35px
+  background: url(../img/close.svg) center center no-repeat
+  -webkit-background-size: 20px
+  background-size: 20px
+  padding: 0
+  margin: 0
+  position: absolute
+  right: 10px
+  top: 10px
+  @include transition-dr(300ms)
+  &:hover
+    opacity: 0.7
+.modal-custom-box
+  z-index: 10
+  opacity: 0
+  @include transition-dr(500ms)
+  //display: flex
+  //flex-direction: column
+  //align-items: flex-end
+  //justify-content: flex-end
+  //height: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+.modal-custom-boxx
+  position: relative
+  margin: 0 auto
+
+.image-banner
+  position: relative
+  .link
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .img
+    display: none
+    img
+      width: 100%
+
+@media (max-width: 1500px)
+  .modal-custom
+    .modal-custom-close
+      right: 0
+      top: 0
+
+
+@media (max-width: 767px)
+  .modal-custom
+    .modal-custom-boxx
+      padding: 50px 0 0 0
+    .modal-custom-close
+      right: 0
+      top: 0
+@media (max-width: 575px)
+  .modal-custom
+    .modal-custom-boxx
+      padding: 35px 0 0 0
+@media (max-width: 575px)
+  .modal-custom
+    .modal-custom-boxx
+      max-width: 100%
+  .image-banner
+    .w-320-100
+      display: block
+
+@media (min-width: 576px) and (max-width: 767px)
+  .modal-custom
+    .modal-custom-boxx
+      max-width: 600px
+  .image-banner
+    .w-600-240
+      display: block
+
+@media (min-width: 768px) and (max-width: 1200px)
+  .modal-custom
+    .modal-custom-boxx
+      max-width: 768px
+  .image-banner
+    .w-768-400
+      display: block
+
+@media (min-width: 1201px)
+  .modal-custom
+    .modal-custom-boxx
+      max-width: 1900px
+  .image-banner
+    .w-1900-300
+      display: block
+
