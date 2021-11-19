@@ -36,7 +36,7 @@ $(function () {
         }
     });
 
-    // modal b 
+    // modal b
     setTimeout(function () {
         $("body").addClass("no-scroll");
         $(".modal-banner").addClass("open");

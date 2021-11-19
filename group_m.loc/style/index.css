@@ -136,13 +136,13 @@ ul {
   h1 {
     font-size: 24px;
     line-height: 120%;
-    font-weight: 900;
+    font-weight: 500;
     margin-bottom: 30px; }
 
   h2 {
     font-size: 24px;
     line-height: 120%;
-    font-weight: 900;
+    font-weight: 500;
     margin-bottom: 30px; }
 
   .slick-slider .slick-dots li button {
@@ -408,7 +408,7 @@ label.error {
   color: #fff;
   font-size: 16px;
   line-height: 60px;
-  font-weight: 900;
+  font-weight: 500;
   text-transform: uppercase;
   position: relative;
   padding: 0 15px;
@@ -979,7 +979,7 @@ header.header {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 23px;
-    font-weight: 900;
+    font-weight: 500;
     font-family: "Arial Black"; }
 
 .header-snake {
@@ -1154,11 +1154,11 @@ header.header {
       .mobile-menu .lang span, .mobile-menu .lang a {
         font-size: 16px;
         line-height: 22px;
-        font-weight: 900; }
+        font-weight: 500; }
     .mobile-menu .link {
       font-size: 16px;
       line-height: 22px;
-      font-weight: 900;
+      font-weight: 500;
       display: block;
       color: #fff;
       text-transform: uppercase;
@@ -1551,7 +1551,7 @@ footer {
   .card-user .name {
     font-size: 16px;
     line-height: 19px;
-    font-weight: 900;
+    font-weight: 500;
     color: #ffffff;
     font-family: "Arial Black";
     margin: 0 0 12px 0; }
@@ -1675,7 +1675,7 @@ footer {
     .card-user .name {
       font-size: 16px;
       line-height: 22px;
-      font-weight: 900; }
+      font-weight: 500; }
     .card-user .text {
       font-size: 16px;
       line-height: 22px;
@@ -1722,7 +1722,7 @@ footer {
 .card-speaker .name {
   font-size: 16px;
   line-height: 19px;
-  font-weight: 900;
+  font-weight: 500;
   color: #000;
   margin: 0 0 15px 0;
   font-family: "Arial Black"; }
@@ -1771,7 +1771,7 @@ footer {
     color: #fff;
     font-size: 24px;
     line-height: 28px;
-    font-weight: 900;
+    font-weight: 500;
     font-family: "Arial Black";
     text-align: center; }
   .partner-line .img-list {
