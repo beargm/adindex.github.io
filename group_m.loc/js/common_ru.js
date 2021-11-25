@@ -37,7 +37,7 @@ $(function () {
     });
 
     // modal b
-     
+    /*
     setTimeout(function () {
         $("body").addClass("no-scroll");
         $(".modal-banner").addClass("open");
@@ -52,7 +52,7 @@ $(function () {
     $(".modal-custom-backdrop").click(function(){
         $("body").removeClass("no-scroll");
         $(".modal-custom").removeClass("open");
-    });
+    });*/
     // modal b
 
 
