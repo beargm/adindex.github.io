@@ -1227,7 +1227,7 @@ footer {
     color: #8493aa !important; } }
 .banner-main {
   position: relative;
-  padding: 0 0 96px 0; }
+  padding: 0 0 30px 0; }
   .banner-main .img {
     position: absolute;
     bottom: 0;
@@ -1257,11 +1257,24 @@ footer {
     .banner-main .text-big span {
       display: inline-block;
       vertical-align: top; }
+  .banner-main .block-btn .btn {
+    float: left;
+    margin: 0 45px 0 0; }
+  .banner-main .date {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #fff;
+    float: left;
+    font-family: "Poppins";
+    letter-spacing: 2px; }
 
 @media (max-width: 1300px) {
   .banner-main .img {
     max-width: 600px; } }
 @media (max-width: 1100px) {
+  .banner-main .block-btn .btn {
+    margin: 0 15px 0 0; }
   .banner-main .text-big {
     font-size: 120px;
     line-height: 80%; }
@@ -1270,7 +1283,7 @@ footer {
     line-height: 100%; } }
 @media (max-width: 991px) {
   .banner-main {
-    padding: 0 0 20px 0; }
+    padding: 0 0 40px 0; }
     .banner-main .img {
       position: relative;
       float: right;
@@ -1287,6 +1300,16 @@ footer {
     font-size: 108px; }
   .banner-main .text {
     font-size: 24px;
+    line-height: 32px; } }
+@media (max-width: 575px) {
+  .banner-main .block-btn .btn {
+    margin: 0 0 20px 0;
+    float: none;
+    max-width: 100%; }
+  .banner-main .date {
+    float: none;
+    text-align: center;
+    font-size: 32px;
     line-height: 32px; } }
 .nav-img-link-box {
   background: linear-gradient(92.68deg, #0A2756 47.77%, #0E387B 71.15%);
@@ -1421,6 +1444,10 @@ footer {
 
   .bg-snake, .circle-bottom, .circle-blue2, .circle-green, .circle-blue {
     background: none; } }
+.blockquote-block {
+  position: relative;
+  z-index: 1; }
+
 .blockquote-box {
   background: linear-gradient(90deg, #00FFB4 3%, #00D1FF 100%);
   -webkit-border-radius: 26px;
@@ -1430,20 +1457,12 @@ footer {
   padding: 40px 235px 30px 50px;
   position: relative;
   overflow: hidden; }
-  .blockquote-box:after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 0;
-    background: url(../img/snake-blockquote.png) no-repeat;
-    width: 208px;
-    height: 67px; }
   .blockquote-box h4 {
     color: #0A2756;
     font-family: "Arial Black";
     font-size: 24px;
     line-height: 120%;
-    font-weight: 900; }
+    font-weight: 500; }
   .blockquote-box .text-formatted {
     padding: 0 0 0 20px;
     color: #0A2756;
@@ -1456,13 +1475,7 @@ footer {
     margin: 30px 0 0 0; }
 
   .blockquote-box {
-    padding: 30px 15px 120px 15px; }
-    .blockquote-box:after {
-      bottom: 10px;
-      top: auto;
-      width: 172px;
-      height: 92px;
-      background: url(../img/mob-snake-blockquote.png) no-repeat; }
+    padding: 30px 15px 30px 15px; }
     .blockquote-box h4 {
       font-size: 18px;
       line-height: 24px; }
@@ -1470,9 +1483,30 @@ footer {
       font-size: 16px;
       line-height: 24px;
       padding: 0 0; } }
+.circle-green-right {
+  background: radial-gradient(50% 50% at 50% 50%, #00FFB4 0%, rgba(0, 255, 180, 0) 100%);
+  width: 1454px;
+  height: 1454px;
+  position: absolute;
+  top: 30%;
+  right: -500px;
+  opacity: 0.3; }
+
 .accordion-programs {
-  padding: 90px 0;
+  padding: 0 0 90px 0;
   position: relative; }
+  .accordion-programs .item {
+    margin-bottom: 60px; }
+    .accordion-programs .item:last-child {
+      margin-bottom: 0; }
+  .accordion-programs h2 {
+    margin-bottom: 30px; }
+  .accordion-programs h3 {
+    text-transform: uppercase;
+    font-size: 31px;
+    line-height: 120%;
+    font-weight: 500;
+    margin-bottom: 20px; }
 
 .accordion-item {
   border-bottom: 1px solid #fff;
@@ -1483,7 +1517,7 @@ footer {
   .accordion-item .text-formatted {
     margin: 0 0 30px 0; }
   .accordion-item .block-btn {
-    margin: 0 0 40px 0; }
+    margin: 0 0 40px 100px; }
     .accordion-item .block-btn.margin-b-0 {
       margin-bottom: 0; }
   .accordion-item .btn-outline {
@@ -1562,7 +1596,7 @@ footer {
     color: #fff; }
 
 .card-user-list {
-  margin: 35px 0 0 0; }
+  margin: 35px 0 0 100px; }
 
 .btn-ppt {
   -webkit-border-radius: 50%;
@@ -1585,9 +1619,15 @@ footer {
 .read-more-acc {
   display: none; }
 
-.mob-circle-green {
+.mob-circle-green, .mob-circle-green-right {
   display: none; }
 
+@media (max-width: 1199px) {
+  .card-user-list {
+    margin-left: 0; }
+
+  .accordion-item .block-btn {
+    margin-left: 0; } }
 @media (max-width: 991px) {
   .read-more-acc {
     display: block;
@@ -1628,8 +1668,24 @@ footer {
     top: 0;
     display: block; }
 
+  .mob-circle-green-right {
+    background: radial-gradient(50% 50% at 50% 50%, #00FFB4 0%, rgba(0, 255, 180, 0) 100%);
+    width: 1338px;
+    height: 1338px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    display: block; }
+
   .accordion-programs {
     padding: 50px 0 45px 0; }
+    .accordion-programs .circle-green-right {
+      display: none; }
+    .accordion-programs h2 {
+      margin-bottom: 20px; }
+    .accordion-programs h3 {
+      font-size: 20px;
+      line-height: 28px; }
 
   .accordion-sub-block {
     padding: 10px 0 60px 0; }
