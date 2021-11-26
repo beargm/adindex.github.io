@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Decima Round';
+    src: url('DecimaRound-Italic.eot');
+    src: url('DecimaRound-Italic.eot?#iefix') format('embedded-opentype'),
+        url('DecimaRound-Italic.woff2') format('woff2'),
+        url('DecimaRound-Italic.woff') format('woff'),
+        url('DecimaRound-Italic.ttf') format('truetype'),
+        url('DecimaRound-Italic.svg#DecimaRound-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Decima Round';
+    src: url('DecimaRound-Regular.eot');
+    src: url('DecimaRound-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DecimaRound-Regular.woff2') format('woff2'),
+        url('DecimaRound-Regular.woff') format('woff'),
+        url('DecimaRound-Regular.ttf') format('truetype'),
+        url('DecimaRound-Regular.svg#DecimaRound-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Decima Round';
+    src: url('DecimaRound-BoldItalic.eot');
+    src: url('DecimaRound-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('DecimaRound-BoldItalic.woff2') format('woff2'),
+        url('DecimaRound-BoldItalic.woff') format('woff'),
+        url('DecimaRound-BoldItalic.ttf') format('truetype'),
+        url('DecimaRound-BoldItalic.svg#DecimaRound-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Decima Round';
+    src: url('DecimaRound-Light.eot');
+    src: url('DecimaRound-Light.eot?#iefix') format('embedded-opentype'),
+        url('DecimaRound-Light.woff2') format('woff2'),
+        url('DecimaRound-Light.woff') format('woff'),
+        url('DecimaRound-Light.ttf') format('truetype'),
+        url('DecimaRound-Light.svg#DecimaRound-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Decima Round';
+    src: url('DecimaRound-Bold.eot');
+    src: url('DecimaRound-Bold.eot?#iefix') format('embedded-opentype'),
+        url('DecimaRound-Bold.woff2') format('woff2'),
+        url('DecimaRound-Bold.woff') format('woff'),
+        url('DecimaRound-Bold.ttf') format('truetype'),
+        url('DecimaRound-Bold.svg#DecimaRound-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Decima Round';
+    src: url('DecimaRound-LightItalic.eot');
+    src: url('DecimaRound-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('DecimaRound-LightItalic.woff2') format('woff2'),
+        url('DecimaRound-LightItalic.woff') format('woff'),
+        url('DecimaRound-LightItalic.ttf') format('truetype'),
+        url('DecimaRound-LightItalic.svg#DecimaRound-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
