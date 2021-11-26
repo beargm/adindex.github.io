@@ -314,8 +314,12 @@ label.error {
 @media (max-width: 991px) {
   .text-formatted {
     font-size: 16px;
-    line-height: 130%;
-    font-weight: 400; } }
+    line-height: 24px;
+    font-weight: 400; }
+    .text-formatted p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400; } }
 .tab-content > .active {
   display: block !important;
   height: auto !important; }
