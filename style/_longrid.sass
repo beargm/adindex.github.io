@@ -1,0 +1,146 @@
+.longrid-top-block
+  margin-bottom: 95px
+  .img
+    max-width: 490px
+  h2, h1
+    line-height: 138%
+    margin-top: 35px
+@media (max-width: 767px)
+  .longrid-page
+    .text-formatted
+      font-size: 16px
+      line-height: 24px
+      .mb-80
+        margin-bottom: 40px !important
+      p
+        margin-bottom: 30px
+        font-size: 16px
+        line-height: 24px
+    h1, h2
+      margin-bottom: 25px
+  .longrid-top-block
+    margin-bottom: 40px
+    .img
+      max-width: 100%
+      margin-bottom: 30px
+    h2, h1
+      margin-top: 0
+    .text-formatted
+      line-height: 24px
+.quote-block
+  padding: 65px 40px 160px 40px
+  background: url(../img/bg-quote.png) no-repeat
+  -webkit-background-size: 100% 100%
+  background-size: 100% 100%
+  position: relative
+  margin: 70px auto 40px auto
+  width: 100%
+  min-height: 490px
+  max-width: 625px
+  .row
+    margin-left: -10px
+    margin-right: -10px
+    >div
+      padding-left: 10px
+      padding-right: 10px
+  .icon
+    width: 107px
+    position: absolute
+    top: -30px
+    right: 30px
+  .blockquote
+    position: absolute
+    right: 30px
+    top: -27px
+    margin: 0 0
+    padding: 0 10px
+    background: #fff
+
+    .blockquote-box
+      background: -webkit-linear-gradient(#B900B4, #F50000)
+      background: linear-gradient(#B900B4, #F50000)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      @include fonts(50px, 50px, 600)
+  .text
+    @include fonts(28px, 104%)
+    background: -webkit-linear-gradient(#B900B4, #F50000)
+    background: linear-gradient(#B900B4, #F50000)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+.quote-user
+  .img
+    max-width: 132px
+    margin: 0 0 15px 0
+    float: right
+  .name
+    text-align: right
+    @include fonts(18px, 138%)
+    text-transform: uppercase
+    color: #000000
+  .position-work
+    text-align: right
+    @include fonts(18px, 138%)
+    text-transform: uppercase
+    background: -webkit-linear-gradient(#B900B4, #F50000)
+    background: linear-gradient(#B900B4, #F50000)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+@media (max-width: 767px)
+  .quote-block
+    padding: 30px 25px 80px 25px
+    .blockquote
+      top: -18px
+      .blockquote-box
+        font-size: 30px
+        line-height: 35px
+    .icon
+      width: 50px
+      top: -35px
+      svg
+        width: 100%
+    .text
+      font-size: 24px
+      line-height: 32px
+
+    .row
+      >div
+        &:first-child
+          order: 2
+        &:last-child
+          order: 1
+  .quote-user
+    .img
+      float: left
+      width: 132px
+    .clearfix
+      display: none
+    .name, .position-work
+      margin: 0 0 0 150px
+      text-align: left
+    .name
+      padding: 15px 0 0 0
+@media (max-width: 575px)
+  .quote-block
+    background: url(../img/bg-quote-mob.png) no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+.mt-80
+  margin-top: 80px
+
+.mb-80
+  margin-bottom: 80px
+
+.mb-130
+  margin-bottom: 130px
+
+@media (max-width: 991px)
+  .mob-p-0
+    padding-left: 0
+    padding-right: 0
+  .mb-130
+    margin-bottom: 250px
+  .mt-80
+    margin-top: 40px
+  .mb-80
+    margin-bottom: 40px
