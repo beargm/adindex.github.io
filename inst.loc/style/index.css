@@ -495,10 +495,12 @@ header.header {
     margin-bottom: 30px; }
     header.header .logo {
       width: 24px;
-      top: 25px; }
+      top: 25px;
+      font-size: 0; }
     header.header .logo-adi {
       width: 76px;
-      top: 25px; }
+      top: 25px;
+      font-size: 0; }
     header.header .text {
       font-size: 16px;
       line-height: 16px;
