@@ -1,6 +1,7 @@
 $(function () {
 
     $('.lazy').lazy();
+    /*
     const slider = $(".slider-longrid");
     slider
     $('.slider-longrid').slick({
@@ -23,9 +24,19 @@ $(function () {
         } else {
             $(this).slick('slickNext');
         }
-    }));
+    }));*/
 
+    $('.slider-longrid').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        fade: false,
+        autoplay: true, 
+        infinite: false
 
+    });
 
     //$("#player2").mediaelementplayer();
 
