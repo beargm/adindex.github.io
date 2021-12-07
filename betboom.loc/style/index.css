@@ -500,7 +500,7 @@ label.error {
     line-height: 30px; } }
 .blitz {
   position: relative;
-  padding: 40px 0 0 0;
+  padding: 40px 0 80px 0;
   overflow: hidden; }
   .blitz .circle-yellow {
     background: #F8E800;
@@ -952,7 +952,7 @@ label.error {
       max-width: 105px;
       margin: 0 auto 30px; } }
 .pm-card-list {
-  padding: 50px 0 40px 0;
+  padding: 50px 0 50px 0;
   position: relative; }
   .pm-card-list .container {
     max-width: 830px; }
@@ -1004,7 +1004,7 @@ label.error {
 
 @media (max-width: 991px) {
   .pm-card-list {
-    padding: 10px 0 0 0; }
+    padding: 10px 0 15px 0; }
 
   .pm-card .title {
     font-size: 24px;
