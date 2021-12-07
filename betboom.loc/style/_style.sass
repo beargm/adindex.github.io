@@ -1,0 +1,238 @@
+input:focus, a:focus, input:active, a:active
+  outline: none
+@media (min-width: 992px)
+  /* START скрол*/
+  ::-webkit-scrollbar-button
+    background-image: url('')
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar-track
+    background-color: transparent
+
+  ::-webkit-scrollbar-thumb
+    -webkit-border-radius: 0px
+    border-radius: 0px
+    background-color: #c8c8c8
+    cursor: pointer
+    background-size: 100% 100%
+
+  ::-webkit-scrollbar-thumb:hover
+    background-color: #b4b2b2
+
+
+  ::-webkit-resizer
+    background-image: url('')
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar
+    width: 10px
+
+
+  ::-webkit-scrollbar:horizontal
+    height: 10px
+
+  ::-webkit-scrollbar-button
+    display: none
+/* END скрол */
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+
+*
+  &:active, &:focus
+    outline: none !important
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+
+body
+  padding: 0 0 0 0
+  font-family: 'Lato'
+  font-size: 18px
+  line-height: 24px
+  font-weight: 400
+  color: #000
+  background: #fff
+  position: relative
+  min-height: 100vh
+.no-scroll
+  overflow: hidden
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  font-weight: 400
+
+
+
+h1, .h1, h2, .h2, h3, .h3
+  color: #000
+  @include fonts(48px, 110%, 600)
+  letter-spacing: 0
+  text-transform: none
+  margin-bottom: 40px
+  text-align: center
+  font-family: $ff3
+
+
+@media (max-width: 1199px)
+  h1, .h1, h2, .h2, h3, .h3
+    @include fonts(40px, 110%, 600)
+
+@media (max-width: 991px)
+  h1, .h1, h2, .h2, h3, .h3
+    @include fonts(28px, 110%, 600)
+    margin-bottom: 30px
+.clearfix
+  clear: both
+
+
+
+input::-webkit-input-placeholder
+  color: #000
+
+input::-moz-placeholder
+  color: #000
+
+input:-ms-input-placeholder
+  color: #000
+
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+
+
+//transform: rotate(45deg)
+
+
+
+.form-control:focus, .form-control:active
+  box-shadow: none !important
+  outline: none !important
+
+input.form-control
+  font-family: $ff
+  border: 1px solid #BABABA
+  background: #fff !important
+  padding: 0 10px 0 10px
+  color: #BABABA
+  @include fonts(16px, 63px, 500)
+  height: 65px
+  +border-radius(4px)
+
+  &:focus, &:active
+    border: 1px solid #C0C0C0 !important
+    box-shadow: none !important
+    color: #000
+
+.form-group
+  margin-bottom: 15px
+  .label
+    color: #000
+    @include fonts(18px, 22px, 600)
+    margin-bottom: 15px
+    text-transform: uppercase
+    letter-spacing: 2px
+    span
+      color: $red
+
+
+label.error
+  margin: 5px 0 0 0
+  color: $red
+  @include fonts(14px, 16px)
+  display: block
+
+
+.table-block
+  width: 100%
+  display: table
+  .td
+    display: table-cell
+    vertical-align: top
+
+
+.mb-45
+  margin-bottom: 45px
+.mb-40
+  margin-bottom: 40px
+.mt-50
+  margin-top: 50px
+.margin-10
+  margin-left: -10px
+  margin-right: -10px
+
+.float-100
+  float: left
+  width: 100%
+
+
+
+
+.margin-10
+  margin-left: -10px
+  margin-right: -10px
+
+
+.text-formatted
+  @include fonts(16px, 24px, 400)
+  position: relative
+  color: #000
+  h4
+    color: #0D0D0D
+    @include fonts(24px, 110%, 600)
+    margin-bottom: 20px
+    font-family: $ff
+  a
+    @include transition-dr(300ms)
+  strong, b
+    font-weight: 600
+    color: #000
+  p
+
+    @include fonts(16px, 24px, 400)
+    margin-bottom: 30px
+    color: #000
+
+  a
+    border-bottom: 1px solid #fff
+    text-decoration: none !important
+    color: #000
+    &:hover
+      color: #fff
+      border-color: transparent
+  .mb-80
+    margin-bottom: 80px
+
+@media (max-width: 991px)
+  .text-formatted
+    @include fonts(16px, 24px, 400)
+    h4
+      @include fonts(18px, 26px, 600)
+      margin-bottom: 15px
+    p
+      @include fonts(16px, 24px, 400)
+
+.tab-content>.active
+  display: block !important
+  height: auto !important
+
+.fade:not(.show)
+  display: block !important
+  height: 0
+  overflow: hidden
+
+
+.tab-content
+  padding: 30px 0 0
+
+
