@@ -1,0 +1,166 @@
+@import "_settings"
+.btn-back
+  width: 90px
+  height: 90px
+  +border-radius(50%)
+  background: #000
+  position: absolute
+  top: -30px
+  left: -100px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none !important
+.page-top
+  position: relative
+  padding: 50px 0 30px 0
+  .container
+    position: relative
+  h1, h2
+    @include fonts(24px, 26px, 700)
+    text-align: center
+    text-transform: uppercase
+    margin: 0 0
+
+
+.banner-inner
+  position: relative
+  .img
+    img
+      +border-radius(30px)
+      width: 100%
+  .bottom-block
+    margin: 0 auto
+    background: #000
+    +border-radius(30px 30px 0 0)
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    max-width: 590px
+    text-align: center
+    padding: 0 15px
+    color: $color1
+    @include fonts(32px, 96px, 700)
+    text-transform: uppercase
+    .text-blue
+      color: #009FE3
+
+@media (max-width: 991px)
+  .banner-inner
+    .img
+      margin: 0 -15px
+      img
+        +border-radius(0)
+    .bottom-block
+      height: 28px
+      font-size: 12px
+      line-height: 28px
+      max-width: 256px
+      span
+        font-size: 14px
+        line-height: 28px
+
+.card-speaker
+  background: #F1F1F1
+  +border-radius(30px)
+  padding: 20px 20px
+  min-height: 430px
+  position: relative
+  overflow: hidden
+  margin: 0 0 30px 0
+  &:hover
+    .hide-box
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      opacity: 1
+      visibility: visible
+  .link
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff !important
+    @include fonts(16px, 18px, 700)
+    text-decoration: none !important
+  .img
+    margin: 0 0 15px 0
+    img
+      width: 100%
+      +border-radius(30px)
+  .name
+    text-transform: uppercase
+    @include fonts(18px, 22px, 700)
+    text-align: center
+    margin: 0 0 15px 0
+  .text
+    @include fonts(16px, 20px)
+    text-align: center
+    margin: 0 0 10px 0
+  .text-bold
+    @include fonts(16px, 20px, 700)
+    text-align: center
+  .hide-box
+    z-index: 3
+    width: auto
+    height: auto
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    top: 50px
+    left: 50px
+    right: 50px
+    bottom: 50px
+    background: rgba(154, 109, 173, 0.9)
+    @include transition-dr(500ms)
+    +border-radius(30px)
+    &.mob
+      display: none
+
+@media (min-width: 992px)
+  .card-speaker
+    .hide-box.mob
+      display: none !important
+
+@media (max-width: 991px)
+  .card-speaker
+    .hide-box
+      display: none
+      opacity: 1
+      left: 0 !important
+      right: 0 !important
+      bottom: 0 !important
+      top: 0 !important
+      visibility: visible
+
+
+.block-btn-section
+  padding: 35px 0 40px 0
+  background: #fff
+  .block-btn
+    max-width: 590px
+    margin: 0 auto
+
+.speaker-read
+  padding: 0 0 50px 0
+  .speaker-card
+    float: right
+
+@media (max-width: 991px)
+  .speaker-read
+    padding: 0 0
+    .speaker-card
+      float: none
+      margin: 0 0 30px 0
+    .row
+      >div
+        &:first-child
+          order: 2
+        &:last-child
+          order: 1
