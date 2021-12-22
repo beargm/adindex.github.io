@@ -81,9 +81,9 @@ $(function () {
         $(".questions-answered .qa-open").show();
     });
 
-    $(".accordion-questions .accordion-item:first-child .accordion-menu-title").addClass("active");
-    $(".accordion-questions .accordion-item:first-child .accordion-menu-title .arrow").addClass("active");
-    $(".accordion-questions .accordion-item:first-child .accordion-sub-block").show();
+    // $(".accordion-questions .accordion-item:first-child .accordion-menu-title").addClass("active");
+    // $(".accordion-questions .accordion-item:first-child .accordion-menu-title .arrow").addClass("active");
+    // $(".accordion-questions .accordion-item:first-child .accordion-sub-block").show();
     $(".accordion-questions .accordion-menu-title .arrow").click(function(e){
         e.stopPropagation();
         if($(this).hasClass("active")){

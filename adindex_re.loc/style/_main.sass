@@ -446,6 +446,11 @@
 
 .mw-795
   max-width: 795px !important
+@media (min-width: 992px)
+  .video-interview
+    .nav-arrow
+      top: 460px
+
 .video-interview
   background: #DECDFB
   padding: 0 0 80px 0
@@ -683,6 +688,13 @@
   .questions-speaker
     overflow: hidden
     padding: 0 0 110px 0
+    .read-more-black
+      height: 55px
+      padding: 0 0
+      line-height: 55px
+      width: 100%
+      position: relative
+      +border-radius(14px)
     .header-top-item
       padding-bottom: 25px
   .questions-item
@@ -764,7 +776,13 @@
 .speaker-scroll
   .speaker-card
     min-height: 640px
-
+  .amount-speaker
+    @include fonts(16px, 18px)
+    position: absolute
+    top: 0
+    right: -82px
+    width: 50px
+    text-align: center
 .speaker-card
   position: relative
   width: 100%
@@ -805,6 +823,9 @@
 
   .speaker-scroll
     margin: 0 0
+    .amount-speaker
+      right: auto
+      left: 287px
     .speaker-card-box
       margin: 0 0 0 0
       padding: 0 40px 110px 0
@@ -816,6 +837,10 @@
   .speaker-scroll
     .read-more-black
       right: 65px
+@media (max-width: 1100px)
+  .speaker-scroll
+    .amount-speaker
+      display: none
 @media (max-width: 991px)
   .speaker-scroll
     position: absolute
@@ -940,7 +965,10 @@
   .text-formatted
     p
       margin-bottom: 15px
-
+  .ansv-item
+    margin: 0 0 45px 0
+    &:last-child
+      margin-bottom: 0
 @media (max-width: 991px)
   .accordion-menu-title
     padding: 20px 15px 45px
@@ -973,3 +1001,8 @@
       padding-bottom: 45px
   .accordion-item
     position: relative
+  .accordion-sub-block
+    .ansv-item
+      margin: 0 0 25px 0
+      &:last-child
+        margin-bottom: 0
