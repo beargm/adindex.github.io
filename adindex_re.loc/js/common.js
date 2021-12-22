@@ -27,7 +27,7 @@ $(function () {
     $(".menu-fixed .link a").click(function(){
         $(".menu-fixed").fadeOut();
     });
-
+    
     $(window).on("load",function(){
         $(".nav-page-scroll a").mPageScroll2id({
             offset: 0,
