@@ -114,6 +114,9 @@ $(function () {
             $(this).removeClass("active");
             $(this).parent().next().slideUp();
             $(this).parent().removeClass("active");
+            $('html, body').animate({
+                scrollTop: $("#accordion-item-list").offset().top
+            }, 1000);
         } else {
             $(".accordion-questions .accordion-menu-title .arrow").removeClass("active");
             $(".accordion-questions .accordion-menu-title").removeClass("active");

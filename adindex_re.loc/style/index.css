@@ -1520,6 +1520,9 @@ label.error {
   .accordion-item {
     position: relative; }
 
+  .accordion-sub-block .ansv-item-list {
+    column-count: 1;
+    column-gap: 0; }
   .accordion-sub-block .ansv-item {
     margin: 0 0 25px 0; }
     .accordion-sub-block .ansv-item:last-child {
