@@ -5,15 +5,39 @@ $(function () {
     $(".video-interview .read-more-full").click(function(e){
         e.stopPropagation();
         if($(this).hasClass("active")){
+
             $(this).removeClass("active");
             $(this).prev().slideUp();
             $(this).html("<span>Развернуть</span>");
+            $('html, body').animate({
+                scrollTop: $("#video-interview").offset().top
+            }, 1000);
         } else {
             $(this).addClass("active");
             $(this).prev().slideDown();
             $(this).html("<span>Скрыть</span>");
+
         }
     });
+
+    /*
+    $(".read-more-full2").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".video-interview").offset().top
+        }, 2000);
+    });*/
+/*
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 200) {
+            $('#goTop').fadeIn();
+        } else {
+            $('#goTop').fadeOut();
+        }
+    });
+    $('.scroll-up').click(function() {
+        $('.video-interview').animate({scrollTo : 0}, 800);
+    });*/
+
 
     $(".menu-fixed-block .ic-menu").click(function(e){
         e.stopPropagation();
@@ -27,7 +51,7 @@ $(function () {
     $(".menu-fixed .link a").click(function(){
         $(".menu-fixed").fadeOut();
     });
-    
+
     $(window).on("load",function(){
         $(".nav-page-scroll a").mPageScroll2id({
             offset: 0,

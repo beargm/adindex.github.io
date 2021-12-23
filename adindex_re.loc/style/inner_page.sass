@@ -13,7 +13,7 @@
   text-decoration: none !important
 .page-top
   position: relative
-  padding: 50px 0 30px 0
+  padding: 50px 0 50px 0
   .container
     position: relative
   h1, h2
@@ -21,8 +21,13 @@
     text-align: center
     text-transform: uppercase
     margin: 0 0
-
-
+@media (max-width: 1450px)
+  .page-top
+    .btn-back
+      display: none
+@media (max-width: 991px)
+  .page-top
+    padding: 25px 0 30px 0
 .banner-inner
   position: relative
   .img
