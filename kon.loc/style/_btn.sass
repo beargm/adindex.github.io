@@ -1,0 +1,91 @@
+.btn
+  background: #962B2B
+  color: #fff
+  @include fonts(16px, 62px, 500)
+  text-transform: uppercase
+  position: relative
+  padding: 0 30px
+  height: 64px
+  letter-spacing: 0
+  +border-radius(5px)
+  @include transition-dr(300ms)
+  z-index: 1
+  overflow: hidden
+  text-align: center
+  border: 1px solid #962B2B
+  display: inline-block
+  vertical-align: top
+  text-decoration: none !important
+  &:hover
+    background: none
+    color: #fff
+  &.btn-submit
+    padding: 0 0
+  input
+    @include transition-dr(300ms)
+    background: none
+    color: #ffffff
+    display: block
+    border: none
+    width: 100%
+.btn-outline
+  background: none
+  color: #fff
+  @include fonts(16px, 62px, 500)
+  text-transform: uppercase
+  position: relative
+  padding: 0 30px
+  height: 64px
+  letter-spacing: 0
+  +border-radius(5px)
+  @include transition-dr(300ms)
+  z-index: 1
+  overflow: hidden
+  text-align: center
+  border: 1px solid #fff
+  display: inline-block
+  vertical-align: top
+  text-decoration: none !important
+  &:hover
+    background: #fff
+    color: #000
+
+
+
+
+.read-more-arrow
+  text-decoration: none !important
+  @include fonts(20px, 20px, 600)
+  color: #962B2B !important
+  display: inline-block
+  vertical-align: top
+  margin: 0 45px 0 0
+  border-bottom: 1px solid #962B2B
+  position: relative
+  &:after
+    @include transition-dr(300ms)
+    content: ""
+    position: absolute
+    top: 0
+    right: -45px
+    width: 24px
+    height: 20px
+    background: url(../img/arrow.svg) no-repeat
+  &:hover
+    border-color: transparent
+    &:after
+      right: -60px
+
+@media (max-width: 991px)
+  .btn, .btn-outline
+    height: 50px
+    @include fonts(18px, 48px, 700)
+
+  .read-more
+    font-size: 40px
+    line-height: 40px
+@media (max-width: 575px)
+  .read-more-arrow
+    font-size: 20px
+.btn.focus, .btn:focus, btn:active
+  box-shadow: none !important

@@ -1,0 +1,105 @@
+@import "_settings"
+header.header
+  padding: 20px 0 0 0
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 900
+  .container
+    width: 100%
+    padding: 0 20px 0 38px
+    max-width: 100%
+    @extend %after-clear
+  .logo
+    margin: 12px 0 0 0
+    width: 78px
+    float: left
+.header-right
+  @extend %after-clear
+  float: right
+  .tel
+    float: left
+    margin: 0 30px 0 0
+    a
+      text-decoration: none !important
+      color: #fff !important
+      @include fonts(20px, 64px, 700)
+  .btn
+    float: right
+
+
+.mobile-menu-close
+  padding: 8px
+  position: absolute
+  top: 15px
+  right: 15px
+  width: 40px
+  height: 40px
+  img
+    width: 100%
+.mobile-menu-content
+  overflow-y: auto
+  height: 100%
+  margin: 0 -15px 0 0
+  padding: 0 15px 0 0
+.mobile-menu
+  display: none
+  background: #f0f2f7
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 900
+  padding: 65px 15px 20px 15px
+
+.mobile-menu-trigger, .mobile-menu
+  display: none
+
+
+@media (max-width: 991px)
+  .mobile-menu-trigger
+    display: block
+    width: 30px
+    position: absolute
+    top: 20px
+    right: 15px
+    span
+      height: 3px
+      background: #fff
+      margin-bottom: 5px
+      width: auto
+      display: block
+      &:nth-child(2)
+        margin-left: 9px
+  .mobile-menu
+    .btn
+      padding: 0 15px
+      font-size: 16px
+
+    .tel, .mail
+      margin: 0 0 20px 0
+      a
+        text-decoration: none !important
+        color: #000 !important
+        @include fonts(18px, 18px, 700)
+    ul
+      li
+        margin-bottom: 25px
+    .link
+      display: block
+      @include fonts(16px, 18px, 600)
+      color: #000
+      text-decoration: none
+
+  header.header
+    background: #0F0601
+    height: 65px
+    position: fixed
+    .container
+      padding: 0 15px
+    .logo
+      margin: 0 0 0
+    .header-right
+      display: none

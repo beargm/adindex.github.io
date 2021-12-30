@@ -1,0 +1,67 @@
+footer .container:after, footer .column-right:after, footer .f-right:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both; }
+
+footer {
+  position: relative;
+  background: #e0e7e7;
+  padding: 20px 0 50px 0; }
+  footer .logo-footer {
+    margin: 20px 0 0 0;
+    width: 75px;
+    float: left; }
+  footer .column-right {
+    margin: 0 0 0 100px; }
+  footer .f-right {
+    float: right; }
+  footer .mail {
+    float: left;
+    margin: 20px 25px 0 0; }
+    footer .mail a {
+      text-decoration: none !important;
+      color: #263157 !important;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 600; }
+  footer .tell {
+    float: left;
+    margin: 20px 25px 0 0; }
+    footer .tell a {
+      text-decoration: none !important;
+      color: #263157 !important;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 600; }
+  footer .btn-outline {
+    border-color: #962B2B;
+    color: #263157; }
+    footer .btn-outline:hover {
+      background: #962B2B;
+      color: #fff; }
+
+@media (max-width: 991px) {
+  footer {
+    padding: 20px 0; }
+    footer .btn-outline {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      width: 53px;
+      height: 53px;
+      background: #962B2B url(../img/talk.svg) center center no-repeat;
+      font-size: 0;
+      padding: 0 0; }
+    footer .tell {
+      display: none; } }
+@media (max-width: 370px) {
+  footer .column-right {
+    margin: 0 0 0 85px; }
+  footer .mail {
+    margin: 20px 15px 0 0; }
+    footer .mail a {
+      font-size: 17px; } }
+
+/*# sourceMappingURL=footer.css.map */

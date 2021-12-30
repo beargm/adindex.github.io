@@ -1,0 +1,62 @@
+@import "_settings"
+
+footer
+  position: relative
+  background: #e0e7e7
+  padding: 20px 0 50px 0
+  .container
+    @extend %after-clear
+  .logo-footer
+    margin: 20px 0 0 0
+    width: 75px
+    float: left
+  .column-right
+    margin: 0 0 0 100px
+    @extend %after-clear
+  .f-right
+    float: right
+    @extend %after-clear
+  .mail
+    float: left
+    margin: 20px 25px 0 0
+    a
+      text-decoration: none !important
+      color: #263157 !important
+      @include fonts(20px, 20px, 600)
+  .tell
+    float: left
+    margin: 20px 25px 0 0
+    a
+      text-decoration: none !important
+      color: #263157 !important
+      @include fonts(20px, 20px, 600)
+  .btn-outline
+    border-color: #962B2B
+    color: #263157
+    &:hover
+      background: #962B2B
+      color: #fff
+
+
+@media (max-width: 991px)
+  footer
+    padding: 20px 0
+    .btn-outline
+      +border-radius(50%)
+      width: 53px
+      height: 53px
+      background: #962B2B url(../img/talk.svg) center center no-repeat
+      font-size: 0
+      padding: 0 0
+
+    .tell
+      display: none
+
+@media (max-width: 370px)
+  footer
+    .column-right
+      margin: 0 0 0 85px
+    .mail
+      margin: 20px 15px 0 0
+      a
+        font-size: 17px
