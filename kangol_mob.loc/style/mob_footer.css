@@ -1,0 +1,171 @@
+.footer-mob {
+  background: #fff;
+  padding: 0 0 47px 0; }
+  .footer-mob .select-size {
+    margin-bottom: 30px; }
+    .footer-mob .select-size .title {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 10px;
+      color: #6c757d;
+      margin-bottom: 15px;
+      text-align: center; }
+    .footer-mob .select-size a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+      .footer-mob .select-size a img {
+        width: 100%;
+        height: 100%;
+        display: block; }
+  .footer-mob .scroll-up {
+    color: #6c757d;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 600;
+    text-align: center; }
+
+.mob-social-footer {
+  padding: 14px 0 10px 0;
+  border-bottom: 1px solid #636366;
+  text-align: center;
+  margin: 0 0 0 0; }
+  .mob-social-footer .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px; }
+  .mob-social-footer a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px; }
+
+.mob-footer-title {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 600;
+  color: #636366;
+  margin-bottom: 0;
+  border-bottom: 1px solid #636366; }
+  .mob-footer-title.border-top {
+    border-top: 1px solid #636366; }
+  .mob-footer-title.border-bottom {
+    border-bottom: 1px solid #636366; }
+  .mob-footer-title.last {
+    border-bottom: none; }
+  .mob-footer-title.mb-10 {
+    margin-bottom: 10px; }
+  .mob-footer-title.ic {
+    padding: 0 20px 0 0;
+    background: url(../img/plus.svg) 100% center no-repeat; }
+  .mob-footer-title a {
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #636366;
+    display: block;
+    text-decoration: none !important; }
+
+.mob-footer-text {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #636366;
+  margin-bottom: 10px; }
+  .mob-footer-text a {
+    text-decoration: none !important;
+    color: #636366 !important;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 500; }
+
+.mob-footer-address {
+  padding: 0 0 0 20px;
+  background: url(../img/address.svg) 0px 3px no-repeat; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mob-footer-payment {
+  padding: 10px 30px;
+  background: #212121;
+  text-align: center;
+  margin: 0 -15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .mob-footer-payment img {
+    max-width: 56px; }
+
+.footer-menu {
+  border-top: 1px solid #E5E5EA;
+  height: 47px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0 0 0 0;
+  z-index: 900; }
+  .footer-menu .icon-list {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer-menu .modal-icon-block {
+    height: 47px;
+    padding: 8px 10px 0 10px;
+    width: 20%;
+    position: relative;
+    text-align: center; }
+    .footer-menu .modal-icon-block.selected .icon:after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: #013F7D;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: -15px; }
+    .footer-menu .modal-icon-block.active {
+      background: #003468; }
+      .footer-menu .modal-icon-block.active .icon:after {
+        opacity: 0; }
+      .footer-menu .modal-icon-block.active .title {
+        color: #fff; }
+      .footer-menu .modal-icon-block.active svg path {
+        fill: #fff; }
+    .footer-menu .modal-icon-block.footer-icon-fav.active svg path {
+      stroke: #fff;
+      fill: #003468; }
+  .footer-menu .icon {
+    position: relative;
+    height: 16px;
+    text-align: center;
+    margin-bottom: 7px;
+    display: inline-block;
+    vertical-align: top; }
+  .footer-menu .title {
+    width: 100%;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000; }
+
+@media (max-width: 400px) {
+  .footer-menu .icon-block {
+    padding: 8px 5px 0 5px; } }
+
+/*# sourceMappingURL=mob_footer.css.map */

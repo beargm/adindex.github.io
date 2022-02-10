@@ -1,0 +1,142 @@
+@import "settings"
+
+
+.product-card-2
+  margin: 0 0 20px 0
+  position: relative
+  .slider
+    height: 100%
+  .slick-list
+    height: 100%
+  .slick-track
+    height: 100%
+  .slick-dots
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 10px
+    li
+      button
+        width: 5px
+        height: 5px
+
+  .ic-block
+    position: absolute
+    right: 5px
+    top: 0
+    width: 15px
+    z-index: 5
+  .ic-sale
+    width: 15px
+    height: 15px
+    position: absolute
+    right: 35px
+    top: 0
+    background: url(../img/sale.svg) center center no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+  .ic-fav
+    background: url(../img/fav.svg) center center no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+    width: 15px
+    height: 15px
+    margin-bottom: 20px
+    &.active
+      &:after
+        opacity: 1
+    &:after
+      opacity: 0
+      background: url(../img/fav-active.svg) center center no-repeat
+      -webkit-background-size: 100% 100%
+      background-size: 100% 100%
+      width: 15px
+      height: 15px
+      position: absolute
+      top: 0
+      left: 0
+      content: ""
+      z-index: 2
+  .ic-video
+    width: 15px
+    height: 15px
+    background: url(../img/play.png) center center no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+  .img
+    text-align: center
+    height: 155px
+    position: relative
+    padding: 0 0 0 0
+
+    img
+      max-width: 100%
+      max-height: 100%
+      display: block
+      margin: 0 auto
+  .title
+    @include fonts(14px, 13px, 600)
+    color: #1C1C1E
+    margin-bottom: 5px
+    text-align: center
+    height: auto
+    overflow: hidden
+    a
+      text-decoration: none !important
+      @include fonts(14px, 13px, 600)
+      display: block
+      color: #1C1C1E !important
+  .text
+    display: none
+    @include fonts(12px, 15px, 500)
+    margin-bottom: 15px
+    text-align: center
+    color: #6C757D
+  .price-block
+    text-align: center
+    margin-bottom: 12px
+
+  .price-old
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    color: #C1C5C8
+    @include fonts(12px, 12px, 600)
+    margin: 0 10px 0 0
+    text-decoration: line-through
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      top: 7px
+      left: 0
+      right: 0
+      background: #C1C5C8
+      height: 1px
+    span
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+  .price
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    color: #636366
+    @include fonts(12px, 12px, 600)
+    span
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+  //.product-color-list
+  //  font-size: 0
+  //  text-align: center
+  //  white-space: nowrap
+  //  overflow: hidden
+  //  margin: 0 -15px 0 0
+  //  .color
+  //    margin: 0 3px
+  //    width: 20px
+  //    height: 20px
+  //    display: inline-block
+  //    vertical-align: top
+  //    img
+  //      width: 100%
+  //      height: 100%
+  //      display: block
+  //      +border-radius(50%)

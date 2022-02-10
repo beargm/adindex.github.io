@@ -1,0 +1,167 @@
+@import "settings"
+.footer-mob
+  background: #fff
+  padding: 0 0 47px 0
+
+  .select-size
+    margin-bottom: 30px
+    .title
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 10px
+      line-height: 10px
+      color: #6c757d
+      margin-bottom: 15px
+      text-align: center
+    a
+      display: inline-block
+      margin: 0 10px
+      width: 30px
+      height: 30px
+      +border-radius(50%)
+      img
+        width: 100%
+        height: 100%
+        display: block
+  .scroll-up
+    color: #6c757d
+    text-transform: uppercase
+    font-size: 10px
+    line-height: 10px
+    font-weight: 600
+    text-align: center
+.mob-social-footer
+  padding: 14px 0 10px 0
+  border-bottom: 1px solid #636366
+  text-align: center
+  margin: 0 0 0 0
+  .img
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 18px
+  a
+    display: inline-block
+    vertical-align: top
+    margin: 0 15px
+
+.mob-footer-title
+  @include fonts(14px, 15px, 600)
+  color: #636366
+  margin-bottom: 0
+  border-bottom: 1px solid #636366
+  &.border-top
+    border-top: 1px solid #636366
+  &.border-bottom
+    border-bottom: 1px solid #636366
+  &.last
+    border-bottom: none
+  &.mb-10
+    margin-bottom: 10px
+  &.ic
+    padding: 0 20px 0 0
+    background: url(../img/plus.svg) 100% center no-repeat
+  a
+    padding: 15px 0
+    @include fonts(14px, 15px, 600)
+    color: #636366
+    display: block
+    text-decoration: none !important
+.mob-footer-text
+  font-size: 14px
+  line-height: 15px
+  font-weight: 500
+  color: #636366
+  margin-bottom: 10px
+  a
+    text-decoration: none !important
+    color: #636366 !important
+    font-size: 14px
+    line-height: 15px
+    font-weight: 500
+
+.mob-footer-address
+  padding: 0 0 0 20px
+  background: url(../img/address.svg) 0px 3px no-repeat
+.mb-20
+  margin-bottom: 20px
+.mob-footer-payment
+  padding: 10px 30px
+  background: #212121
+  text-align: center
+  margin: 0 -15px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  img
+    max-width: 56px
+.footer-menu
+  border-top: 1px solid #E5E5EA
+  height: 47px
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  background: #fff
+  padding: 0 0 0 0
+  z-index: 900
+  .icon-list
+    -ms-flex-pack: justify
+    justify-content: space-between
+    display: -ms-flexbox
+    display: flex
+  .modal-icon-block
+    height: 47px
+    padding: 8px 10px 0 10px
+    width: 20%
+    position: relative
+    text-align: center
+    &.selected
+      .icon
+        &:after
+          content: ""
+          width: 6px
+          height: 6px
+          background: #013F7D
+          +border-radius(50%)
+          position: absolute
+          top: 0
+          right: -15px
+    &.active
+      background: #003468
+      .icon
+        &:after
+          opacity: 0
+      .title
+        color: #fff
+      svg
+        path
+          fill: #fff
+    &.footer-icon-fav
+      &.active
+        svg
+          path
+            stroke: #fff
+            fill: #003468
+  .icon
+    position: relative
+    height: 16px
+    text-align: center
+    margin-bottom: 7px
+    display: inline-block
+    vertical-align: top
+    //display: -ms-flexbox
+    //display: flex
+    //-ms-flex-align: end
+    //align-items: flex-end
+    //-ms-flex-pack: center
+    //justify-content: center
+  .title
+    width: 100%
+    @include fonts(10px, 10px, 400)
+    text-align: center
+    color: #000000
+@media (max-width: 400px)
+  .footer-menu
+    .icon-block
+      padding: 8px 5px 0 5px

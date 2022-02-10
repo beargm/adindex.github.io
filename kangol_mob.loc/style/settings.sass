@@ -1,0 +1,52 @@
+// цвета
+$black :#000
+$green-dark: #1e9323
+$green: #27AE60
+$gray: #7A7A7A
+$yellow: #B89E7F
+$red: #9D2929
+$violet: #3c2760
+$blue: #002d90
+
+$ff: 'Bebas Neue'
+
+//расширение
+%after-clear
+  &:after
+    content: ''
+    display: table
+    width: 100%
+    clear: both
+
+%before-clear
+  &:before
+    content: ''
+    display: table
+    width: 100%
+    clear: both
+
+//миксины
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+@mixin transition-dr($duration: 300ms)
+  -webkit-transition-duration: $duration
+  -moz-transition-duration: $duration
+  -ms-transition-duration: $duration
+  -o-transition-duration: $duration
+  transition-duration: $duration
+
+@mixin transition-dl($delay: 300ms)
+  -webkit-transition-delay: $delay
+  -moz-transition-delay: $delay
+  -ms-transition-delay: $delay
+  -o-transition-delay: $delay
+  transition-delay: $delay
+
+@mixin fonts($size, $lineheight, $bold:400)
+  font-size: $size
+  line-height: $lineheight
+  font-weight: $bold
