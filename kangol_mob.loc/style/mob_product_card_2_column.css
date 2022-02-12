@@ -103,18 +103,17 @@
     line-height: 12px;
     font-weight: 600;
     margin: 0 10px 0 0;
-    text-decoration: line-through;
     position: relative; }
     .product-card-2 .price-old:before {
       content: "";
       position: absolute;
-      top: 7px;
+      top: 6px;
       left: 0;
       right: 0;
       background: #C1C5C8;
-      height: 1px; }
+      height: 2px; }
     .product-card-2 .price-old span {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+      font-family: "Houschka Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
   .product-card-2 .price {
     display: inline-block;
     vertical-align: top;
@@ -124,6 +123,6 @@
     line-height: 12px;
     font-weight: 600; }
     .product-card-2 .price span {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+      font-family: "Houschka Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 /*# sourceMappingURL=mob_product_card_2_column.css.map */

@@ -198,7 +198,7 @@ body {
   position: relative;
   font-size: 0;
   white-space: nowrap;
-  margin: 30px 0 35px 0;
+  margin: 15px 0 35px 0;
   display: block; }
   .pagination-mob:after {
     content: "";
@@ -237,7 +237,7 @@ body {
     margin: 0 5px;
     color: #000 !important;
     text-decoration: none !important;
-    background: #F7F7F7;
+    background: #F2F2F5;
     text-align: center; }
 
 .text-center {
