@@ -34,11 +34,21 @@
   left: 20px;
   top: 25px;
   cursor: pointer; }
+  .mob-menu-trigger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px); }
+  .mob-menu-trigger.active span:nth-child(2) {
+    transform: rotate(-45deg) translate(2px, -2px); }
   .mob-menu-trigger span {
     display: block;
     background: #000;
     height: 2px;
-    margin-bottom: 4px; }
+    margin-bottom: 4px;
+    position: relative;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms; }
     .mob-menu-trigger span:last-child {
       margin-bottom: 0; }
 

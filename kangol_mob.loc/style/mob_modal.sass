@@ -43,12 +43,13 @@
   margin-bottom: 20px
 .modal-cart-fav
   .modal-cart-block
-    padding: 40px 0 15px 0
+    padding: 25px 0 15px 0
     .title
       padding-right: 0
     .img
       width: 120px
     .content
+      padding: 0 0
       margin: 0 0 0 130px
 
 .modal-cart-block
@@ -87,7 +88,7 @@
     width: 14px
     height: 14px
     position: absolute
-    top: 0
+    top: 10px
     right: 0
   .img
     position: relative
@@ -445,7 +446,57 @@ input
     input
       text-transform: uppercase
       font-size: 13px
+  .btn-list-auth
+    background: #F2F2F5
+    padding: 2px
+    @extend %after-clear
+    .btn
+      float: left
+      width: 50%
+      background: #F2F2F5
+      color: #1C1C1E
+      padding: 0 5px
+      text-align: center
+      &.active
+        color: #fff
+        background: #003468
 
+  .text-auth
+
+    p
+      @include fonts(14px, 19px, 500)
+      color: #1C1C1E
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+.form-auth-tell
+  .form-group
+    margin-bottom: 30px
+    &:nth-child(2)
+      margin-bottom: 20px
+.mob-modal
+  &.modal-auth-pass
+    .modal-bg
+      &:before
+        background: url(../img/back.svg) no-repeat
+        width: 21px
+.form-auth-path
+  .form-group
+    &:nth-child(2)
+      margin-bottom: 30px
+  .text
+    @extend %after-clear
+    @include fonts(14px, 14px, 600)
+    color: #8E8E93
+    font-style: italic
+    a
+      text-decoration: none !important
+      color: #8E8E93 !important
+    .left
+      float: left
+    .right
+      float: right
+      color: #C1C5C8
 .link-forget-pass
   text-decoration: none !important
   color: #636366 !important
@@ -583,3 +634,70 @@ input
     border-bottom: 2px solid #C1C5C8
     font-size: 19px
     font-weight: 700
+.mob-modal
+  &.modal-right
+    .mob-modal-box
+      left: 0
+      right: 65px
+    .modal-bg
+      &:before
+        left: auto
+        right: 20px
+.modal-menu
+  .mob-modal-box
+    padding: 0 20px 40px
+  .modal-menu-link
+    border-bottom: 1px solid #E5E5EA
+    padding: 15px 0
+    a
+      @include fonts(13px, 15px, 600)
+      color: #1C1C1E
+      display: block
+      text-decoration: none !important
+      position: relative
+      text-transform: uppercase
+    &.blue
+      color: #003468
+    &.mb-35
+      margin-bottom: 35px
+.mob-menu-acc
+  .accordion-item
+    border-bottom: 1px solid #E5E5EA
+    padding: 15px 0
+  .accordion-sub-block
+    display: none
+  .accordion-menu-title
+    @include fonts(13px, 15px, 600)
+    color: #636366
+    display: block
+    text-decoration: none !important
+    position: relative
+    text-transform: uppercase
+    &.active
+      &:after
+        transform: rotate(45deg)
+    &:after
+      content: ""
+      background: url(../img/plus-acc.svg) no-repeat
+      width: 10px
+      height: 10px
+      position: absolute
+      top: 4px
+      right: 0
+
+  .list-link
+    padding: 20px 0 0 0
+  .sub-link
+    padding: 0 0 0 25px
+  .link
+    margin-bottom: 20px
+    line-height: 0
+    &:last-child
+      margin-bottom: 0
+    a
+      text-decoration: none !important
+      color: #636366 !important
+      @include fonts(13px, 15px, 600)
+      text-transform: uppercase
+    .read-more
+      color: #013F7D !important

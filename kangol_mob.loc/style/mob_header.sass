@@ -39,11 +39,19 @@
   left: 20px
   top: 25px
   cursor: pointer
+  &.active
+    span
+      &:nth-child(1)
+        transform: rotate(45deg) translate(2px, 2px)
+      &:nth-child(2)
+        transform: rotate(-45deg) translate(2px, -2px)
   span
     display: block
     background: #000
     height: 2px
     margin-bottom: 4px
+    position: relative
+    @include transition-dr(300ms)
     &:last-child
       margin-bottom: 0
 

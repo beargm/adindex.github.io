@@ -34,9 +34,9 @@
 
 .mob-social-footer {
   padding: 14px 0 10px 0;
-  border-bottom: 1px solid #636366;
+  border-bottom: 1px solid #E5E5EA;
   text-align: center;
-  margin: 0 0 0 0; }
+  margin: 0 0 15px 0; }
   .mob-social-footer .img {
     display: flex;
     align-items: center;
@@ -47,26 +47,38 @@
     vertical-align: top;
     margin: 0 15px; }
 
+.form-feedback {
+  margin: 0 0 25px 0; }
+  .form-feedback .reset {
+    background-position: right center; }
+  .form-feedback .form-group {
+    margin: 0 0 15px 0; }
+  .form-feedback .form-control {
+    font-weight: 600;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid #636366;
+    color: #8E8E93;
+    font-size: 14px;
+    font-style: italic; }
+  .form-feedback .btn {
+    width: 100%; }
+    .form-feedback .btn input {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600; }
+
 .mob-footer-title {
   font-size: 14px;
   line-height: 15px;
   font-weight: 600;
   color: #636366;
-  margin-bottom: 0;
-  border-bottom: 1px solid #636366; }
-  .mob-footer-title.border-top {
-    border-top: 1px solid #636366; }
-  .mob-footer-title.border-bottom {
-    border-bottom: 1px solid #636366; }
-  .mob-footer-title.last {
-    border-bottom: none; }
-  .mob-footer-title.mb-10 {
-    margin-bottom: 10px; }
-  .mob-footer-title.ic {
+  margin-bottom: 20px; }
+  .mob-footer-title.arrow {
     padding: 0 20px 0 0;
-    background: url(../img/plus.svg) 100% center no-repeat; }
+    background: url(../img/arrow.svg) 100% 3px no-repeat; }
   .mob-footer-title a {
-    padding: 15px 0;
+    padding: 0 0;
     font-size: 14px;
     line-height: 15px;
     font-weight: 600;
@@ -80,6 +92,8 @@
   font-weight: 500;
   color: #636366;
   margin-bottom: 10px; }
+  .mob-footer-text.pl {
+    padding-left: 20px; }
   .mob-footer-text a {
     text-decoration: none !important;
     color: #636366 !important;
@@ -102,8 +116,83 @@
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .mob-footer-payment .img {
+    height: 16px;
+    display: flex;
+    align-items: center; }
   .mob-footer-payment img {
-    max-width: 56px; }
+    max-width: 56px;
+    max-height: 16px; }
+
+.footer-acc {
+  margin-bottom: 20px; }
+  .footer-acc .accordion-item {
+    border-bottom: 1px solid #E5E5EA;
+    padding: 15px 0; }
+    .footer-acc .accordion-item:first-child {
+      border-top: 1px solid #E5E5EA; }
+  .footer-acc .accordion-sub-block {
+    display: none; }
+  .footer-acc .accordion-menu-title {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #636366;
+    display: block;
+    text-decoration: none !important;
+    position: relative; }
+    .footer-acc .accordion-menu-title.active:after {
+      transform: rotate(45deg); }
+    .footer-acc .accordion-menu-title:after {
+      content: "";
+      background: url(../img/plus-acc.svg) no-repeat;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 4px;
+      right: 0; }
+  .footer-acc .list-link {
+    padding: 20px 0 0 20px; }
+  .footer-acc .link {
+    margin-bottom: 10px;
+    line-height: 0; }
+    .footer-acc .link:last-child {
+      margin-bottom: 0; }
+    .footer-acc .link a {
+      text-decoration: none !important;
+      color: #636366 !important;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 500; }
+
+.copyright {
+  color: #636366;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px; }
+
+.footer-link {
+  font-size: 0;
+  margin: 0 0 30px 0; }
+  .footer-link .link {
+    line-height: 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+    border-right: 1px solid #E5E5EA; }
+    .footer-link .link:last-child {
+      border-right: none; }
+    .footer-link .link:first-child {
+      padding-left: 0; }
+  .footer-link a {
+    color: #1C1C1E !important;
+    text-decoration: none !important;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 500; }
 
 .footer-menu {
   border-top: 1px solid #E5E5EA;
