@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Giorgio Sans LCG';
+    src: url('GiorgioSansLCG-Bold.eot');
+    src: url('GiorgioSansLCG-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GiorgioSansLCG-Bold.woff2') format('woff2'),
+        url('GiorgioSansLCG-Bold.woff') format('woff'),
+        url('GiorgioSansLCG-Bold.ttf') format('truetype'),
+        url('GiorgioSansLCG-Bold.svg#GiorgioSansLCG-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giorgio Sans LCG';
+    src: url('GiorgioSansLCG-Regular.eot');
+    src: url('GiorgioSansLCG-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GiorgioSansLCG-Regular.woff2') format('woff2'),
+        url('GiorgioSansLCG-Regular.woff') format('woff'),
+        url('GiorgioSansLCG-Regular.ttf') format('truetype'),
+        url('GiorgioSansLCG-Regular.svg#GiorgioSansLCG-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

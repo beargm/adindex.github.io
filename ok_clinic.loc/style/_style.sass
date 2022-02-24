@@ -1,0 +1,337 @@
+input:focus, a:focus, input:active, a:active
+  outline: none
+@media (min-width: 992px)
+  /* START скрол*/
+  ::-webkit-scrollbar-button
+    //background-image: url()
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar-track
+    background-color: transparent
+
+  ::-webkit-scrollbar-thumb
+    -webkit-border-radius: 0px
+    border-radius: 0px
+    background-color: #c8c8c8
+    cursor: pointer
+    background-size: 100% 100%
+
+  ::-webkit-scrollbar-thumb:hover
+    background-color: #b4b2b2
+
+
+  ::-webkit-resizer
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar
+    width: 10px
+
+
+  ::-webkit-scrollbar:horizontal
+    height: 10px
+
+  ::-webkit-scrollbar-button
+    display: none
+/* END скрол */
+
+
+
+*
+  &:active, &:focus
+    outline: none !important
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+
+body
+  padding: 65px 0 0 0
+  font-family: 'Montserrat'
+  font-size: 18px
+  line-height: 24px
+  font-weight: 400
+  color: #000
+  background: #E9F5FF
+  position: relative
+  min-height: 100vh
+@media (max-width: 991px)
+  body
+    padding: 10px 0 0 0
+.no-scroll
+  overflow: hidden
+
+a
+  @include transition-dr(300ms)
+
+h1, .h1, h2, .h2
+  color: #000
+  @include fonts(32px, 39px, 700)
+  letter-spacing: 0
+  text-transform: none
+  margin-bottom: 40px
+
+
+
+@media (max-width: 991px)
+  h1, .h1, h2, .h2
+    margin-bottom: 25px
+    @include fonts(24px, 29px, 700)
+.clearfix
+  clear: both
+
+
+
+.form-control::-webkit-input-placeholder
+  color: #000 !important
+
+.form-control::-moz-placeholder
+  color: #000 !important
+
+.form-control:-ms-input-placeholder
+  color: #000 !important
+
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+
+.text-formatted
+  @include fonts(14px, 17px, 400)
+  position: relative
+  color: #000
+
+  a
+    @include transition-dr(300ms)
+
+  strong, b
+    font-weight: 700
+    color: #000
+  p
+
+    @include fonts(14px, 17px, 400)
+    margin-bottom: 15px
+    color: #000
+
+  a
+    border-bottom: 1px solid #000
+    text-decoration: none !important
+    color: #000
+    &:hover
+      color: #000
+      border-color: transparent
+  ul
+    margin-bottom: 15px
+    li
+      position: relative
+      padding: 0 0 0 20px
+      @include fonts(14px, 17px, 400)
+      margin-bottom: 5px
+      &:before
+        content: ""
+        width: 3px
+        height: 3px
+        +border-radius(50%)
+        position: absolute
+        top: 6px
+        left: 0
+        background: #000
+
+
+
+.margin-15
+  margin-left: -15px
+  margin-right: -15px
+
+
+.form-control:focus, .form-control:active
+  box-shadow: none !important
+  outline: none !important
+
+input.form-control
+  border: none
+  background: #fff !important
+  padding: 0 10px 0 25px
+  color: #000 !important
+  @include fonts(16px, 56px, 500)
+  height: 56px
+  +border-radius(16px)
+
+  &:focus, &:active
+    box-shadow: none !important
+    color: #000
+
+textarea.form-control
+  border: none
+  background: #fff !important
+  padding: 20px 10px 10px 25px
+  color: #000 !important
+  @include fonts(16px, 20px, 500)
+  height: 56px
+  min-height: 87px
+  max-height: 150px
+  overflow: hidden
+  resize: vertical
+  +border-radius(16px)
+
+  &:focus, &:active
+    box-shadow: none !important
+    color: #000
+label.error
+  color: #ffffff
+  @include fonts(12px, 14px)
+.form-group
+  margin-bottom: 15px
+  .label
+    color: #000
+    @include fonts(11px, 13px, 400)
+    margin-bottom: 5px
+    span
+      color: $red
+@media (max-width: 991px)
+  input.form-control
+    height: 70px
+    padding: 0 10px 0 25px
+
+.slick-slider
+  opacity: 0
+  &.slick-initialized
+    opacity: 1
+  &.slick-dotted
+    margin: 0 0 70px 0
+  .slick-dots
+    text-align: center
+    font-size: 0
+    line-height: 0
+    margin: 0 0 0 0
+    padding: 0 0 0 0
+    position: absolute
+    bottom: -68px
+    left: 0
+    right: 0
+    li
+      display: inline-block
+      vertical-align: top
+      &.slick-active
+        button
+          background: #11E44C
+          opacity: 1
+
+      button
+        font-size: 0
+        padding: 0
+        width: 8px
+        height: 8px
+        +border-radius(50%)
+        margin: 0 5px
+        background: #033BD8
+        opacity: 1
+        @include transition-dr(300ms)
+        border: none
+        cursor: pointer
+        &:hover
+          background: $color1
+          opacity: 1
+        &:before
+          display: none
+  &.arrow-bottom
+    .slick-arrow
+      bottom: 0
+      top: auto
+      margin: 0 0 0 0
+  .slick-arrow
+    border: none
+    +border-radius(50%)
+    cursor: pointer
+    z-index: 50
+    width: 64px
+    height: 64px
+    background: #fff
+    padding: 0
+    font-size: 0
+    position: absolute
+    top: 50%
+    @include transition-dr(300ms)
+    margin: -32px 0 0 0
+    &:hover
+      background: #033BD8
+      &:before
+        opacity: 0
+      &:after
+        opacity: 1
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: url(../img/slider-arrow.svg) center center no-repeat
+      @include transition-dr(300ms)
+    &:after
+      opacity: 0
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      height: 100% 
+      background: url(../img/slider-arrow-hover.svg) center center no-repeat
+      width: 100%
+      overflow: hidden
+      @include transition-dr(300ms)
+    &.slick-prev
+      left: -110px
+      right: auto
+      &:before, &:after
+        left: auto
+        right: 0
+        transform: rotate(180deg)
+    &.slick-next
+      right: -110px
+@media (max-width: 1400px)
+  .slick-slider
+    .slick-arrow
+      display: none !important
+@media (max-width: 991px)
+  .slick-slider
+    margin: 0 0 50px
+    &.slick-dotted
+      margin: 0 0 30px 0
+    .slick-dots
+      bottom: -30px
+      display: block !important
+
+    .slick-arrow
+
+
+
+.nav-tabs
+  @extend %after-clear
+  border: 2px solid #F1274C
+  display: inline-block
+  vertical-align: top
+  +border-radius(10px)
+  overflow: hidden
+  .nav-item
+    margin: 0 0
+    float: left
+  .nav-link
+    min-width: 148px
+    text-align: center
+    color: #464646
+    text-decoration: none !important
+    background: #fff
+    +border-radius(0)
+    display: block
+    @include fonts(16px, 52px, 600)
+    padding: 0 5px
+    position: relative
+    border: none
+    &.active
+      background: #F1274C
+      color: #fff
+
