@@ -1,0 +1,372 @@
+.banner-main
+  position: relative
+  background: url(../img/bg-banner-main.png) center top no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  padding: 220px 0 145px 0
+  overflow: hidden
+  min-height: 820px
+  .container
+    position: relative
+  .h2
+    text-transform: uppercase
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    color: #4F4F4F
+    @include fonts(44px, 48px, 800)
+    margin-bottom: 50px
+  .text
+    color: #4F4F4F
+    @include fonts(42px, 110%, 800)
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    margin-bottom: 60px
+    a
+      color: #4F4F4F !important
+      text-decoration: none !important
+      border-bottom: 2px solid #4A5568
+  .image-right
+    position: absolute
+    right: -50px
+    top: 20px
+    width: 100%
+    max-width: 1040px
+  .image-left
+    position: absolute
+    left: -130px
+    top: 80px
+    width: 450px
+@media (max-width: 1199px)
+  .banner-main
+    .image-right
+      top: 100px
+      max-width: 800px
+@media (max-width: 991px)
+  .banner-main
+    padding: 120px 0 120px 0
+    min-height: 10px
+    .h2
+      padding-top: 0
+      @include fonts(34px, 40px, 800)
+    .text
+      @include fonts(28px, 35px, 700)
+    .image-right
+      display: none
+
+@media (max-width: 991px)
+  .banner-main
+    padding: 120px 0 75px 0
+
+
+.advantage-list
+  position: relative
+  padding: 150px 0 150px 0
+  .text-formatted
+    margin-bottom: 30px
+.advantage-card
+  position: relative
+  min-height: 120px
+  +border-radius(6px)
+  box-shadow: 0px 0px 30px rgba(45, 45, 45, 0.08)
+  background: #fff
+  margin: 0 0 20px 0
+  text-align: center
+  padding: 40px 15px 10px
+  @include transition-dr(300ms)
+  overflow: hidden
+  &:before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    background: linear-gradient(66.68deg, #3034B1 -40.28%, #4381CC 102.81%)
+    height: 0
+    overflow: hidden
+    @include transition-dr(800ms)
+    opacity: 0
+  &:hover
+    .num
+      color: #fff
+    .text
+      color: #fff
+    &:before
+      opacity: 1
+      //-webkit-transform: scaleX(-1)
+      //transform: scaleX(-1)
+      //-webkit-filter: FlipH
+      //filter: FlipH
+      //-ms-filter: "FlipH"
+      height: 100%
+  .num
+    @include transition-dr(300ms)
+    position: relative
+    z-index: 1
+    color: #1E1E1E
+    @include fonts(24px, 26px, 800)
+    margin-bottom: 10px
+  .text
+    @include transition-dr(300ms)
+    position: relative
+    z-index: 1
+    @include fonts(16px, 24px, 300)
+    color: #1E1E1E
+@media (max-width: 991px)
+  .advantage-list
+    padding: 50px 0
+
+
+@media (max-width: 767px)
+  .advantage-list
+    .row
+      margin-left: -5px
+      margin-right: -5px
+      >div
+        padding-left: 5px
+        padding-right: 5px
+@media (max-width: 575px)
+  .advantage-card
+    padding: 25px 10px 10px
+    .num
+      font-size: 20px
+      line-height: 22px
+    .text
+      font-size: 15px
+      line-height: 18px
+
+
+
+.bg-section-text
+  background: url(../img/bg-text.png) center top no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  padding: 140px 0
+.section-text-box
+  box-shadow: 0px 0px 30px rgba(45, 45, 45, 0.08)
+  background: #fff
+  +border-radius(6px)
+  text-align: center
+  padding: 55px 115px
+  @include fonts(18px, 36px, 300)
+  color: #1E1E1E
+  p
+    @include fonts(18px, 36px, 300)
+    color: #1E1E1E
+  a
+    text-decoration: none !important
+    color: #1E1E1E
+    border-bottom: 1px solid #1E1E1E
+    &:hover
+      border-color: transparent
+@media (max-width: 991px)
+  .bg-section-text
+    padding: 50px 0
+  .section-text-box
+    padding: 25px 20px
+
+
+.section-feedback
+  background: url(../img/bg-text.png) center top no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  padding: 70px 0
+  .column-left
+    padding: 80px 0 0 0
+    max-width: 550px
+  .h2
+    margin-bottom: 30px
+    color: #4F4F4F
+    line-height: 48px
+  .img
+    max-width: 350px
+    float: right
+    margin: 65px 0 0 0
+@media (max-width: 991px)
+  .section-feedback
+    padding: 30px 0
+    .h2
+      line-height: 32px
+@media (max-width: 767px)
+  .section-feedback
+    .column-left
+      padding: 0 0
+      max-width: 100%
+    .img
+      float: none
+      margin: 30px 0 0 0
+
+.utp-list
+  position: relative
+  padding: 155px 0
+  .text-formatted
+    margin-bottom: 40px
+  .text-center
+    padding: 20px 0 0 0
+  .btn-outline
+    padding: 27px 15px
+    height: auto
+    @include fonts(20px, 22px, 700)
+    text-align: center
+    width: 100%
+    max-width: 660px
+    margin: 0 auto
+    display: block
+.utp
+  background: #fff
+  position: relative
+  box-shadow: 0px 0px 30px rgba(45, 45, 45, 0.08)
+  +border-radius(6px)
+  margin: 0 0 30px 0
+  padding: 45px 10px 10px
+  min-height: 220px
+  .img
+    width: 60px
+    height: 60px
+    margin: 0 auto 25px
+    img
+      display: block
+      margin: 0 auto
+  .text
+    @include fonts(16px, 24px, 600)
+    text-align: center
+    color: #1E1E1E
+@media (max-width: 991px)
+  .utp-list
+    padding: 50px 0
+  .utp
+    padding: 35px 10px 30px
+@media (max-width: 575px)
+  .utp
+    min-height: 10px
+    padding: 35px 10px 30px
+  .utp-list
+    .btn-outline
+      padding: 15px 15px
+      font-size: 18px
+
+.card-list
+  padding: 150px 0 120px 0
+  .h2
+    margin-bottom: 105px
+.card-block
+  position: relative
+  +border-radius(6px)
+  box-shadow: 0px 0px 30px rgba(45, 45, 45, 0.08)
+  background: #fff
+  padding: 65px 30px 40px
+  text-align: center
+  margin: 0 0 30px 0
+  .card-top
+  .card-middle
+    border-top: 1px solid #E3E3E3
+    border-bottom: 1px solid #E3E3E3
+    padding: 25px 0
+    margin: 25px 0
+  .card-bottom
+    .text
+      min-height: 120px
+      margin-bottom: 55px
+  .card-title
+    color: #1E1E1E
+    @include fonts(24px, 28px, 600)
+    margin-bottom: 20px
+  .title
+    @include fonts(18px, 20px, 600)
+    margin-bottom: 10px
+    color: #1E1E1E
+  .price
+    color: #4571AD
+    @include fonts(36px, 40px, 500)
+    sup
+      @include fonts(20px, 20px, 500)
+      top: -20px
+  .text
+    @include fonts(16px, 30px, 300)
+    color: #1E1E1E
+@media (max-width: 991px)
+  .card-list
+    padding: 50px 0
+    .h2
+      margin-bottom: 30px
+  .card-block
+    padding: 30px 15px 30px
+    .card-bottom
+      .text
+        min-height: 10px
+        margin-bottom: 20px
+
+.our-team
+  position: relative
+  background: url(../img/bg-team.jpg) center top no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  padding: 150px 0
+  .h2
+    margin-bottom: 50px
+
+.card-team
+  position: relative
+  .img
+    margin: 0 0 30px 0
+    img
+      width: 100%
+  .name
+    @include fonts(18px, 20px, 600)
+    margin-bottom: 15px
+    text-align: center
+    color: #fff
+  .text
+    color: #fff
+    text-align: center
+    @include fonts(15px, 20px, 300)
+@media (max-width: 991px)
+  .our-team
+    padding: 50px 0
+  .card-team
+    margin: 0 0 30px 0
+    .name
+      color: #4F4F4F
+    .text
+      color: #4F4F4F
+
+.section-faq
+  position: relative
+  padding: 150px 0
+  .h2
+    margin-bottom: 35px
+
+.accordion-item
+  margin-bottom: 10px
+  position: relative
+  background: #fff
+  box-shadow: 0px 0px 30px rgba(45, 45, 45, 0.08)
+  +border-radius(6px)
+.accordion-menu-title
+  position: relative
+  @include fonts(16px, 20px, 600)
+  color: #1E1E1E
+  margin: 0 15px
+  padding: 25px 45px 25px 25px
+  cursor: pointer
+  &:after
+    content: ""
+    width: 23px
+    height: 13px
+    position: absolute
+    top: 27px
+    right: 10px
+    background: url(../img/arrow.svg) no-repeat
+  &.active
+    &:after
+      transform: rotate(180deg)
+.accordion-sub-block
+  display: none
+  margin: 0 15px
+  padding: 30px 25px 40px
+  border-top: 1px solid #E3E3E3
+@media (max-width: 991px)
+  .section-faq
+    padding: 50px 0
+  .accordion-menu-title
+    margin: 0 0
+    padding: 20px 45px 20px 15px
+  .accordion-sub-block
+    padding: 20px 0

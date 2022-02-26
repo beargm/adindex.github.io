@@ -1,0 +1,117 @@
+.modal
+  background: rgba(255,255,255,0.8)
+  .modal-dialog
+    max-width: 460px
+  .modal-content
+    border: none
+    +border-radius(6px)
+    background: #fff
+    padding: 0 0
+    position: relative
+    box-shadow: 0px 0px 30px rgba(45, 45, 45, 0.08)
+.modal-dialog
+  .modal-header
+    position: relative
+    z-index: 10
+    +border-radius(0)
+    display: block
+    padding: 45px 0 45px 0
+    margin: 0 10px 0 10px
+    border-bottom: 1px solid #D7D7D7
+  .modal-body
+    padding: 30px 0 50px
+    margin: 0 10px
+  .modal-title
+    @include fonts(30px, 100%, 700)
+    color: #1E1E1E
+    text-align: center
+    padding-top: 0
+    padding-bottom: 0
+    margin-bottom: 0
+    display: block
+    position: relative
+
+  .close
+    width: 34px
+    height: 34px
+    background: url(../img/close-w.svg) center center no-repeat
+    -webkit-background-size: 34px
+    background-size: 34px
+    padding: 0
+    margin: 0
+    position: absolute
+    right: -50px
+    top: -25px
+    font-size: 0
+    font-weight: 400
+    color: #fff
+    @include transition-dr(300ms)
+    transform: rotate(0deg)
+    opacity: 0.9
+    text-shadow: none
+    z-index: 10
+    span
+      display: none
+
+
+.modal-feedback-box
+  padding: 0 0
+  .text-center
+    padding: 10px 0 0
+  .modal-form
+    padding: 0 15px
+  .text
+    @include fonts(16px, 28px, 300)
+    color: #2B2A28
+    text-align: center
+    margin-bottom: 20px
+  .modal-bottom
+    text-align: center
+    border-top: 1px solid #D7D7D7
+    padding: 35px 0 0
+    margin: 35px 0 0 0
+    .text
+      margin-bottom: 10px
+  .tell
+    a
+      text-decoration: none !important
+      color: #1E1E1E !important
+      @include fonts(24px, 24px, 600)
+
+@media (max-width: 991px)
+  .modal
+    padding-left: 15px !important
+    padding-right: 15px !important
+    .modal-body
+      padding: 0px 0 35px
+    .close
+      top: 5px
+      right: 5px
+      width: 35px
+      height: 35px
+      background: url(../img/close.svg) no-repeat
+      -webkit-background-size: 100%
+      background-size: 100%
+    .modal-header
+      margin-bottom: 20px
+      padding: 35px 0 25px 0
+    .modal-content
+      padding: 0 0
+      +border-radius(0)
+    .modal-dialog
+      max-width: 320px
+      .modal-title
+        font-size: 18px
+        line-height: 22px
+        font-weight: 700
+        text-align: center
+  .modal-feedback-box
+    .modal-form
+      padding: 0 10px
+@media (max-width: 767px)
+  .modal
+
+
+
+@media (max-width: 991px)
+  .modal
