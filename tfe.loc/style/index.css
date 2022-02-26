@@ -730,20 +730,20 @@ label.error {
   .banner-main .h2 {
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #4F4F4F;
+    color: #1E1E1E;
     font-size: 44px;
     line-height: 48px;
     font-weight: 800;
     margin-bottom: 50px; }
   .banner-main .text {
-    color: #4F4F4F;
+    color: #1E1E1E;
     font-size: 42px;
     line-height: 110%;
     font-weight: 800;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 60px; }
     .banner-main .text a {
-      color: #4F4F4F !important;
+      color: #1E1E1E !important;
       text-decoration: none !important;
       border-bottom: 2px solid #4A5568; }
   .banner-main .image-right {
@@ -918,7 +918,7 @@ label.error {
     max-width: 550px; }
   .section-feedback .h2 {
     margin-bottom: 30px;
-    color: #4F4F4F;
+    color: #1E1E1E;
     line-height: 48px; }
   .section-feedback .img {
     max-width: 350px;
@@ -1079,9 +1079,9 @@ label.error {
     font-weight: 600;
     margin-bottom: 15px;
     text-align: center;
-    color: #fff; }
+    color: #1E1E1E; }
   .card-team .text {
-    color: #fff;
+    color: #1E1E1E;
     text-align: center;
     font-size: 15px;
     line-height: 20px;
@@ -1094,9 +1094,9 @@ label.error {
   .card-team {
     margin: 0 0 30px 0; }
     .card-team .name {
-      color: #4F4F4F; }
+      color: #1E1E1E; }
     .card-team .text {
-      color: #4F4F4F; } }
+      color: #1E1E1E; } }
 .section-faq {
   position: relative;
   padding: 150px 0; }
