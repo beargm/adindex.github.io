@@ -48,7 +48,13 @@
     margin: 0 15px; }
 
 .form-feedback {
-  margin: 0 0 25px 0; }
+  margin: 28px 0 25px 0; }
+  .form-feedback .form-title {
+    color: #1C1C1E;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    margin: 0 0 5px 0; }
   .form-feedback .reset {
     background-position: right center; }
   .form-feedback .form-group {
@@ -211,7 +217,7 @@
     display: flex; }
   .footer-menu .modal-icon-block {
     height: 47px;
-    padding: 8px 10px 0 10px;
+    padding: 7px 10px 0 10px;
     width: 20%;
     position: relative;
     text-align: center; }
@@ -247,14 +253,14 @@
     vertical-align: top; }
   .footer-menu .title {
     width: 100%;
-    font-size: 10px;
-    line-height: 10px;
-    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 500;
     text-align: center;
-    color: #000000; }
+    color: #1C1C1E; }
 
 @media (max-width: 400px) {
   .footer-menu .icon-block {
-    padding: 8px 5px 0 5px; } }
+    padding: 7px 5px 0 5px; } }
 
 /*# sourceMappingURL=mob_footer.css.map */

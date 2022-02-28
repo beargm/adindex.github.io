@@ -20,17 +20,22 @@ $(function () {
         }
     });
 
-    $(".btn-list-auth .btn").click(function(e){
+    $(".btn-list-auth .btn-1").click(function(e){
         e.stopPropagation();
-
-        if($(this).hasClass("active")){
-            $(this).removeClass("active");
-        } else {
-            $(".btn-list-auth .btn").removeClass("active");
-            $(this).addClass("active");
-
-        }
+        $(".btn-list-auth .btn").removeClass("active");
+        $(this).addClass("active");
+        $(".text-auth-1").show();
+        $(".text-auth-2").hide();
     });
+
+    $(".btn-list-auth .btn-2").click(function(e){
+        e.stopPropagation();
+        $(".btn-list-auth .btn").removeClass("active");
+        $(this).addClass("active");
+        $(".text-auth-2").show();
+        $(".text-auth-1").hide();
+    });
+
 
     $(".footer-icon-cart").click(function(e){
         e.stopPropagation();

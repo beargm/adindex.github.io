@@ -80,7 +80,8 @@ body {
     height: 100%;
     font-size: inherit;
     background: none;
-    color: inherit; }
+    color: inherit;
+    font-weight: 600; }
 
 .catalog-title-block {
   position: relative;

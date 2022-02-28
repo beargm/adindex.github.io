@@ -51,14 +51,18 @@
   margin-bottom: 20px; }
 
 .modal-cart-fav .modal-cart-block {
-  padding: 25px 0 15px 0; }
+  padding: 40px 0 15px 0; }
   .modal-cart-fav .modal-cart-block .title {
     padding-right: 0; }
   .modal-cart-fav .modal-cart-block .img {
     width: 120px; }
   .modal-cart-fav .modal-cart-block .content {
     padding: 0 0;
-    margin: 0 0 0 130px; }
+    margin: 0 0 0 130px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
 
 .modal-cart-block {
   position: relative;
@@ -478,7 +482,8 @@ input {
     width: 100%; }
     .modal-auth-content .btn-submit input {
       text-transform: uppercase;
-      font-size: 13px; }
+      font-size: 13px;
+      font-weight: 600; }
   .modal-auth-content .btn-list-auth {
     background: #F2F2F5;
     padding: 2px; }
@@ -492,6 +497,8 @@ input {
       .modal-auth-content .btn-list-auth .btn.active {
         color: #fff;
         background: #003468; }
+  .modal-auth-content .text-auth.text-auth-2 {
+    display: none; }
   .modal-auth-content .text-auth p {
     font-size: 14px;
     line-height: 19px;
@@ -513,8 +520,8 @@ input {
 .form-auth-path .form-group:nth-child(2) {
   margin-bottom: 30px; }
 .form-auth-path .text {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 13px;
+  line-height: 13px;
   font-weight: 600;
   color: #8E8E93;
   font-style: italic; }
@@ -700,6 +707,8 @@ input {
     text-transform: uppercase; }
   .modal-menu .modal-menu-link.blue {
     color: #003468; }
+    .modal-menu .modal-menu-link.blue a {
+      color: #003468; }
   .modal-menu .modal-menu-link.mb-35 {
     margin-bottom: 35px; }
 

@@ -43,7 +43,7 @@
   margin-bottom: 20px
 .modal-cart-fav
   .modal-cart-block
-    padding: 25px 0 15px 0
+    padding: 40px 0 15px 0
     .title
       padding-right: 0
     .img
@@ -51,6 +51,10 @@
     .content
       padding: 0 0
       margin: 0 0 0 130px
+      height: 125px
+      display: flex
+      justify-content: center
+      flex-direction: column
 
 .modal-cart-block
   position: relative
@@ -446,6 +450,8 @@ input
     input
       text-transform: uppercase
       font-size: 13px
+      font-weight: 600
+
   .btn-list-auth
     background: #F2F2F5
     padding: 2px
@@ -462,7 +468,8 @@ input
         background: #003468
 
   .text-auth
-
+    &.text-auth-2
+      display: none
     p
       @include fonts(14px, 19px, 500)
       color: #1C1C1E
@@ -486,7 +493,7 @@ input
       margin-bottom: 30px
   .text
     @extend %after-clear
-    @include fonts(14px, 14px, 600)
+    @include fonts(13px, 13px, 600)
     color: #8E8E93
     font-style: italic
     a
@@ -658,6 +665,8 @@ input
       text-transform: uppercase
     &.blue
       color: #003468
+      a
+        color: #003468
     &.mb-35
       margin-bottom: 35px
 .mob-menu-acc
