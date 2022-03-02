@@ -37,7 +37,8 @@ input:focus, a:focus, input:active, a:active
   ::-webkit-scrollbar-button
     display: none
 /* END скрол */
-
+.modal-open
+  padding: 0 0 !important
 
 
 *
@@ -368,3 +369,25 @@ label.error
       background: #F1274C
       color: #fff
 
+.scroll-up
+  @include transition-dr(300ms)
+  position: fixed
+  width: 40px
+  height: 40px
+  +border-radius(5px)
+  background: #4571AD url("../img/scroll.svg") center center no-repeat
+  -webkit-background-size: 12px auto
+  background-size: 12px auto
+  transform: rotate(90deg)
+  bottom: 30px
+  right: 30px
+  cursor: pointer
+  z-index: 400
+  &:hover
+    background-color: $black
+
+
+@media (max-width: 767px)
+  .scroll-up
+    right: 15px
+    bottom: 30px

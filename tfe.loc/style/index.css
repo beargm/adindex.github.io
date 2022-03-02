@@ -42,6 +42,9 @@ input:focus, a:focus, input:active, a:active {
   ::-webkit-scrollbar-button {
     display: none; } }
 /* END ╤Б╨║╤А╨╛╨╗ */
+.modal-open {
+  padding: 0 0 !important; }
+
 *:active, *:focus {
   outline: none !important;
   -webkit-box-shadow: none;
@@ -416,6 +419,34 @@ label.error {
       background: #F1274C;
       color: #fff; }
 
+.scroll-up {
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -ms-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #4571AD url("../img/scroll.svg") center center no-repeat;
+  -webkit-background-size: 12px auto;
+  background-size: 12px auto;
+  transform: rotate(90deg);
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 400; }
+  .scroll-up:hover {
+    background-color: #44404F; }
+
+@media (max-width: 767px) {
+  .scroll-up {
+    right: 15px;
+    bottom: 30px; } }
 .btn {
   background: #6FCF97;
   box-shadow: 0px 2px 4px rgba(39, 174, 96, 0.3);
@@ -726,7 +757,8 @@ label.error {
   overflow: hidden;
   min-height: 820px; }
   .banner-main .container {
-    position: relative; }
+    position: relative;
+    z-index: 2; }
   .banner-main .h2 {
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -764,9 +796,10 @@ label.error {
     max-width: 800px; } }
 @media (max-width: 991px) {
   .banner-main {
-    padding: 120px 0 120px 0;
+    padding: 120px 0 75px 0;
     min-height: 10px; }
     .banner-main .h2 {
+      text-align: center;
       padding-top: 0;
       font-size: 34px;
       line-height: 40px;
@@ -776,10 +809,11 @@ label.error {
       line-height: 35px;
       font-weight: 700; }
     .banner-main .image-right {
-      display: none; } }
-@media (max-width: 991px) {
-  .banner-main {
-    padding: 120px 0 75px 0; } }
+      display: none; }
+    .banner-main .btn {
+      display: block;
+      max-width: 250px;
+      margin: 0 auto; } }
 .advantage-list {
   position: relative;
   padding: 150px 0 150px 0; }
@@ -936,7 +970,11 @@ label.error {
     max-width: 100%; }
   .section-feedback .img {
     float: none;
-    margin: 30px 0 0 0; } }
+    margin: 30px 0 0 0; }
+  .section-feedback .btn {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto; } }
 .utp-list {
   position: relative;
   padding: 155px 0; }
@@ -1211,7 +1249,7 @@ label.error {
   transform: rotate(0deg);
   opacity: 0.9;
   text-shadow: none;
-  z-index: 10; }
+  z-index: 100; }
   .modal-dialog .close span {
     display: none; }
 

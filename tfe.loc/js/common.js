@@ -74,12 +74,6 @@ $(function () {
         }
     });
 
-
-
-
-
-
-
     //$(".accordion-block .accordion-item:first-child .accordion-menu-title").addClass("active");
     //$(".accordion-block .accordion-item:first-child .accordion-sub-block").show();
     $(".accordion-block .accordion-menu-title").click(function(e){
@@ -97,8 +91,6 @@ $(function () {
             $(this).addClass("active");
         }
     });
-
-
 
     $("input[type=tel], input[type=phone]").inputmask({
         mask : "+38(999) 999-99-99",
@@ -119,7 +111,16 @@ $(function () {
         $(".mobile-menu").fadeOut();
     });
 
-
+    $(window).on("load",function(){
+        $(".nav-page-scroll a").mPageScroll2id({
+            offset: 0,
+            //highlightClass:"highlighted-menu-item"
+        });
+    });
+    $(".mobile-menu .nav-page-scroll a").click(function () {
+        //e.stopPropagation();
+        $(".mobile-menu").hide();
+    });
 
     AOS.init({
         disable: 'mobile',
@@ -129,6 +130,26 @@ $(function () {
         offset: '0',
         once: true
     });
+
+    $('#goTop').click(function() {
+        $('body,html').animate({scrollTop : 0}, 800);
+    });
+
+    if($(this).scrollTop() > 250) {
+        $('header.header').addClass("fixed");
+    } else {
+        $('header.header').removeClass("fixed");
+    }
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 250) {
+            $('header.header').addClass("fixed");
+            $('#goTop').fadeIn();
+        } else {
+            $('header.header').removeClass("fixed");
+            $('#goTop').fadeOut();
+        }
+    });
+
 });
 
 
