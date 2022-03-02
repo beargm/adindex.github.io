@@ -113,7 +113,7 @@ $(function () {
 
     $(window).on("load",function(){
         $(".nav-page-scroll a").mPageScroll2id({
-            offset: 0,
+            offset: 60, 
             //highlightClass:"highlighted-menu-item"
         });
     });
@@ -136,15 +136,19 @@ $(function () {
     });
 
     if($(this).scrollTop() > 250) {
+        $('body').addClass("padding");
         $('header.header').addClass("fixed");
     } else {
+        $('body').removeClass("padding");
         $('header.header').removeClass("fixed");
     }
     $(window).scroll(function() {
         if($(this).scrollTop() > 250) {
+            $('body').addClass("padding");
             $('header.header').addClass("fixed");
             $('#goTop').fadeIn();
         } else {
+            $('body').removeClass("padding");
             $('header.header').removeClass("fixed");
             $('#goTop').fadeOut();
         }
