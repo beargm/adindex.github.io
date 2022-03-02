@@ -1,3 +1,9 @@
+$(window).on("load",function(){
+    $(".nav-page-scroll a").mPageScroll2id({
+        offset: 60
+        //highlightClass:"highlighted-menu-item"
+    });
+});
 $(function () {
 
     $(".form-1").validate({
@@ -111,12 +117,7 @@ $(function () {
         $(".mobile-menu").fadeOut();
     });
 
-    $(window).on("load",function(){
-        $(".nav-page-scroll a").mPageScroll2id({
-            offset: 60, 
-            //highlightClass:"highlighted-menu-item"
-        });
-    });
+
     $(".mobile-menu .nav-page-scroll a").click(function () {
         //e.stopPropagation();
         $(".mobile-menu").hide();
