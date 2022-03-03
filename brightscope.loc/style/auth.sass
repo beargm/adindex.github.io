@@ -40,6 +40,7 @@
   position: relative
   width: 100%
   max-width: 350px
+  margin: 0 0 50px 0
   .form-group
     margin-bottom: 10px
   .form-title
@@ -86,6 +87,46 @@
   .margin
     margin: 20px 0 35px 0
 
-@media (max-width: 1500px)
+
+
+@media (max-height: 950px)
+  .auth-page
+    min-height: 950px
   .auth-left-column
-    padding: 110px 15px 80px 30px
+    padding: 50px 15px 20px 200px
+    min-height: 950px
+    .logo
+      margin: 0 0 70px 0
+    .copyright
+      bottom: 25px
+@media (min-width: 1400px) and (max-width: 1700px)
+
+@media (max-width: 1700px)
+  .auth-left-column
+    padding: 50px 15px 20px 100px
+
+@media (max-width: 1400px)
+  .auth-left-column
+    padding: 80px 15px 80px 30px
+    .copyright
+      left: 30px
+
+@media (max-width: 1199px)
+  .auth-left-column
+    padding: 30px 15px 30px 0
+    .copyright
+      left: 0
+
+@media (max-width: 991px)
+  .auth-page
+    min-height: 10px
+  .auth-left-column
+    min-height: 10px
+    padding: 30px 0 50px 0
+
+@media (max-width: 767px)
+  .form-auth
+    max-width: 100%
+    .btn
+      margin: 0 auto 30px
+      display: block
