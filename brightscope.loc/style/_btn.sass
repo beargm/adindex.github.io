@@ -1,0 +1,93 @@
+.btn
+  background: #2a62fb
+  box-shadow: none
+  color: #fff
+  @include fonts(11px, 40px, 400)
+  position: relative
+  padding: 0 15px
+  height: 40px
+  letter-spacing: 0
+  +border-radius(3px)
+  @include transition-dr(300ms)
+  z-index: 1
+  overflow: hidden
+  text-align: center
+  border: none
+  display: inline-block
+  vertical-align: top
+  text-decoration: none !important
+  width: 100%
+  max-width: 450px
+
+  &:hover
+    background: #4571AD
+    color: #fff
+  &.btn-submit
+    padding: 0 0
+  input
+    @include transition-dr(300ms)
+    background: none
+    color: #ffffff
+    display: block
+    border: none
+    width: 100%
+  &.white
+    background: #ffffff
+    color: #000
+    border-color: #ffffff
+    input
+      color: #000
+    &:hover
+      background: #000
+      color: #fff
+      border-color: #fff
+      input
+        color: #fff
+.btn-outline
+  background: #dbdfe2
+  color: #4A5568
+  @include fonts(16px, 63px, 600)
+  position: relative
+  padding: 0 5px
+  height: 65px
+  letter-spacing: 0
+  +border-radius(50px)
+  @include transition-dr(300ms)
+  z-index: 1
+  overflow: hidden
+  text-align: center
+  border: 1px solid #4F4F4F
+  box-shadow: 0px 2px 4px rgba(39, 174, 96, 0.3)
+  display: inline-block
+  vertical-align: top
+  text-decoration: none !important
+  width: 100%
+  max-width: 250px
+  &:hover
+    background: #6FCF97
+    border-color: #6FCF97
+    color: #fff
+  &.blue
+    color: #4571AD
+    border: 2px solid #4571AD
+    +border-radius(2px)
+    background: #fff
+    box-shadow: none
+    &:hover
+      background: #4571AD
+      color: #fff
+
+
+
+
+
+
+@media (max-width: 991px)
+  .btn
+    text-transform: none
+
+
+@media (max-width: 575px)
+
+.btn.focus, .btn:focus, btn:active
+  box-shadow: none !important

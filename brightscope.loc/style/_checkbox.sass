@@ -1,0 +1,266 @@
+.checkbox
+  @extend %after-clear
+  margin: 0 0 15px 0
+  &.select-all
+    label
+      &:after
+        border-color: #CDCDCD
+    input
+      &:checked + label:after
+        border-color: $yellow
+  input
+    width: 10px
+    height: 10px
+    background: none
+    display: block
+    opacity: 0
+    float: left
+    &:checked + label:before
+      opacity: 1
+    &[checked="checked"] + label:before
+      opacity: 1
+    &[checked="checked"] + label
+      color: #000
+  input:checked + label
+    color: #000 !important
+  label
+    cursor: pointer
+    padding: 1px 0 0 15px
+    @include fonts(11px, 15px, 500)
+    color: #303030
+    margin: 0
+    position: relative
+    display: block
+    text-align: left
+    &:before
+      @include transition-dr(300ms)
+      opacity: 0
+      content: ""
+      position: absolute
+      top: 3px
+      left: 0
+      width: 10px
+      height: 10px
+      background: #303030
+      z-index: 2
+      +border-radius(0%)
+    &:after
+      content: ""
+      position: absolute
+      top: 3px
+      left: 0
+      width: 10px
+      height: 10px
+      background-color: #fff
+      border: 1px solid #303030
+      +border-radius(1px)
+      display: block
+      @include transition-dr(300ms)
+
+    a
+      font-weight: 600
+      color: #2a62fb
+      border-bottom: 1px solid transparent
+      text-decoration: none
+      &:hover
+        border-color: #2a62fb
+  label.error
+    width: 0
+    height: 0
+    overflow: hidden
+    font-size: 0
+    padding: 0
+  input.error + label + label
+    &:before
+      opacity: 0
+    &:after
+      border-color: $red
+  input.valid + label + label
+    &:before
+      opacity: 1
+    &:after
+      border-color: $yellow
+
+
+.agree-block
+  @extend %after-clear
+  input
+    width: 15px
+    height: 18px
+    background: none
+    display: block
+    opacity: 0
+    float: left
+    &:checked + label:before
+      opacity: 1
+
+  label
+    cursor: pointer
+    padding: 0 0 0 40px
+    @include fonts(18px, 23px)
+    color: #000
+    margin: 0
+    position: relative
+    display: block
+    &:before
+      @include transition-dr(300ms)
+      opacity: 0
+      content: ""
+      position: absolute
+      top: 8px
+      left: 6px
+      width: 10px
+      height: 10px
+      background: $yellow
+      z-index: 2
+      +border-radius(50%)
+    &:after
+      content: ""
+      position: absolute
+      top: 2px
+      left: 0
+      width: 22px
+      height: 22px
+      background-color: #ffffff
+      border: 1px solid $yellow
+      +border-radius(50%)
+      display: block
+    a
+      color: $yellow
+      border-bottom: 1px solid $yellow
+      text-decoration: none
+      &:hover
+        border-color: transparent
+  label.error
+    width: 0
+    height: 0
+    overflow: hidden
+    font-size: 0
+    padding: 0
+  input.error + label + label
+    &:before
+      opacity: 0
+    &:after
+      border-color: $red
+  input.valid + label + label
+    &:before
+      opacity: 1
+    &:after
+      border-color: $yellow
+.text-switch
+  display: inline-block
+  vertical-align: top
+  @include fonts(15px, 32px)
+  color: #000
+  &.left
+    margin: 0 5px 0 0
+  &.right
+    margin-left: 5px
+.checkbox-switch
+  cursor: pointer
+  display: block
+  vertical-align: top
+  position: relative
+  input
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    cursor: pointer
+    &:checked + label:after
+      background: #D0D0D0
+    &:checked + label:before
+      right: 22px
+  label
+    padding: 0 65px 0 0
+    display: block
+    @include fonts(18px, 130%, 400)
+    cursor: pointer
+    text-transform: lowercase
+    &:first-letter
+      text-transform: uppercase
+    &:after
+      width: 48px
+      height: 28px
+      +border-radius(30px)
+      cursor: pointer
+      @include transition-dr(300ms)
+      content: ""
+      position: absolute
+      top: 3px
+      right: 0
+      background: #06D6A0
+    &:before
+      z-index: 2
+      @include transition-dr(300ms)
+      content: ""
+      width: 24px
+      height: 24px
+      +border-radius(50%)
+      position: absolute
+      top: 5px 
+      right: 2px
+      background: #ffffff
+
+.radiobox
+  @extend %after-clear
+  margin: 0 0 15px 0
+  &.select-all
+    label
+      &:after
+        border-color: #CDCDCD
+    input
+      &:checked + label:after
+        border-color: $yellow
+  input
+    width: 20px
+    height: 20px
+    background: none
+    display: block
+    opacity: 0
+    float: left
+    &:checked + label:before
+      opacity: 1
+    &[checked="radio"] + label:before
+      opacity: 1
+    &[checked="radio"] + label
+      color: #000
+  input:checked + label
+    color: #000 !important
+  label
+    cursor: pointer
+    padding: 1px 0 0 30px
+    @include fonts(18px, 20px, 400)
+    color: #000
+    margin: 0
+    position: relative
+    display: block
+    text-align: left
+    text-transform: none
+    &:before
+      @include transition-dr(300ms)
+      opacity: 0
+      content: ""
+      position: absolute
+      top: 4px
+      left: 4px
+      width: 12px
+      height: 12px
+      background: #000
+      z-index: 2
+      +border-radius(50%)
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 20px
+      height: 20px
+      background-color: #fff
+      border: 1px solid #000
+      +border-radius(50%)
+      display: block
+      @include transition-dr(300ms)

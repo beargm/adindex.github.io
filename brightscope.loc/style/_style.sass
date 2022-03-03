@@ -1,0 +1,395 @@
+input:focus, a:focus, input:active, a:active
+  outline: none
+@media (min-width: 992px)
+  /* START скрол*/
+  ::-webkit-scrollbar-button
+    //background-image: url()
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar-track
+    background-color: transparent
+
+  ::-webkit-scrollbar-thumb
+    -webkit-border-radius: 0px
+    border-radius: 0px
+    background-color: #c8c8c8
+    cursor: pointer
+    background-size: 100% 100%
+
+  ::-webkit-scrollbar-thumb:hover
+    background-color: #b4b2b2
+
+
+  ::-webkit-resizer
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar
+    width: 10px
+
+
+  ::-webkit-scrollbar:horizontal
+    height: 10px
+
+  ::-webkit-scrollbar-button
+    display: none
+/* END скрол */
+.modal-open
+  padding: 0 0 !important
+
+
+*
+  &:active, &:focus
+    outline: none !important
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+
+body
+  padding: 0 0 0 0
+  font-family: 'Montserrat'
+  font-size: 18px
+  line-height: 24px
+  font-weight: 400
+  color: #000
+  background: #fff
+  position: relative
+  min-height: 100vh
+  &.padding
+    //padding: 80px 0 0 0
+@media (max-width: 991px)
+  body
+    padding: 0 0 0 0
+    &.padding
+      //padding: 60px 0 0 0
+.no-scroll
+  overflow: hidden
+
+a
+  @include transition-dr(300ms)
+
+h1, .h1, h2, .h2
+  color: #1E1E1E
+  @include fonts(36px, 38px, 800)
+  letter-spacing: 0
+  text-transform: none
+  margin-bottom: 25px
+  position: relative
+  &.line
+    padding: 35px 0 0 0
+    &:before
+      content: ""
+      background: linear-gradient(66.68deg, #FF82BE -40.28%, #FF82BE 102.81%)
+      +border-radius(6px)
+      width: 80px
+      height: 3px
+      position: absolute
+      top: 0
+      left: 0
+
+
+
+@media (max-width: 991px)
+  h1, .h1, h2, .h2
+    margin-bottom: 25px
+    @include fonts(30px, 35px, 800)
+    padding: 15px 0 0 0
+
+@media (max-width: 575px)
+  h1, .h1, h2, .h2
+    margin-bottom: 25px
+    @include fonts(28px, 32px, 800)
+.clearfix
+  clear: both
+
+
+
+.form-control::-webkit-input-placeholder
+  color: #aaaaaa !important
+
+.form-control::-moz-placeholder
+  color: #aaaaaa !important
+
+.form-control:-ms-input-placeholder
+  color: #aaaaaa !important
+
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+strong, b
+  font-weight: 700
+  color: #000
+.section-text
+  padding: 155px 0
+  .text-formatted
+    margin-bottom: 60px
+    &:last-child
+      //margin-bottom: 0
+@media (max-width: 991px)
+.section-text
+  padding: 50px 0 20px 0
+  .text-formatted
+    margin-bottom: 30px
+
+
+
+.text-formatted
+  @include fonts(18px, 36px, 300)
+  position: relative
+  color: #4F4F4F
+
+  a
+    @include transition-dr(300ms)
+
+  strong, b
+    font-weight: 700
+    color: #000
+  p
+    @include fonts(18px, 36px, 300)
+    position: relative
+    color: #4F4F4F
+    margin-bottom: 15px
+
+  a
+    border-bottom: 1px solid #000
+    text-decoration: none !important
+    color: #000
+    &:hover
+      color: #000
+      border-color: transparent
+  ul
+    margin-bottom: 15px
+    li
+      position: relative
+      padding: 0 0 0 20px
+      @include fonts(14px, 17px, 400)
+      margin-bottom: 5px
+      &:before
+        content: ""
+        width: 3px
+        height: 3px
+        +border-radius(50%)
+        position: absolute
+        top: 6px
+        left: 0
+        background: #000
+
+
+
+.margin-15
+  margin-left: -15px
+  margin-right: -15px
+
+
+.form-control:focus, .form-control:active
+  box-shadow: none !important
+  outline: none !important
+.form-group
+  margin-bottom: 10px
+input.form-control
+  border: none
+  background: #f0f2f7 !important
+  color: #303030 !important
+  @include fonts(11px, 40px, 400)
+  height: 40px
+  +border-radius(3px)
+  padding: 0 10px
+  &:focus, &:active
+    box-shadow: none !important
+    color: #000
+
+textarea.form-control
+  border: none
+  background: #f0f2f7 !important
+  color: #aaaaaa !important
+  @include fonts(11px, 40px, 400)
+  height: 40px
+  +border-radius(3px)
+  padding: 0 10px
+  min-height: 85px
+  max-height: 150px
+  overflow: hidden
+  resize: vertical
+  &:focus, &:active
+    box-shadow: none !important
+    color: #000
+label.error
+  color: $red
+  @include fonts(12px, 14px)
+.form-group
+  margin-bottom: 15px
+  .label
+    color: #000
+    @include fonts(11px, 13px, 400)
+    margin-bottom: 5px
+    span
+      color: $red
+@media (max-width: 991px)
+  input.form-control
+
+
+.slick-slider
+  opacity: 0
+  &.slick-initialized
+    opacity: 1
+  &.slick-dotted
+    margin: 0 0 70px 0
+  .slick-dots
+    text-align: center
+    font-size: 0
+    line-height: 0
+    margin: 0 0 0 0
+    padding: 0 0 0 0
+    position: absolute
+    bottom: -68px
+    left: 0
+    right: 0
+    li
+      display: inline-block
+      vertical-align: top
+      &.slick-active
+        button
+          background: #11E44C
+          opacity: 1
+
+      button
+        font-size: 0
+        padding: 0
+        width: 8px
+        height: 8px
+        +border-radius(50%)
+        margin: 0 5px
+        background: #033BD8
+        opacity: 1
+        @include transition-dr(300ms)
+        border: none
+        cursor: pointer
+        &:hover
+          background: $color1
+          opacity: 1
+        &:before
+          display: none
+  &.arrow-bottom
+    .slick-arrow
+      bottom: 0
+      top: auto
+      margin: 0 0 0 0
+  .slick-arrow
+    border: none
+    +border-radius(50%)
+    cursor: pointer
+    z-index: 50
+    width: 64px
+    height: 64px
+    background: #fff
+    padding: 0
+    font-size: 0
+    position: absolute
+    top: 50%
+    @include transition-dr(300ms)
+    margin: -32px 0 0 0
+    &:hover
+      background: #033BD8
+      &:before
+        opacity: 0
+      &:after
+        opacity: 1
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: url(../img/slider-arrow.svg) center center no-repeat
+      @include transition-dr(300ms)
+    &:after
+      opacity: 0
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      height: 100% 
+      background: url(../img/slider-arrow-hover.svg) center center no-repeat
+      width: 100%
+      overflow: hidden
+      @include transition-dr(300ms)
+    &.slick-prev
+      left: -110px
+      right: auto
+      &:before, &:after
+        left: auto
+        right: 0
+        transform: rotate(180deg)
+    &.slick-next
+      right: -110px
+@media (max-width: 1400px)
+  .slick-slider
+    .slick-arrow
+      display: none !important
+@media (max-width: 991px)
+  .slick-slider
+    margin: 0 0 50px
+    &.slick-dotted
+      margin: 0 0 30px 0
+    .slick-dots
+      bottom: -30px
+      display: block !important
+
+    .slick-arrow
+
+
+
+.nav-tabs
+  @extend %after-clear
+  border: 2px solid #F1274C
+  display: inline-block
+  vertical-align: top
+  +border-radius(10px)
+  overflow: hidden
+  .nav-item
+    margin: 0 0
+    float: left
+  .nav-link
+    min-width: 148px
+    text-align: center
+    color: #464646
+    text-decoration: none !important
+    background: #fff
+    +border-radius(0)
+    display: block
+    @include fonts(16px, 52px, 600)
+    padding: 0 5px
+    position: relative
+    border: none
+    &.active
+      background: #F1274C
+      color: #fff
+
+.scroll-up
+  @include transition-dr(300ms)
+  position: fixed
+  width: 40px
+  height: 40px
+  +border-radius(5px)
+  background: #4571AD url("../img/scroll.svg") center center no-repeat
+  -webkit-background-size: 12px auto
+  background-size: 12px auto
+  transform: rotate(90deg)
+  bottom: 30px
+  right: 30px
+  cursor: pointer
+  z-index: 400
+  &:hover
+    background-color: $black
+
+
+@media (max-width: 767px)
+  .scroll-up
+    right: 15px
+    bottom: 30px

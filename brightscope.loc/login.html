@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/form-styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="libs/aos/aos.css">
+
+
+
+
+    <link rel="stylesheet" href="fonts/montserrat/stylesheet.css">
+
+
+    <link rel="stylesheet" href="style/auth.css">
+
+    <link rel="stylesheet" href="style/index.css">
+    <title></title>
+</head>
+<body>
+
+    <div class="auth-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 col-lg-4">
+                    <div class="auth-left-column">
+
+                        <div class="logo">
+                            <a href="#">
+                                <img src="./img/logo.png" alt="" class="img-fluid lazy">
+                            </a>
+                        </div>
+
+                        <form action="" class="form-auth form-login">
+                            <div class="form-title">Login</div>
+                            <div class="form-text">Bitte einfach die unten angeführten Felder ausfüllen.</div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Firmen E-Mail" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Passwort" required="required">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="left-right">
+                                    <div class="left">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="agree">
+                                            <label for="agree">Merken</label>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <a href="#" class="link">Passwort vergessen?</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                    <span class="btn btn-submit">
+                        <input type="submit" value="LOGIN">
+                    </span>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-text text-center">
+                                    Sie haben noch keinen Account? <a href="#">Registrieren</a>
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <div class="copyright">Copyright 2022, <span>Brightscope</span></div>
+
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-8 auth-bg-column">
+                    <div class="auth-bg"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- start Заполнить анкету -->
+    <div class="modal fade" id="modal-feedback" style="display: none" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="modal-title">
+                        Консультация
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-feedback-box">
+
+                        <div class="text">
+                            Заполните ниже формы и мы свяжемся с вами в ближайшее время для консультации
+                        </div>
+
+                        <form action="" class="modal-form form-1">
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="Ваше имя" name="name" required="required">
+                            </div>
+                            <div class="form-group">
+                                <div class="input-tell">
+                                    <input type="tel" class="form-control" placeholder="" name="tel" required="required">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" name="email" required="required">
+                            </div>
+                            <div class="form-group">
+                                <div class="text-center">
+                                    <span class="btn btn-submit">
+                                        <input type="submit" value="Отправить">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="modal-bottom">
+                            <div class="text">
+                                Или свяжитесь с нами по телефону:
+                            </div>
+                            <div class="tell"><a href="tel:+38 (098) 42 15 100">+38 (098) 42 15 100</a></div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Заполнить анкету -->
+
+    <!-- start Заполнить анкету -->
+    <div class="modal fade" id="modal-feedback2" style="display: none" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="modal-title">
+                        Оптимальная
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-feedback-box">
+
+                        <div class="text">
+                            Заполните ниже формы и мы свяжемся с вами в ближайшее время для консультации
+                        </div>
+
+                        <form action="" class="modal-form form-2">
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="Ваше имя" name="name" required="required">
+                            </div>
+                            <div class="form-group">
+                                <div class="input-tell">
+                                    <input type="tel" class="form-control" placeholder="" name="tel" required="required">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" name="email" required="required">
+                            </div>
+                            <div class="form-group">
+                                <div class="text-center">
+                                    <span class="btn btn-submit">
+                                        <input type="submit" value="Отправить">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="modal-bottom">
+                            <div class="text">
+                                Или свяжитесь с нами по телефону:
+                            </div>
+                            <div class="tell"><a href="tel:+38 (098) 42 15 100">+38 (098) 42 15 100</a></div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Заполнить анкету -->
+
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/jquery/jquery-migrate-3.0.0.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/lazy_load/jquery.lazy.min.js"></script>
+
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+<!--    <script src="libs/form-styler/jquery.formstyler.min.js"></script>-->
+    <script src="libs/input_mask/jquery.inputmask.min.js"></script>
+    <script src="libs/jquery/jquery.validate.min.js"></script>
+    <script src="libs/page-scroll/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
+
+    <script src="js/common.js"></script>
+
+    <div class="scroll-up" id="goTop"></div>
+
+
+</body>
+</html>
