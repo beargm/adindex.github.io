@@ -1,0 +1,321 @@
+@import _settings
+
+.nav-dashboard
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  width: 160px
+  border-right: 1px solid #edeef0
+  background: #fff
+  padding: 30px 0 170px 0
+  .logo-nav
+    width: 75px
+    height: 75px
+    +border-radius(50%)
+    background: #fff
+    border: 1px solid #f2f2f2
+    margin: 0 auto 90px
+  .link
+    width: 50px
+    height: 50px
+    margin: 0 auto 50px
+    +border-radius(50%)
+    overflow: hidden
+    &.active
+      background: #e9efff 
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 100%
+  .back
+    background: #fff
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 150px
+    border-top: 2px solid #f7f8fb
+    display: flex
+    align-items: center
+    justify-content: center
+.dashboard-header
+  height: 120px
+  border-bottom: 1px solid #e1e1e3
+  position: absolute
+  top: 0
+  left: 160px
+  right: 0
+  padding: 0 70px 0 0
+  .user
+    margin: 50px 0 0 0
+    float: right
+    @include fonts(15px, 15px)
+    color: #898989
+    padding: 0 15px 0 0
+    background: url(../img/user.png) right 3px no-repeat
+    -webkit-background-size: 10px auto
+    background-size: 10px auto
+.dashboard-box
+  padding: 0 0 0 145px
+  min-height: 600px 
+.dashboard-content
+  padding: 160px 55px 50px 70px
+  position: relative
+  .h2
+    @include fonts(20px, 24px, 600)
+    color: #000000
+  .table-btn
+    .btn
+      margin: 25px 0 0 0
+      max-width: 200px
+      font-weight: 600 
+
+.title-search
+  position: relative
+  padding: 0 160px 0 0
+  .h2
+
+
+  .form-search
+    position: absolute
+    top: 0
+    right: 0
+.form-search
+  width: 140px
+  padding: 0 0 0 25px
+  position: relative
+  height: 25px
+  .input
+    height: 25px
+    border: none
+    border-bottom: 1px solid #e1e1e3
+    @include fonts(12px, 24px)
+    background: none
+    width: 100%
+  .submit
+    background: url(../img/search.png) center no-repeat
+    -webkit-background-size: 12px auto
+    background-size: 12px auto 
+    height: 25px
+    width: 25px
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 2
+    cursor: pointer
+    input
+      font-size: 0
+      opacity: 0
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+
+.table-block
+  background: #fff
+  border: 1px solid #e3e3e4
+  .no-res
+    text-align: center
+    @include fonts(15px, 17px)
+    color: #000
+    background: #fff
+    padding: 20px 15px
+  table
+    border-collapse: collapse
+    width: 100%
+  tr
+    &:first-child
+      td
+        border-bottom: 2px solid #d0d0d0
+    &:last-child
+      td
+        //border-bottom: 1px solid #e3e3e4
+  td
+    text-align: right
+    padding: 25px 10px
+    vertical-align: middle
+    width: 10%
+    border-bottom: 1px solid #f3f3f3
+    &:first-child
+      .title
+        text-align: left
+    &:last-child
+      text-align: right
+      padding-right: 35px
+    &:nth-child(1)
+      width: 17%
+
+    &:nth-child(2)
+      width: 11%
+    &:nth-child(3)
+      width: 11%
+    &:nth-child(4)
+      width: 11%
+    &:nth-child(5)
+      width: 11%
+    &:nth-child(6)
+      width: 11%
+    &:nth-child(7)
+      width: 11%
+    &:nth-child(8)
+      width: 11%
+  .title
+    text-transform: uppercase
+    color: #959595
+    @include fonts(12px, 14px, 600)
+    text-align: right
+  .checkbox
+    float: left
+    margin: 0 20px 0 0
+    &.mt
+      margin-top: 8px
+      margin-right: 0
+  .text
+    @include fonts(15px, 17px, 400)
+  .user
+    @extend %after-clear
+    margin: 0 0 0 35px
+    .img
+      width: 35px
+      height: 35px
+      float: left
+      img
+        width: 100%
+        height: 100%
+        +border-radius(500%)
+        overflow: hidden
+    .name
+      text-align: left
+      padding: 8px 0 0 0
+      margin: 0 0 0 60px
+      @include fonts(15px, 18px, 600)
+  .status
+    padding: 0 20px 0 0
+    text-align: right
+    @include fonts(15px, 17px)
+    position: relative
+    &:after
+      content: ""
+      +border-radius(50%)
+      width: 12px
+      height: 12px
+      +border-radius(50%)
+      position: absolute
+      top: 2px
+      right: 0
+      background: #3aaa35
+    &.st-2
+      &:after
+        background: #f28d4f
+    &.st-3
+      &:after
+        background: #e30613
+  .icon-m
+    cursor: pointer
+    display: inline-block
+    vertical-align: top
+    width: 30px
+    text-align: right
+    div
+      font-size: 0
+      line-height: 0
+
+    span
+      background: #000
+      display: inline-block
+      vertical-align: top
+      width: 4px
+      height: 4px
+      +border-radius(50%)
+      margin: 0 0 1px 0
+  .link
+    text-decoration: none
+    color: #2a62fb
+    @include fonts(15px, 17px, 600)
+    border-bottom: 1px solid #2a62fb
+    &:hover
+      border-color: transparent
+
+@media (max-width: 1400px)
+  .dashboard-header
+    padding: 0 15px 0 0
+    left: 80px
+  .nav-dashboard
+    width: 80px
+    padding: 15px 0 90px 0
+    .back
+      height: 70px
+      img
+        max-width: 35px
+    .logo-nav
+      width: 50px
+      height: 50px
+      margin: 0 auto 45px
+  .dashboard-box
+    padding: 0 0 0 65px
+  .dashboard-content
+    padding: 160px 0px 50px 15px
+  .table-block
+    td
+      &:nth-child(1)
+        width: 15%
+    .user
+      .name
+        padding: 3px 0 0 0
+
+@media (max-width: 1199px)
+  .dashboard-content
+  .table-block
+    .checkbox
+      margin: 0 10px 0 0
+      &.mt
+        margin-top: 8px
+    .user
+      margin: 0 0 0 20px
+      .name
+        margin: 0 0 0 45px
+        font-size: 12px
+    .text
+      font-size: 12px
+      line-height: 15px
+    .link
+      font-size: 12px
+      line-height: 15px
+    .status
+      font-size: 12px
+      line-height: 15px
+
+@media (max-width: 1100px)
+  .table-block
+    margin: 0 0 30px 0
+    .table-box
+      overflow: hidden
+      overflow-x: auto
+      padding: 0 0 15px 0
+
+    table
+      table-layout: fixed
+      min-width: 1000px
+  .dashboard-content
+    .table-btn
+      .btn
+        margin-top: 0
+
+@media (max-width: 991px)
+  .dashboard-header
+    height: 80px
+    .user
+      margin: 32px 0 0 0
+  .dashboard-content
+    padding: 120px 0px 50px 15px
+
+@media (max-width: 767px)
+  .title-search
+    padding: 0 0
+    .form-search
+      position: relative
+      width: 100%
+      margin: 0 0 30px 0

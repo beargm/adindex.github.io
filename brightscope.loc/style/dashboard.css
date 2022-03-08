@@ -1,0 +1,346 @@
+.table-block .user:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both; }
+
+.nav-dashboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 160px;
+  border-right: 1px solid #edeef0;
+  background: #fff;
+  padding: 30px 0 170px 0; }
+  .nav-dashboard .logo-nav {
+    width: 75px;
+    height: 75px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    margin: 0 auto 90px; }
+  .nav-dashboard .link {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden; }
+    .nav-dashboard .link.active {
+      background: #e9efff; }
+    .nav-dashboard .link a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%; }
+  .nav-dashboard .back {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    border-top: 2px solid #f7f8fb;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.dashboard-header {
+  height: 120px;
+  border-bottom: 1px solid #e1e1e3;
+  position: absolute;
+  top: 0;
+  left: 160px;
+  right: 0;
+  padding: 0 70px 0 0; }
+  .dashboard-header .user {
+    margin: 50px 0 0 0;
+    float: right;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #898989;
+    padding: 0 15px 0 0;
+    background: url(../img/user.png) right 3px no-repeat;
+    -webkit-background-size: 10px auto;
+    background-size: 10px auto; }
+
+.dashboard-box {
+  padding: 0 0 0 145px;
+  min-height: 600px; }
+
+.dashboard-content {
+  padding: 160px 55px 50px 70px;
+  position: relative; }
+  .dashboard-content .h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #000000; }
+  .dashboard-content .table-btn .btn {
+    margin: 25px 0 0 0;
+    max-width: 200px;
+    font-weight: 600; }
+
+.title-search {
+  position: relative;
+  padding: 0 160px 0 0; }
+  .title-search .form-search {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.form-search {
+  width: 140px;
+  padding: 0 0 0 25px;
+  position: relative;
+  height: 25px; }
+  .form-search .input {
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #e1e1e3;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    background: none;
+    width: 100%; }
+  .form-search .submit {
+    background: url(../img/search.png) center no-repeat;
+    -webkit-background-size: 12px auto;
+    background-size: 12px auto;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    cursor: pointer; }
+    .form-search .submit input {
+      font-size: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+.table-block {
+  background: #fff;
+  border: 1px solid #e3e3e4; }
+  .table-block .no-res {
+    text-align: center;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #000;
+    background: #fff;
+    padding: 20px 15px; }
+  .table-block table {
+    border-collapse: collapse;
+    width: 100%; }
+  .table-block tr:first-child td {
+    border-bottom: 2px solid #d0d0d0; }
+  .table-block td {
+    text-align: right;
+    padding: 25px 10px;
+    vertical-align: middle;
+    width: 10%;
+    border-bottom: 1px solid #f3f3f3; }
+    .table-block td:first-child .title {
+      text-align: left; }
+    .table-block td:last-child {
+      text-align: right;
+      padding-right: 35px; }
+    .table-block td:nth-child(1) {
+      width: 17%; }
+    .table-block td:nth-child(2) {
+      width: 11%; }
+    .table-block td:nth-child(3) {
+      width: 11%; }
+    .table-block td:nth-child(4) {
+      width: 11%; }
+    .table-block td:nth-child(5) {
+      width: 11%; }
+    .table-block td:nth-child(6) {
+      width: 11%; }
+    .table-block td:nth-child(7) {
+      width: 11%; }
+    .table-block td:nth-child(8) {
+      width: 11%; }
+  .table-block .title {
+    text-transform: uppercase;
+    color: #959595;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    text-align: right; }
+  .table-block .checkbox {
+    float: left;
+    margin: 0 20px 0 0; }
+    .table-block .checkbox.mt {
+      margin-top: 8px;
+      margin-right: 0; }
+  .table-block .text {
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400; }
+  .table-block .user {
+    margin: 0 0 0 35px; }
+    .table-block .user .img {
+      width: 35px;
+      height: 35px;
+      float: left; }
+      .table-block .user .img img {
+        width: 100%;
+        height: 100%;
+        -webkit-border-radius: 500%;
+        -moz-border-radius: 500%;
+        -ms-border-radius: 500%;
+        border-radius: 500%;
+        overflow: hidden; }
+    .table-block .user .name {
+      text-align: left;
+      padding: 8px 0 0 0;
+      margin: 0 0 0 60px;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 600; }
+  .table-block .status {
+    padding: 0 20px 0 0;
+    text-align: right;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+    position: relative; }
+    .table-block .status:after {
+      content: "";
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      right: 0;
+      background: #3aaa35; }
+    .table-block .status.st-2:after {
+      background: #f28d4f; }
+    .table-block .status.st-3:after {
+      background: #e30613; }
+  .table-block .icon-m {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    text-align: right; }
+    .table-block .icon-m div {
+      font-size: 0;
+      line-height: 0; }
+    .table-block .icon-m span {
+      background: #000;
+      display: inline-block;
+      vertical-align: top;
+      width: 4px;
+      height: 4px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      margin: 0 0 1px 0; }
+  .table-block .link {
+    text-decoration: none;
+    color: #2a62fb;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 600;
+    border-bottom: 1px solid #2a62fb; }
+    .table-block .link:hover {
+      border-color: transparent; }
+
+@media (max-width: 1400px) {
+  .dashboard-header {
+    padding: 0 15px 0 0;
+    left: 80px; }
+
+  .nav-dashboard {
+    width: 80px;
+    padding: 15px 0 90px 0; }
+    .nav-dashboard .back {
+      height: 70px; }
+      .nav-dashboard .back img {
+        max-width: 35px; }
+    .nav-dashboard .logo-nav {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 45px; }
+
+  .dashboard-box {
+    padding: 0 0 0 65px; }
+
+  .dashboard-content {
+    padding: 160px 0px 50px 15px; }
+
+  .table-block td:nth-child(1) {
+    width: 15%; }
+  .table-block .user .name {
+    padding: 3px 0 0 0; } }
+@media (max-width: 1199px) {
+  .table-block .checkbox {
+    margin: 0 10px 0 0; }
+    .table-block .checkbox.mt {
+      margin-top: 8px; }
+  .table-block .user {
+    margin: 0 0 0 20px; }
+    .table-block .user .name {
+      margin: 0 0 0 45px;
+      font-size: 12px; }
+  .table-block .text {
+    font-size: 12px;
+    line-height: 15px; }
+  .table-block .link {
+    font-size: 12px;
+    line-height: 15px; }
+  .table-block .status {
+    font-size: 12px;
+    line-height: 15px; } }
+@media (max-width: 1100px) {
+  .table-block {
+    margin: 0 0 30px 0; }
+    .table-block .table-box {
+      overflow: hidden;
+      overflow-x: auto;
+      padding: 0 0 15px 0; }
+    .table-block table {
+      table-layout: fixed;
+      min-width: 1000px; }
+
+  .dashboard-content .table-btn .btn {
+    margin-top: 0; } }
+@media (max-width: 991px) {
+  .dashboard-header {
+    height: 80px; }
+    .dashboard-header .user {
+      margin: 32px 0 0 0; }
+
+  .dashboard-content {
+    padding: 120px 0px 50px 15px; } }
+@media (max-width: 767px) {
+  .title-search {
+    padding: 0 0; }
+    .title-search .form-search {
+      position: relative;
+      width: 100%;
+      margin: 0 0 30px 0; } }
+
+/*# sourceMappingURL=dashboard.css.map */
