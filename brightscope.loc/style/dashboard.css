@@ -31,14 +31,36 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-    overflow: hidden; }
-    .nav-dashboard .link.active {
+    overflow: hidden;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms; }
+    .nav-dashboard .link.active, .nav-dashboard .link:hover {
       background: #e9efff; }
+      .nav-dashboard .link.active svg path, .nav-dashboard .link:hover svg path {
+        fill: #2a62fb !important; }
     .nav-dashboard .link a {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100%; }
+    .nav-dashboard .link svg {
+      width: 27px;
+      height: 23px;
+      display: block;
+      max-width: 100%;
+      max-height: 100%; }
+      .nav-dashboard .link svg path {
+        width: 100%;
+        display: block;
+        fill: #c6c6c6 !important;
+        -webkit-transition-duration: 300ms;
+        -moz-transition-duration: 300ms;
+        -ms-transition-duration: 300ms;
+        -o-transition-duration: 300ms;
+        transition-duration: 300ms; }
   .nav-dashboard .back {
     background: #fff;
     position: absolute;
@@ -342,5 +364,35 @@
       position: relative;
       width: 100%;
       margin: 0 0 30px 0; } }
+@media (max-width: 575px) {
+  .nav-dashboard {
+    position: relative;
+    width: auto;
+    padding: 15px 0 15px 0;
+    margin: 0 -15px; }
+    .nav-dashboard .back {
+      display: none; }
+    .nav-dashboard .logo-nav {
+      margin: 0 auto 25px; }
+    .nav-dashboard .list-link {
+      font-size: 0;
+      text-align: center; }
+    .nav-dashboard .link {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 10px 0; }
+
+  .dashboard-box {
+    padding: 60px 0 0 0; }
+
+  .dashboard-header {
+    height: 60px;
+    left: 0;
+    padding: 0 15px; }
+    .dashboard-header .user {
+      margin: 24px 0 0 0; }
+
+  .dashboard-content {
+    padding: 20px 0 50px 0; } }
 
 /*# sourceMappingURL=dashboard.css.map */

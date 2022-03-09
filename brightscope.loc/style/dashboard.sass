@@ -22,13 +22,28 @@
     margin: 0 auto 50px
     +border-radius(50%)
     overflow: hidden
-    &.active
-      background: #e9efff 
+    @include transition-dr(300ms)
+    &.active, &:hover
+      background: #e9efff
+      svg
+        path
+          fill: #2a62fb !important
     a
       display: flex
       align-items: center
       justify-content: center
       height: 100%
+    svg
+      width: 27px
+      height: 23px
+      display: block
+      max-width: 100%
+      max-height: 100%
+      path
+        width: 100%
+        display: block
+        fill: #c6c6c6 !important
+        @include transition-dr(300ms)
   .back
     background: #fff
     position: absolute
@@ -59,7 +74,7 @@
     background-size: 10px auto
 .dashboard-box
   padding: 0 0 0 145px
-  min-height: 600px 
+  min-height: 600px
 .dashboard-content
   padding: 160px 55px 50px 70px
   position: relative
@@ -319,3 +334,32 @@
       position: relative
       width: 100%
       margin: 0 0 30px 0
+
+@media (max-width: 575px)
+  .nav-dashboard
+    position: relative
+    width: auto
+    padding: 15px 0 15px 0
+    margin: 0 -15px 
+    .back
+      display: none
+    .logo-nav
+      margin: 0 auto 25px
+    .list-link
+      font-size: 0
+      text-align: center
+
+    .link
+      display: inline-block
+      vertical-align: top
+      margin: 0 10px 0
+  .dashboard-box
+    padding: 60px 0 0 0
+  .dashboard-header
+    height: 60px
+    left: 0
+    padding: 0 15px
+    .user
+      margin: 24px 0 0 0
+  .dashboard-content
+    padding: 20px 0 50px 0
