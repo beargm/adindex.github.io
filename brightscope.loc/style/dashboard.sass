@@ -132,23 +132,32 @@
 .table-block
   background: #fff
   border: 1px solid #e3e3e4
+  .mob-title
+    display: none
+  .table
+    display: table
+    margin: 0 0
+  .tr
+    display: table-row
+  .td
+    display: table-cell
   .no-res
     text-align: center
     @include fonts(15px, 17px)
     color: #000
     background: #fff
     padding: 20px 15px
-  table
+  .table
     border-collapse: collapse
     width: 100%
-  tr
+  .tr
     &:first-child
-      td
+      .td
         border-bottom: 2px solid #d0d0d0
     &:last-child
-      td
+      .td
         //border-bottom: 1px solid #e3e3e4
-  td
+  .td
     text-align: right
     padding: 25px 10px
     vertical-align: middle
@@ -204,9 +213,12 @@
         overflow: hidden
     .name
       text-align: left
-      padding: 8px 0 0 0
+      padding: 0 0 0 0
       margin: 0 0 0 60px
       @include fonts(15px, 18px, 600)
+      display: flex
+      align-items: center
+      min-height: 35px
   .status
     padding: 0 20px 0 0
     text-align: right
@@ -274,7 +286,7 @@
   .dashboard-content
     padding: 160px 0px 50px 15px
   .table-block
-    td
+    .td
       &:nth-child(1)
         width: 15%
     .user
@@ -307,13 +319,8 @@
   .table-block
     margin: 0 0 30px 0
     .table-box
-      overflow: hidden
-      overflow-x: auto
-      padding: 0 0 15px 0
+    .table
 
-    table
-      table-layout: fixed
-      min-width: 1000px
   .dashboard-content
     .table-btn
       .btn
@@ -326,7 +333,30 @@
       margin: 32px 0 0 0
   .dashboard-content
     padding: 120px 0px 50px 15px
-
+  .table-block
+    background: none
+    border: none
+    .status
+      text-align: left
+      display: inline-block
+      vertical-align: top
+    .table
+      display: block
+      .tr-title
+        display: none !important
+      .tr
+        background: #fff
+        display: block
+        margin: 0 0 30px 0
+      .td
+        padding: 10px 10px
+        display: block
+        width: 100%
+        text-align: left
+    .mob-title
+      display: block
+      @include fonts(16px, 18px, 600)
+      margin-bottom: 5px
 @media (max-width: 767px)
   .title-search
     padding: 0 0
@@ -340,7 +370,7 @@
     position: relative
     width: auto
     padding: 15px 0 15px 0
-    margin: 0 -15px 
+    margin: 0 -15px
     .back
       display: none
     .logo-nav

@@ -8,6 +8,12 @@
     input
       &:checked + label:after
         border-color: $yellow
+  &.no-active
+    label
+      &:after
+        background: #959595 url(../img/check.svg) center no-repeat
+        -webkit-background-size: 7px auto
+        background-size: 7px auto
   input
     width: 10px
     height: 10px
@@ -41,7 +47,9 @@
       left: 0
       width: 10px
       height: 10px
-      background: #303030
+      background: #2a62fb url(../img/check.svg) center no-repeat
+      -webkit-background-size: 7px auto
+      background-size: 7px auto 
       z-index: 2
       +border-radius(0%)
     &:after

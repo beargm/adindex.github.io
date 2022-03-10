@@ -739,6 +739,10 @@ label.error {
     border-color: #CDCDCD; }
   .checkbox.select-all input:checked + label:after {
     border-color: #B89E7F; }
+  .checkbox.no-active label:after {
+    background: #959595 url(../img/check.svg) center no-repeat;
+    -webkit-background-size: 7px auto;
+    background-size: 7px auto; }
   .checkbox input {
     width: 10px;
     height: 10px;
@@ -778,7 +782,9 @@ label.error {
       left: 0;
       width: 10px;
       height: 10px;
-      background: #303030;
+      background: #2a62fb url(../img/check.svg) center no-repeat;
+      -webkit-background-size: 7px auto;
+      background-size: 7px auto;
       z-index: 2;
       -webkit-border-radius: 0%;
       -moz-border-radius: 0%;
