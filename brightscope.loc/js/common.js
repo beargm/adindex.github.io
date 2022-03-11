@@ -99,23 +99,25 @@ $(function () {
         }
     });
 
+    $(".select-hd").styler();
+
     //$(".accordion-block .accordion-item:first-child .accordion-menu-title").addClass("active");
     //$(".accordion-block .accordion-item:first-child .accordion-sub-block").show();
-    $(".accordion-block .accordion-menu-title").click(function(e){
-        e.stopPropagation();
-        if($(this).hasClass("active")){
-            $(this).next().slideUp();
-            $(this).removeClass("active");
-
-        } else {
-
-            $(".accordion-block .accordion-menu-title").removeClass("active");
-            $(".accordion-sub-block").slideUp();
-
-            $(this).next().slideDown();
-            $(this).addClass("active");
-        }
-    });
+    // $(".accordion-block .accordion-menu-title").click(function(e){
+    //     e.stopPropagation();
+    //     if($(this).hasClass("active")){
+    //         $(this).next().slideUp();
+    //         $(this).removeClass("active");
+    //
+    //     } else {
+    //
+    //         $(".accordion-block .accordion-menu-title").removeClass("active");
+    //         $(".accordion-sub-block").slideUp();
+    //
+    //         $(this).next().slideDown();
+    //         $(this).addClass("active");
+    //     }
+    // });
 
     $("input[type=tel], input[type=phone]").inputmask({
         mask : "+38(999) 999-99-99",

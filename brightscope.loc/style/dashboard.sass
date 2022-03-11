@@ -62,16 +62,30 @@
   top: 0
   left: 160px
   right: 0
-  padding: 0 70px 0 0
-  .user
+  z-index: 2
+  padding: 0 70px 0 75px
+  @extend %after-clear
+  .jq-selectbox
+    margin: 40px 0 0 0
+    float: left
+    background: none
+    border: none
+    .jq-selectbox__select
+      .jq-selectbox__select-text
+        padding-left: 0
+        @include fonts(20px, 40px, 600)
+  .header-user
     margin: 50px 0 0 0
     float: right
-    @include fonts(15px, 15px)
-    color: #898989
-    padding: 0 15px 0 0
-    background: url(../img/user.png) right 3px no-repeat
-    -webkit-background-size: 10px auto
-    background-size: 10px auto
+.header-user
+  display: inline-block
+  vertical-align: top
+  @include fonts(15px, 15px)
+  color: #898989
+  padding: 0 15px 0 0
+  background: url(../img/user.png) right 3px no-repeat
+  -webkit-background-size: 10px auto
+  background-size: 10px auto
 .dashboard-box
   padding: 0 0 0 145px
   min-height: 600px
@@ -82,17 +96,20 @@
     @include fonts(20px, 24px, 600)
     color: #000000
   .table-btn
-    .btn
-      margin: 25px 0 0 0
+    font-size: 0
+    margin: 25px 0 0 0
+    .btn, .btn-outline
+      margin: 0 0 0 0
       max-width: 200px
-      font-weight: 600 
+      font-weight: 600
+    .btn-outline
+      margin: 0 20px 0 0
 
 .title-search
   position: relative
   padding: 0 160px 0 0
-  .h2
-
-
+  min-height: 24px
+  margin-bottom: 25px
   .form-search
     position: absolute
     top: 0
@@ -268,7 +285,7 @@
 
 @media (max-width: 1400px)
   .dashboard-header
-    padding: 0 15px 0 0
+    padding: 0 15px 0 15px
     left: 80px
   .nav-dashboard
     width: 80px
@@ -327,12 +344,22 @@
         margin-top: 0
 
 @media (max-width: 991px)
+  .nav-dashboard
+    display: none
   .dashboard-header
     height: 80px
-    .user
+    display: none
+    .jq-selectbox
+      margin: 22px 0 0 0
+      .jq-selectbox__select
+        .jq-selectbox__select-text
+          @include fonts(15px, 35px, 500)
+    .header-user
       margin: 32px 0 0 0
+  .dashboard-box
+    padding: 0 0
   .dashboard-content
-    padding: 120px 0px 50px 15px
+    padding: 80px 0 50px 0
   .table-block
     background: none
     border: none
@@ -358,6 +385,9 @@
       @include fonts(16px, 18px, 600)
       margin-bottom: 5px
 @media (max-width: 767px)
+  .dashboard-header
+    .jq-selectbox
+      display: none !important
   .title-search
     padding: 0 0
     .form-search
@@ -366,30 +396,115 @@
       margin: 0 0 30px 0
 
 @media (max-width: 575px)
-  .nav-dashboard
-    position: relative
-    width: auto
-    padding: 15px 0 15px 0
-    margin: 0 -15px
-    .back
-      display: none
-    .logo-nav
-      margin: 0 auto 25px
-    .list-link
-      font-size: 0
-      text-align: center
-
-    .link
-      display: inline-block
-      vertical-align: top
-      margin: 0 10px 0
+  //.nav-dashboard
+  //  position: relative
+  //  width: auto
+  //  padding: 15px 0 15px 0
+  //  margin: 0 -15px
+  //  .back
+  //    display: none
+  //  .logo-nav
+  //    margin: 0 auto 25px
+  //  .list-link
+  //    font-size: 0
+  //    text-align: center
+  //
+  //  .link
+  //    display: inline-block
+  //    vertical-align: top
+  //    margin: 0 10px 0
   .dashboard-box
     padding: 60px 0 0 0
   .dashboard-header
     height: 60px
     left: 0
     padding: 0 15px
-    .user
+    .header-user
       margin: 24px 0 0 0
   .dashboard-content
     padding: 20px 0 50px 0
+
+@media (max-width: 460px)
+  .dashboard-content
+    .table-btn
+      .btn-outline, .btn
+        width: 100%
+        margin: 0 0 15px 0
+        display: block
+        max-width: 100%
+
+// mob header
+
+.mob-header
+  display: none
+.mobile-menu
+  display: none
+@media (max-width: 991px)
+
+  .mob-header
+    display: block
+    height: 60px
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 500
+    border-bottom: 1px solid #e1e1e3
+    background: #f7f8fb
+    padding: 0 15px
+    .logo
+      width: 110px
+      float: none
+      margin: 16px 0 10px 0
+    .nav-dashboard
+      border: none
+      display: block
+      width: auto
+      position: relative
+      left: auto
+      right: auto
+      top: auto
+      padding: 0 0
+      margin: 20px 0 0 0
+      .link
+        margin: 0 auto 20px
+  .header-mobile
+    height: 100%
+    display: block
+    padding: 0 15px
+
+  .mobile-menu-close
+    padding: 0
+    position: absolute
+    top: 15px
+    right: 15px
+    width: 40px
+    height: 40px
+    img
+      width: 100%
+  .mobile-menu-trigger
+    display: block
+    position: absolute
+    top: 22px
+    right: 15px
+    width: 24px
+    span
+      height: 2px
+      background: #4F4F4F
+      display: block
+      margin: 0 0 4px 0
+  .mobile-menu-content
+    overflow-y: auto
+    height: 100%
+    margin: 0 -15px 0 0
+    padding: 0 15px 0 0
+  .mobile-menu
+    background: #fff
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 900
+    padding: 65px 15px 20px 15px
+

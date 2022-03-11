@@ -1,11 +1,12 @@
 .jq-selectbox
-  height: 84px
+  height: 40px
   width: auto
   display: inline-block
   vertical-align: top
-  +border-radius(0px)
+  +border-radius(3px)
   cursor: pointer
-  border: 1px solid #E6E6E6
+  border: 1px solid #edeef0
+  background: #f0f2f7
   &.select-search
     .jq-selectbox__select
       .jq-selectbox__trigger
@@ -23,38 +24,21 @@
       background: #fff
   .jq-selectbox__not-found[style] + ul
     box-shadow: none
-  .jq-selectbox__not-found
-    background: none
-    display: block
-    @include fonts(15px, 43px, 400)
-    padding: 0 20px
-    color: #958e8e
-    opacity: 1
-    background: #fff
-    border: 2px solid #B3B3B3
-    margin: 0 0
-  //&.dropup.opened
-  //  .jq-selectbox__dropdown
-  //    top: auto !important
-  //    bottom: 50px !important
-  //    ul
-  //      bottom: 0
-  //      top: auto
+
   &.opened
-    border-color: #fff
+
     .jq-selectbox__select
       .jq-selectbox__trigger
         .jq-selectbox__trigger-arrow
-          //margin-top: -5px
-          //margin-right: 0
+          margin: -7px -5px 0 0
           transform: rotate(180deg)
   .jq-selectbox__select
     .jq-selectbox__select-text
-      height: 82px
-      @include fonts(19px, 82px, 500)
-      color: #fff
-      padding-right: 70px
-      padding-left: 35px
+      height: 35px
+      @include fonts(15px, 38px, 400)
+      color: #898989
+      padding-right: 40px
+      padding-left: 10px
       width: auto !important
       max-width: 100%
     .jq-selectbox__trigger
@@ -63,23 +47,25 @@
       top: 0
       right: 0
       height: 100%
-      width: 70px
+      width: 40px
       .jq-selectbox__trigger-arrow
-        background: url("../img/select.svg") center center no-repeat
-        -webkit-background-size: 100% 100%
-        background-size: 100% 100%
+        //background: url("../img/select.svg") center center no-repeat
+        //-webkit-background-size: 100% 100%
+        //background-size: 100% 100%
+        border: 5px solid transparent
+        border-top: 5px solid #9b9b9b
         content: ""
         position: absolute
         margin: -3px -5px 0 0
         top: 50%
         right: 50%
-        width: 14px
-        height: 8px
+        //width: 14px
+        //height: 8px
         transform: rotate(0deg)
         opacity: 1
   .jq-selectbox__dropdown
     position: absolute
-    top: 84px !important
+    top: 40px !important
     left: -1px !important
     right: -1px !important
     width: auto !important
@@ -107,18 +93,18 @@
         width: 6px
         background: #f6f6f6
       li
-        @include fonts(18px, 22px, 400)
-        padding: 7px 10px 7px 15px
+        @include fonts(14px, 16px, 400)
+        padding: 10px 10px 12px 10px
         @include transition-dr(300ms)
         white-space: normal
         color: #000
-        //border-bottom: 1px solid $yellow
+        border-bottom: 1px solid #edeef0
         display: block
         width: 100%
         &:last-child
           border-bottom: none
         &:hover
-          background: #dedede
+          background: #edeef0
 
 
 .qty
@@ -178,12 +164,4 @@
         background: none
 
 @media (max-width: 991px)
-  .jq-selectbox
-    height: 70px
-    .jq-selectbox__select
-      .jq-selectbox__select-text
-        height: 68px
-        line-height: 68px
-        padding: 0 50px 0 25px 
-      .jq-selectbox__trigger
-        width: 50px
+ 

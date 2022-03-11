@@ -44,29 +44,29 @@
       input
         color: #fff
 .btn-outline
-  background: #dbdfe2
-  color: #4A5568
-  @include fonts(16px, 63px, 600)
+  background: transparent
+  box-shadow: none
+  color: #2a62fb
+  @include fonts(11px, 40px, 400)
   position: relative
-  padding: 0 5px
-  height: 65px
+  padding: 0 15px
+  height: 40px
   letter-spacing: 0
-  +border-radius(50px)
+  +border-radius(3px)
   @include transition-dr(300ms)
   z-index: 1
   overflow: hidden
   text-align: center
-  border: 1px solid #4F4F4F
-  box-shadow: 0px 2px 4px rgba(39, 174, 96, 0.3)
+  border: 1px solid #2a62fb
   display: inline-block
   vertical-align: top
   text-decoration: none !important
   width: 100%
-  max-width: 250px
+  max-width: 450px
   &:hover
-    background: #6FCF97
-    border-color: #6FCF97
-    color: #fff
+    background: #2a62fb
+    border-color: #2a62fb
+    color: #fff 
   &.blue
     color: #4571AD
     border: 2px solid #4571AD
@@ -77,7 +77,16 @@
       background: #4571AD
       color: #fff
 
-
+.link-back
+  display: inline-block
+  vertical-align: top
+  @include fonts(20px, 20px, 500)
+  color: #000
+  padding: 0 0 0 25px
+  text-decoration: none !important
+  background: url(../img/arrow-left.png) 0px 2px no-repeat
+  -webkit-background-size: 15px auto
+  background-size: 15px auto
 
 
 
