@@ -496,8 +496,8 @@
   .mobile-menu-close {
     padding: 0;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 5px;
     width: 40px;
     height: 40px; }
     .mobile-menu-close img {

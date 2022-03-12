@@ -163,5 +163,36 @@
         border: none
         background: none
 
-@media (max-width: 991px)
+.jq-selectbox
+  &.select-style
+    width: 100%
+    margin-bottom: 5px
+    background: #9d9d9c
+    border: none
+    &.color-1
+      background: #0f0e5e
+    &.color-2
+      background: #2a62fb
+    &.color-3
+      background: #fa5482
+    &.color-4
+      background: #9d9d9c
+    &.opened
+      .jq-selectbox__select
+        .jq-selectbox__trigger
+          .jq-selectbox__trigger-arrow
+            margin: -3px -5px 0 0
+    .jq-selectbox__select
+      .jq-selectbox__select-text
+        height: 40px
+        @include fonts(12px, 40px, 600)
+        color: #fff
+      .jq-selectbox__trigger
+        .jq-selectbox__trigger-arrow
+          border: none
+          background: url(../img/select-w.svg) center no-repeat
+          -webkit-background-size: 7px auto
+          background-size: 7px auto
+          width: 7px
+          height: 7px
  
