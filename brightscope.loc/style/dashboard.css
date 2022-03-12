@@ -12,7 +12,8 @@
   width: 160px;
   border-right: 1px solid #edeef0;
   background: #fff;
-  padding: 30px 0 170px 0; }
+  padding: 30px 0 170px 0;
+  min-height: 800px; }
   .nav-dashboard .logo-nav {
     width: 75px;
     height: 75px;
@@ -80,7 +81,7 @@
   top: 0;
   left: 160px;
   right: 0;
-  z-index: 2;
+  z-index: 15;
   padding: 0 70px 0 75px; }
   .dashboard-header .jq-selectbox {
     margin: 40px 0 0 0;
@@ -114,7 +115,8 @@
 
 .dashboard-content {
   padding: 160px 55px 50px 70px;
-  position: relative; }
+  position: relative;
+  z-index: 5; }
   .dashboard-content .h2 {
     font-size: 20px;
     line-height: 24px;

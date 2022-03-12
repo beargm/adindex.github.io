@@ -1,18 +1,24 @@
 @import _settings
+.dashboard-page
+
+.bg-map
+  position: absolute
+  top: 120px
+  left: 160px
+  right: 0
+  bottom: 0
+  width: auto
+  height: auto
+  background-repeat: no-repeat
+  background-position: center top
+  -webkit-background-size: cover
+  background-size: cover
 .dashboard-map
   position: relative
-  min-height: 1000px
+  min-height: 500px
   margin: -40px -70px -50px -70px
   .map
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background-repeat: no-repeat
-    background-position: center top
-    -webkit-background-size: cover
-    background-size: cover
+
   .map-menu
     padding: 20px 0 0 10px
     width: 100%
@@ -40,10 +46,15 @@
 
 
 @media (max-width: 1400px)
+  .bg-map
+    left: 80px
   .dashboard-map
     margin: -40px -15px -50px -15px
 
 @media (max-width: 991px)
+  .bg-map
+    top: 60px
+    left: 0
   .dashboard-map
     margin: -20px -15px -50px -15px
     min-height: 800px
