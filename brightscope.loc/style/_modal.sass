@@ -1,14 +1,14 @@
 .modal
-  background: rgba(255,255,255,0.8)
+  background: rgba(0,0,0,0.7)
   .modal-dialog
-    max-width: 460px
+    max-width: 800px
   .modal-content
     border: none
-    +border-radius(6px)
+    +border-radius(3px)
     background: #fff
     padding: 0 0
     position: relative
-    box-shadow: 0px 0px 30px rgba(45, 45, 45, 0.08)
+    box-shadow: none
 .modal-dialog
   .modal-header
     position: relative
@@ -19,8 +19,8 @@
     margin: 0 10px 0 10px
     border-bottom: 1px solid #D7D7D7
   .modal-body
-    padding: 30px 0 50px
-    margin: 0 10px
+    padding: 20px
+    margin: 0 0
   .modal-title
     @include fonts(30px, 100%, 700)
     color: #1E1E1E
@@ -32,16 +32,16 @@
     position: relative
 
   .close
-    width: 34px
-    height: 34px
-    background: url(../img/close-w.svg) center center no-repeat
+    width: 35px
+    height: 35px
+    background: url(../img/close.svg) center center no-repeat
     -webkit-background-size: 34px
     background-size: 34px
     padding: 0
     margin: 0
     position: absolute
-    right: -50px
-    top: -25px
+    right: 14px
+    top: 12px
     font-size: 0
     font-weight: 400
     color: #fff
@@ -54,64 +54,64 @@
       display: none
 
 
-.modal-feedback-box
-  padding: 0 0
-  .text-center
-    padding: 10px 0 0
-  .modal-form
-    padding: 0 15px
-  .text
-    @include fonts(16px, 28px, 300)
-    color: #2B2A28
-    text-align: center
-    margin-bottom: 20px
-  .modal-bottom
-    text-align: center
-    border-top: 1px solid #D7D7D7
-    padding: 35px 0 0
-    margin: 35px 0 0 0
-    .text
-      margin-bottom: 10px
-  .tell
-    a
-      text-decoration: none !important
-      color: #1E1E1E !important
-      @include fonts(24px, 24px, 600)
 
 @media (max-width: 991px)
   .modal
     padding-left: 15px !important
     padding-right: 15px !important
     .modal-body
-      padding: 0px 0 35px
+      padding: 15px
     .close
       top: 5px
       right: 5px
-      width: 35px
-      height: 35px
-      background: url(../img/close.svg) no-repeat
-      -webkit-background-size: 100%
-      background-size: 100%
-    .modal-header
-      margin-bottom: 20px
-      padding: 35px 0 25px 0
     .modal-content
-      padding: 0 0
+      padding: 0
       +border-radius(0)
     .modal-dialog
-      max-width: 320px
-      .modal-title
-        font-size: 18px
-        line-height: 22px
-        font-weight: 700
-        text-align: center
-  .modal-feedback-box
-    .modal-form
-      padding: 0 10px
+      max-width: 100%
+
+
 @media (max-width: 767px)
   .modal
+    .modal-body
+      padding: 45px 15px 15px 15px
 
 
 
 @media (max-width: 991px)
   .modal
+
+
+.modal-city-box
+  .image
+    img
+      width: 100%
+  .map
+    margin: 20px 0 0 0
+  .title-top
+    padding: 0 30px 0 0
+    color: #626262
+    @include fonts(12px, 15px, 600)
+    margin-bottom: 10px
+    text-transform: uppercase
+  .title
+    @include fonts(15px, 20px, 600)
+    margin-bottom: 25px
+  .attr-val-list
+  .attr-val
+    @include fonts(15px, 18px)
+    margin-bottom: 5px
+    color: #626262
+    @extend %after-clear
+    .attr
+      float: left
+      width: 35%
+    .val
+      float: left
+      width: 65%
+
+@media (max-width: 767px)
+  .modal-city-box
+    .image
+      margin-bottom: 20px
+

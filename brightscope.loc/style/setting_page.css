@@ -72,26 +72,6 @@
     padding: 20px 40px 15px 20px; }
     .settings-block .line:after {
       right: 10px; } }
-.select-custom {
-  cursor: pointer;
-  width: 35px; }
-  .select-custom .ic {
-    text-align: right; }
-    .select-custom .ic div {
-      font-size: 0;
-      line-height: 0; }
-    .select-custom .ic span {
-      background: #898989;
-      display: inline-block;
-      vertical-align: top;
-      width: 3px;
-      height: 3px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      border-radius: 50%;
-      margin: 0 0 1px 0; }
-
 .settings-medientypen {
   background: #fff;
   border: 1px solid #e3e3e4;
