@@ -108,6 +108,20 @@ $(function () {
         }
     });
 
+    $(".nav-dashboard .back").click(function(e){
+        e.stopPropagation();
+        if($(this).hasClass("active")){
+            $(".bg-map").removeClass("active");
+            $(".dashboard-box").removeClass("hide-menu");
+            $(this).removeClass("active");
+
+        } else {
+            $(".bg-map").addClass("active");
+            $(".dashboard-box").addClass("hide-menu");
+            $(this).addClass("active");
+        }
+    });
+
     //$(".accordion-block .accordion-item:first-child .accordion-menu-title").addClass("active");
     //$(".accordion-block .accordion-item:first-child .accordion-sub-block").show();
     $(".accordion-block .accordion-menu-title").click(function(e){
