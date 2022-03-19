@@ -1,0 +1,189 @@
+.jq-selectbox
+  height: 84px
+  width: auto
+  display: inline-block
+  vertical-align: top
+  +border-radius(0px)
+  cursor: pointer
+  border: 1px solid #E6E6E6
+  &.select-search
+    .jq-selectbox__select
+      .jq-selectbox__trigger
+        display: none
+  .jq-selectbox__search
+    input
+      display: block
+      width: 100%
+      height: 50px
+      @include fonts(15px, 43px, 400)
+      padding: 0 20px
+      color: #958e8e
+      border: 2px solid #B3B3B3
+      border-bottom: none
+      background: #fff
+  .jq-selectbox__not-found[style] + ul
+    box-shadow: none
+  .jq-selectbox__not-found
+    background: none
+    display: block
+    @include fonts(15px, 43px, 400)
+    padding: 0 20px
+    color: #958e8e
+    opacity: 1
+    background: #fff
+    border: 2px solid #B3B3B3
+    margin: 0 0
+  //&.dropup.opened
+  //  .jq-selectbox__dropdown
+  //    top: auto !important
+  //    bottom: 50px !important
+  //    ul
+  //      bottom: 0
+  //      top: auto
+  &.opened
+    border-color: #fff
+    .jq-selectbox__select
+      .jq-selectbox__trigger
+        .jq-selectbox__trigger-arrow
+          //margin-top: -5px
+          //margin-right: 0
+          transform: rotate(180deg)
+  .jq-selectbox__select
+    .jq-selectbox__select-text
+      height: 82px
+      @include fonts(19px, 82px, 500)
+      color: #fff
+      padding-right: 70px
+      padding-left: 35px
+      width: auto !important
+      max-width: 100%
+    .jq-selectbox__trigger
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      height: 100%
+      width: 70px
+      .jq-selectbox__trigger-arrow
+        background: url("../img/select.svg") center center no-repeat
+        -webkit-background-size: 100% 100%
+        background-size: 100% 100%
+        content: ""
+        position: absolute
+        margin: -3px -5px 0 0
+        top: 50%
+        right: 50%
+        width: 14px
+        height: 8px
+        transform: rotate(0deg)
+        opacity: 1
+  .jq-selectbox__dropdown
+    position: absolute
+    top: 84px !important
+    left: -1px !important
+    right: -1px !important
+    width: auto !important
+    bottom: auto !important
+    ul
+      box-shadow: none
+      display: block
+      width: 100%
+      position: absolute
+      top: 0
+      min-width: 155px
+      max-height: 365px !important
+      background: #fff
+      border: 1px solid #E6E6E6
+      padding: 0 0
+      margin: 0
+      list-style: none
+      +border-radius(0px)
+      overflow-y: auto
+      &::-webkit-scrollbar-thumb
+        background-color: #DFDFDF
+      &::-webkit-resizer
+        width: 6px
+      &::-webkit-scrollbar
+        width: 6px
+        background: #f6f6f6
+      li
+        @include fonts(18px, 22px, 400)
+        padding: 7px 10px 7px 15px
+        @include transition-dr(300ms)
+        white-space: normal
+        color: #000
+        //border-bottom: 1px solid $yellow
+        display: block
+        width: 100%
+        &:last-child
+          border-bottom: none
+        &:hover
+          background: #dedede
+
+
+.qty
+  .jq-number
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 120px
+    border: none
+    background: #fff
+
+    .jq-number__spin
+      width: 28px
+      height: 28px
+      position: absolute
+      top: 0
+      cursor: pointer
+      border: 2px solid $red
+      +border-radius(10px)
+    .minus
+      left: 0
+      &:before
+        content: ""
+        position: absolute
+        top: 11px
+        left: 6px
+        height: 2px
+        background: $red
+        width: 12px
+    .plus
+      right: 0
+      &:before
+        content: ""
+        position: absolute
+        top: 11px
+        left: 6px
+        height: 2px
+        background: $red
+        width: 12px
+      &:after
+        content: ""
+        position: absolute
+        top: 7px
+        left: 11px
+        height: 12px
+        background: $red
+        width: 2px
+    .jq-number__field
+      input
+        opacity: 1 !important
+        width: 100%
+        padding: 0 24px
+        display: block
+        text-align: center
+        @include fonts(20px, 30px, 600)
+        border: none
+        background: none
+
+@media (max-width: 991px)
+  .jq-selectbox
+    height: 70px
+    .jq-selectbox__select
+      .jq-selectbox__select-text
+        height: 68px
+        line-height: 68px
+        padding: 0 50px 0 25px 
+      .jq-selectbox__trigger
+        width: 50px
