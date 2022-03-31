@@ -1,0 +1,198 @@
+.btn
+  background: $color2
+  color: #fff
+  @include fonts(16px, 50px, 500)
+  text-transform: none
+  position: relative
+  padding: 0 20px
+  height: 50px
+  letter-spacing: 0px
+  border: none
+  +border-radius(6px)
+  @include transition-dr(300ms)
+  z-index: 1
+  overflow: hidden
+  &:before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 0
+    @include transition-dr(300ms)
+    background: #102A83
+    z-index: -1
+  &:hover
+    background: none
+    color: #fff
+    &:before
+      height: 100%
+  input
+    box-shadow: none !important
+    background: none !important
+    border: none !important
+    display: block
+    color: #ffffff
+    cursor: pointer
+  &.btn-submit
+    padding: 0
+    input
+      display: block
+      text-align: center
+      padding: 0 0
+      width: 100%
+      background: none
+      border: none
+      text-shadow: none
+      @include transition-dr(300ms)
+
+  &.gray
+    background: #F5F6F9
+    color: #49505F
+    &:before
+      background: #E1E4EC
+    &:hover
+      color: #000
+
+
+.btn-outline
+  background: rgba(255,255,255,0.1)
+  height: 48px
+  display: inline-block
+  vertical-align: top
+  @include fonts(16px, 48px, 600)
+  text-transform: uppercase
+  @include transition-dr(300ms)
+  +border-radius(6px)
+  padding: 0 30px
+  color: #fff
+  position: relative
+  text-decoration: none !important
+  border: 1px solid #fff
+  letter-spacing: 1px
+  z-index: 1
+  overflow: hidden
+  &:hover
+    background: #4c4c4c
+    color: $black
+    &:before
+      height: 100%
+  &:before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 0
+    @include transition-dr(300ms)
+    background: #fff
+    z-index: -1
+  &.red
+    border: 2px solid $red
+    background: #ffffff
+    color: $red
+    &:hover
+      background: $red
+      color: #fff
+
+@-webkit-keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+
+@-moz-keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+
+@-ms-keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+
+@-o-keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+@keyframes move
+  0%
+    left: 0
+  20%
+    left: 100%
+  100%
+    left: 100%
+
+.btn-effect-1
+  overflow: hidden
+  position: relative
+  &:after
+    content: ""
+    display: block
+    width: 30px
+    height: 100%
+    position: absolute
+    opacity: .3
+    top: 0
+    left: 0
+    background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%)
+    -webkit-transform: skew(-10deg,0)
+    -moz-transform: skew(-10deg,0)
+    -ms-transform: skew(-10deg,0)
+    -o-transform: skew(-10deg,0)
+    transform: skew(-10deg,0)
+    -webkit-animation: move 5s linear infinite
+    -moz-animation: move 5s linear infinite
+    -ms-animation: move 5s linear infinite
+    -o-animation: move 5s linear infinite
+    animation: move 5s linear infinite
+
+
+input.btn.btn-grey
+  &:hover
+    background: #697177
+
+.btn.focus, .btn:focus, btn:active
+  box-shadow: none !important
+
+.read-more
+  color: $yellow
+  text-decoration: none
+  @include fonts(23px, 25px, 500)
+  font-style: italic
+  border-bottom: 1px solid $yellow
+  display: inline-block
+  @include transition-dr(300ms)
+  position: relative
+  &:hover
+    color: $yellow
+    border-color: transparent
+    text-decoration: none
+
+
+.link-dashed
+  text-decoration: none
+  color: $black
+  border-bottom: 1px dashed #000
+  &:hover
+    border-color: transparent
+
+
+
+@media (max-width: 575px)
+  .btn
+    &.sm-2-line
+      height: auto
+      @include fonts(18px, 22px)
+      padding: 15px 15px 13px 15px
