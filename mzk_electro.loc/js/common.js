@@ -26,8 +26,8 @@ $(function () {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             },
             {
@@ -38,7 +38,7 @@ $(function () {
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -108,8 +108,8 @@ $(function () {
             {
                 breakpoint: 500,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]
@@ -128,8 +128,8 @@ $(function () {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             },
             {
@@ -142,8 +142,8 @@ $(function () {
             {
                 breakpoint: 500,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]
@@ -167,74 +167,48 @@ $(function () {
         filePlaceholder: ' '
     });
 
-    $(".form-anketa").validate({
+    $(".form-callback").validate({
         rules: {
-            city: {
-                required: true,
-                minlength: 3
-            },
-            vacancy: {
-                required: true,
-                minlength: 3
-            },
-            fio: {
+            name: {
                 required: true,
                 minlength: 3
             },
 
-            birthday: {
-                required: true,
-                minlength: 6
-            },
 
             tel: {
                 required: true,
                 minlength: 10
             },
-            mail: {
+            message: {
                 required: true,
-                minlength: 6,
+                minlength: 5
             },
-            dopinfo: {
+            code: {
                 required: true,
-                minlength: 10,
-            },
-            checkboxagree: {
-                required: true
+                minlength: 3
             }
+
         },
         messages: {
-            checkboxagree: {
-                required: ''
-            },
-            city: {
-                required: 'Введите город'
-            },
 
-            vacancy: {
-                required: 'Введите вакансию'
-            },
-
-            fio: {
+            name: {
                 required: 'Введите фио',
                 // minlength: "Ваш пароль должен состоять не менее чем из 10 символов"
             },
-            birthday: {
-                required: 'Введите дату рождения',
-                // minlength: "Ваш пароль должен состоять не менее чем из 10 символов"
-            },
+
             tel: {
                 required: 'Введите тел',
                 // minlength: "Ваш пароль должен состоять не менее чем из 10 символов"
             },
-            mail: {
-                required: 'Введите email',
+            message: {
+                required: 'Введите сообщение',
                 // minlength: "Ваш пароль должен состоять не менее чем из 10 символов"
             },
-            dopinfo: {
-                required: 'Введите текст',
+            code: {
+                required: 'Введите код',
                 // minlength: "Ваш пароль должен состоять не менее чем из 10 символов"
-            }
+            },
+
         }
     });
 

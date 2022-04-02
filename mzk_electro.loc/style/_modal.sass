@@ -1,13 +1,13 @@
 .modal
   background: rgba(255,255,255,0.8)
   .modal-dialog
-    max-width: 880px
+    max-width: 555px
   .modal-content
     border: none
-    +border-radius(8px)
+    +border-radius(16px)
     background: #fff
-    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.06)
-    padding: 60px 60px 60px 60px
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+    padding: 35px 40px 40px 40px
     position: relative
   .jq-selectbox
     .jq-selectbox__dropdown
@@ -21,12 +21,12 @@
     display: block
     padding: 0 0
     border-bottom: none
-    margin-bottom: 45px
+    margin-bottom: 35px
     border-bottom: none
   .modal-body
     padding: 0 0 0
   .modal-title
-    @include fonts(48px, 110%, 500)
+    @include fonts(24px, 110%, 500)
     color: #000
     text-align: left
     padding-top: 0
@@ -44,8 +44,8 @@
     padding: 0
     margin: 0
     position: absolute
-    right: 20px
-    top: 20px
+    right: 10px
+    top: 10px
     font-size: 0
     font-weight: 400
     color: #fff
@@ -58,57 +58,28 @@
       display: none
 
 .modal
-  .btn
-
+.form-callback
+  .captcha-image
+    margin: 30px 0 10px 0
+  .btn-submit
+    width: 100%
+    max-width: 120px
+    float: right
 
 @media (max-width: 991px)
   .modal
     padding-left: 15px !important
     padding-right: 15px !important
     .modal-content
-      padding: 30px 20px
+      padding: 30px 15px
   .modal-dialog
     .modal-title
-      font-size: 25px
+      font-size: 22px
+      padding: 0 30px 0 0
 
-@media (max-width: 767px)
-  .modal
-
-.form-anketa
-  .btn
-    width: 100%
-    padding: 0 10px
-    text-align: center
-  input.form-control
-    height: 67px
-    line-height: 67px
-  .form-group
-    position: relative
-    margin-bottom: 15px
-    .label-title
-      z-index: 2
-      position: absolute
-      top: -10px
-      left: 15px
-      background: #fff
-      padding: 0 10px
-      color: #898791
-      @include fonts(14px, 20px)
-      display: inline-block
-      vertical-align: top
-.success-sent
-  padding: 130px 0
-  max-width: 550px
-  margin: 0 auto
-  .img
-    max-width: 80px
-    margin: 0 auto 30px
-  h2
-    margin-bottom: 30px
-    text-align: center
-  .text-formatted
-    font-weight: 500
-    text-align: center
-
-@media (max-width: 991px)
-  .modal
+@media (max-width: 575px)
+  .form-callback
+    .sm-hide
+      display: none
+    .btn-submit
+      float: none

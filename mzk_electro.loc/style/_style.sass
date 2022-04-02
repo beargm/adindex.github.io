@@ -92,27 +92,22 @@ p
   color: $black
 
 @media (max-width: 1199px)
-  h1, .h1
-    @include fonts(40px, 120%, 500)
+  h1, .h1, h2, .h2
+    @include fonts(30px, 110%, 500)
 
 @media (max-width: 991px)
 
   body
     padding: 60px 0 0 0
-  h1
-    @include fonts(32px, 120%, 500)
-    margin-bottom: 30px
-  h2
-    @include fonts(32px, 120%, 500)
-    margin-bottom: 30px
-
+  h1, .h1, h2, .h2
+    @include fonts(28px, 110%, 600)
+    margin-bottom: 20px
 
 
 @media (max-width: 575px)
-  h1
-    @include fonts(25px, 120%, 500)
-  h2
-    @include fonts(25px, 120%, 500)
+  h1, .h1, h2, .h2
+    @include fonts(25px, 110%, 600)
+
 
 .form-control::-webkit-input-placeholder
   color: #333
@@ -135,37 +130,37 @@ p
   outline: none !important
 
 input.form-control
-  border: 2px solid #dddddd
+  border: 1px solid #E1E4EC
   background: #fff !important
-  padding: 0 20px 0 20px
-  color: #898791
-  @include fonts(18px, 55px)
-  height: 55px
-  +border-radius(8px)
+  padding: 0 10px 0 15px
+  color: #3a404c
+  @include fonts(14px, 50px)
+  height: 50px
+  +border-radius(6px)
+  box-shadow: none
   &:focus, &:active
-    border: 2px solid #09A675
+    border: 1px solid #E1E4EC
     box-shadow: none !important
     color: #000
-    &+.label-title
-      color: #09A675
+
 textarea.form-control
-  border: 2px solid #dddddd
+  border: 1px solid #E1E4EC
   background: #fff !important
-  padding: 20px
-  color: #898791
-  @include fonts(18px, 22px)
-  min-height: 150px
-  +border-radius(8px)
+  padding: 20px 15px
+  color: #3a404c
+  @include fonts(14px, 18px)
+  min-height: 145px
+  +border-radius(6px)
   overflow: hidden
   resize: vertical
+  box-shadow: none
   &:focus, &:active
-    border: 2px solid #09A675
+    border: 1px solid #E1E4EC
     box-shadow: none !important
     color: #000
     &+.label-title
       color: #09A675
-.form-control.birthday
-  background: #fff url(../img/callendar.svg) 96% center no-repeat !important
+
 .jq-file__browse
   font-size: 0
   cursor: pointer !important
@@ -194,9 +189,9 @@ textarea.form-control
 .form-group
   margin-bottom: 15px
   .label
-    color: #000
+    color: #3a404c
     @include fonts(14px, 16px, 400)
-    margin-bottom: 8px
+    margin-bottom: 10px
     span
       color: $red
 
@@ -282,6 +277,16 @@ label.error
     +border-radius(6px)
     &.active, &:hover
       background: #E1E4EC
+@media (max-width: 767px)
+  .nav-tabs
+    .nav-link
+      font-size: 14px
+      padding: 10px 10px
+
+@media (max-width: 360px)
+  .nav-tabs
+    .nav-link
+      font-size: 12px
 
 
 .margin-10
@@ -389,12 +394,18 @@ label.error
       right: 4px
 @media (max-width: 991px)
   .slick-slider
+    &.mob-pd
+      margin-right: -15px
+      .slick-list
+        padding: 0 50px 0 0
+      .slick-arrow
+        display: none !important
     .slick-arrow
-      width: 50px
-      height: 50px
+      width: 40px
+      height: 40px
       top: -70px
       &.slick-prev
-        right: 75px
+        right: 50px
 
 
 .margin-15
@@ -525,15 +536,29 @@ label.error
       color: #102A83
       border-color: transparent
 
-@media (max-width: 767px)
+@media (max-width: 991px)
   .section-text
-    padding: 30px 0
-  .text-formatted
-    @include fonts(16px, 24px, 500)
-    p
-      @include fonts(16px, 24px, 500)
-
-
+    padding: 20px 0
+    img
+      margin-bottom: 15px
+    .list-link
+      .link
+        a
+          @include fonts(18px, 120%, 400)
+    .li-title
+      @include fonts(18px, 120%, 400)
+    .ul
+      li
+        @include fonts(18px, 120%, 400)
+    .text-formatted
+      @include fonts(18px, 120%, 400)
+      p
+        @include fonts(18px, 120%, 400)
+        margin-bottom: 15px
+  .alert-text
+    padding: 15px 15px
+    margin: 0 0 25px 0
+    @include fonts(18px, 120%, 400)
 .social-block
   font-size: 0
   @extend %after-clear

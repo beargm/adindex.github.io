@@ -97,4 +97,12 @@ footer {
   line-height: 18px;
   font-weight: 400; }
 
+@media (max-width: 991px) {
+  footer {
+    padding: 20px 0; }
+    footer .list-link {
+      display: none; }
+    footer .social {
+      margin-bottom: 10px; } }
+
 /*# sourceMappingURL=footer.css.map */
