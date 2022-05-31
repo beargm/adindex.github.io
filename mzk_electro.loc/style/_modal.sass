@@ -1,0 +1,85 @@
+.modal
+  background: rgba(255,255,255,0.8)
+  .modal-dialog
+    max-width: 555px
+  .modal-content
+    border: none
+    +border-radius(16px)
+    background: #fff
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+    padding: 35px 40px 40px 40px
+    position: relative
+  .jq-selectbox
+    .jq-selectbox__dropdown
+      ul
+        max-height: 180px !important
+.modal-dialog
+  .modal-header
+    position: relative
+    z-index: 10
+    +border-radius(0)
+    display: block
+    padding: 0 0
+    border-bottom: none
+    margin-bottom: 35px
+    border-bottom: none
+  .modal-body
+    padding: 0 0 0
+  .modal-title
+    @include fonts(24px, 110%, 500)
+    color: #000
+    text-align: left
+    padding-top: 0
+    padding-bottom: 0
+    margin-bottom: 0
+    display: block
+    position: relative
+
+  .close
+    width: 40px
+    height: 40px
+    background: url(../img/close.svg) center center no-repeat
+    -webkit-background-size: 14px
+    background-size: 14px
+    padding: 0
+    margin: 0
+    position: absolute
+    right: 10px
+    top: 10px
+    font-size: 0
+    font-weight: 400
+    color: #fff
+    @include transition-dr(300ms)
+    transform: rotate(0deg)
+    opacity: 0.5
+    text-shadow: none
+    z-index: 10
+    span
+      display: none
+
+.modal
+.form-callback
+  .captcha-image
+    margin: 30px 0 10px 0
+  .btn-submit
+    width: 100%
+    max-width: 120px
+    float: right
+
+@media (max-width: 991px)
+  .modal
+    padding-left: 15px !important
+    padding-right: 15px !important
+    .modal-content
+      padding: 30px 15px
+  .modal-dialog
+    .modal-title
+      font-size: 22px
+      padding: 0 30px 0 0
+
+@media (max-width: 575px)
+  .form-callback
+    .sm-hide
+      display: none
+    .btn-submit
+      float: none

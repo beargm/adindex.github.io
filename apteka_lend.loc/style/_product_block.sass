@@ -1,0 +1,412 @@
+.catalog-page
+  padding: 60px 0 0 0
+  h1, .h1
+    margin-bottom: 40px
+
+
+.product-list
+  margin-bottom: 50px
+  padding: 0 0 0 0
+  h2
+    color: #dddada
+    text-transform: uppercase
+    @include fonts(80px, 80px, 600)
+    margin-bottom: 60px
+  .slider-product-2-image
+    .product-block
+      margin: 15px 15px 15px 15px
+  .slider-product
+    .product-block
+      margin: 15px 15px 15px 15px
+  .slick-slider
+    .slick-arrow
+      +border-radius(50%)
+      width: 85px
+      height: 50px
+      border: none
+      background: none
+      top: -90px
+      opacity: 1 !important
+      &:hover
+        opacity: 0.7 !important
+      &.slick-prev
+        left: auto
+        right: 145px
+        top: -89px
+      &.slick-next
+        position: absolute
+        right: 15px
+
+
+      &:after
+        display: none
+      &:before
+        opacity: 1 !important
+        background: url(../img/slider-arrow.svg) center center no-repeat
+        -webkit-background-size: 100% auto
+        background-size: 100% auto
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        content: ""
+  .product-block
+    margin: 0 0 30px 0
+  .margin-15
+    margin-left: -15px
+    margin-right: -15px
+
+.sticker-block
+  position: absolute
+  top: 20px
+  left: 0
+  text-align: center
+  z-index: 10
+  .black
+    color: #ffffff
+    text-transform: uppercase
+    @include fonts(13px, 31px)
+    background: #000
+    min-width: 70px
+    margin-bottom: 10px
+  .red
+    color: #ffffff
+    text-transform: uppercase
+    @include fonts(13px, 31px)
+    background: #9D2929
+    min-width: 70px
+    margin-bottom: 10px
+
+.product-block
+  position: relative
+  @include transition-dr(300ms)
+  padding: 0 0 15px 0
+  &.product-favorite
+    box-shadow: none !important
+    .color-block
+      .color
+        &:hover
+          box-shadow: none
+        &.active
+          box-shadow: 0 0 0 3px #e2caca
+    .size-block
+      .size
+        &:hover
+          background: #fff
+          color: #958e8e
+        &.active
+          background: #f4f3f3
+          color: #9D2929
+  &:hover
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
+  .img
+    margin-bottom: 25px
+    overflow: hidden
+    position: relative
+    @extend %after-clear
+    img
+      max-width: 100%
+      max-height: 100%
+      width: 100%
+  .img-list
+    width: 50%
+    float: left
+
+  .product-content
+    clear: both
+  .link
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+  .fav
+    position: absolute
+    top: 25px
+    right: 20px
+    width: 23px
+    height: 20px
+    display: block
+    z-index: 5
+    background: url(../img/fav2.svg) center center no-repeat
+  .favorite-delete
+    position: absolute
+    top: 25px
+    right: 20px
+    width: 19px
+    height: 20px
+    display: block
+    z-index: 5
+    background: url(../img/delete.svg) center center no-repeat
+  .title
+    text-align: center
+    margin-bottom: 15px
+    @include fonts(30px, 34px, 600)
+    text-decoration: none !important
+    overflow: hidden
+    color: #9D2929 !important
+    max-height: 62px
+    height: 62px
+    display: block
+    text-transform: uppercase
+    padding: 0 15px
+    a
+      display: block
+      text-decoration: none !important
+      color: #9D2929 !important
+  .price-block
+    text-align: center
+    margin-bottom: 15px
+  .price
+    @include fonts(20px, 25px, 600)
+    display: inline-block
+    vertical-align: top
+    color: #000
+  .price-old
+    @include fonts(20px, 25px, 600)
+    display: inline-block
+    vertical-align: top
+    margin: 0 40px 0 0
+    color: #b3b3b3
+  .type
+    color: #9D2929
+    opacity: 0.5
+    text-align: center
+    text-transform: uppercase
+    @include fonts(15px, 19px, 400)
+  .btn
+    font-weight: 600
+    width: 100%
+    padding: 0 0
+    text-align: center
+    font-size: 20px
+    margin-bottom: 15px
+  .product-bottom
+    @extend %after-clear
+    padding: 25px 0 15px 0
+    margin: 25px 0 0
+    border-top: 3px solid #f4f3f3
+  .stock-block
+    .no-stock
+      text-align: center
+      text-transform: uppercase
+      color: #aaa4a4
+      @include fonts(18px, 22px, 600)
+  .size-block
+    float: right
+    width: auto
+    max-width: 50%
+    .size
+      margin: 0 0 15px 15px
+      &:first-child
+        margin-left: 0
+  .color-block
+    float: left
+    width: 50%
+    .color-list
+      padding: 5px 0 0
+      text-align: left
+    .color
+      width: 25px
+      height: 25px
+    .title-color
+      text-transform: uppercase
+      @include fonts(14px, 17px, 600)
+      margin-bottom: 20px
+  .size-block
+    .size-list
+      text-align: right
+    .title-size
+      @include fonts(14px, 17px, 600)
+      margin-bottom: 20px
+    .size
+      width: 34px
+      height: 34px
+      border: 3px solid #f4f3f3
+      @include fonts(12px, 30px)
+  .amount-block
+    display: none
+@media (max-width: 1499px)
+  .product-list
+    padding: 0 0 0 0
+    margin-bottom: 25px
+    h2
+      font-size: 60px
+      line-height: 60px
+      margin-bottom: 25px
+    .slick-slider
+      .slick-arrow
+        top: -60px
+        &.slick-prev
+          top: -59px
+
+@media (max-width: 1400px)
+  .product-block
+    .btn
+      font-size: 15px
+      height: 50px
+      line-height: 50px
+      letter-spacing: 0
+
+@media (max-width: 991px)
+  .product-list
+    .margin-15
+      margin-left: 0
+    .slick-slider
+      .slick-arrow
+        width: 26px
+        height: 30px
+        top: -31px
+        &.slick-prev
+          top: -30px
+          right: 70px
+        &:before
+          background: url(../img/slider-arrow-mob.svg) center center no-repeat
+      .product-block
+        margin: 15px 15px 15px 0
+  .product-list
+    h2
+      @include fonts(18px, 20px, 600)
+      margin-bottom: 20px
+@media (max-width: 767px)
+
+  .product-block
+    .title
+      @include fonts(14px, 17px, 600)
+      text-align: left
+      height: 32px
+      max-height: 32px
+      padding: 0 0
+      margin-bottom: 8px
+    .img
+      margin-bottom: 15px
+    .price-block
+      text-align: left
+      margin-bottom: 0
+    .price-old
+      @include fonts(14px, 17px, 600)
+      margin-right: 15px
+    .price
+      @include fonts(14px, 17px, 600)
+    .type
+      text-align: left
+
+@media (max-width: 575px)
+  .product-block
+    &:hover
+      box-shadow: none
+    &.product-favorite
+      padding: 0 0
+      margin-bottom: 50px
+      .price-old
+        display: none
+      .type
+        display: none
+    .favorite-delete
+      top: 20px
+    .product-bottom
+      padding: 0 0
+      border: none
+      margin: 10px 0 0
+    .amount-block
+      display: block
+      margin-bottom: 15px
+      &:after
+        content: ""
+        display: table
+        width: 100%
+        clear: both
+      .amount-title
+        font-size: 12px
+        line-height: 17px
+        letter-spacing: 1px
+
+        float: left
+        text-transform: uppercase
+      .amount
+        min-width: 16px
+        text-align: center
+        display: inline-block
+        vertical-align: top
+        float: right
+        font-size: 13px
+        line-height: 17px
+        font-weight: 600
+    .color-block
+      width: auto
+      float: none
+      margin-bottom: 10px
+      &:after
+        display: table
+        width: 100%
+        clear: both
+        content: ""
+      .title-color
+        font-weight: 400
+        letter-spacing: 1px
+        font-size: 12px
+        margin-bottom: 0
+        float: left
+      .color-list
+        padding: 0 0
+        float: right
+      .color
+        display: none
+        width: 16px
+        height: 16px
+        margin: 0 0
+        &.active
+          display: block
+          box-shadow: none !important
+    .size-block
+      float: none
+      width: auto
+      max-width: inherit
+      margin-bottom: 10px
+      &:after
+        display: table
+        width: 100%
+        clear: both
+        content: ""
+      .title-size
+        font-weight: 400
+        letter-spacing: 1px
+        float: left
+        margin: 0 0
+      .size-list
+        float: right
+      .size
+        border: none
+        width: 16px
+        height: 16px
+        margin: 0 0 0
+        display: none
+        font-size: 10px
+        line-height: 16px
+        &.active
+          display: block
+    .btn
+      height: 40px
+      line-height: 40px
+      margin-bottom: 0
+      .hide-mob
+        display: none
+        text-transform: uppercase
+  .product-list
+    .row.mob-mp-5
+      margin-left: -5px
+      margin-right: -5px
+      >div
+        padding-left: 5px
+        padding-right: 5px
+  .sticker-block
+    top: 10px
+    .black
+      line-height: 26px
+      background: rgba(0,0,0,0.5)
+    .red
+      line-height: 26px
+      background: rgba(157,41, 41, 0.5)

@@ -1,0 +1,87 @@
+footer
+  background: #F5F5F9
+  padding: 105px 0 125px 0
+  overflow: hidden
+  h2
+    margin-bottom: 65px
+  .link-small
+    margin-bottom: 30px
+    .link
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+    a
+      text-decoration: none !important
+      color: #43434E
+      &:hover
+        color: $color3
+  .copyright
+    @include fonts(16px, 19px)
+    color: #43434E
+  .name
+    color: #43434E
+    @include fonts(24px, 156%)
+    margin-bottom: 25px
+  .tell
+    .link
+      margin-bottom: 25px
+    a
+      text-decoration: none !important
+      color: #000 !important
+      @include fonts(24px, 24px, 500)
+    img
+      margin: -3px 0 0 0
+  .mail
+    margin: 0 0 55px 0
+    a
+      color: #000 !important
+      @include fonts(24px, 24px, 500)
+      text-decoration: none !important
+  .city-title
+    color: #43434E
+    @include fonts(24px, 156%)
+    margin-bottom: 20px
+  .city
+    color: #000000
+    @include fonts(24px, 132%, 500)
+
+@media (max-width: 1199px)
+  footer
+    padding: 50px 0 50px 0
+    h2, .h2
+      font-size: 38px
+
+@media (max-width: 991px)
+  footer
+    padding: 40px 0 40px 0
+    h2, .h2
+      font-size: 30px
+      margin-bottom: 30px
+    .name
+      font-size: 20px
+      line-height: 110%
+      margin-bottom: 15px
+    .tell
+      img
+        margin: -6px 0 0 0
+      .link
+        margin-bottom: 10px
+      a
+        font-size: 18px
+        line-height: 18px
+    .mail
+      margin: 0 0 20px 0
+      a
+        font-size: 18px
+        line-height: 18px
+    .city-title
+      font-size: 20px
+      line-height: 110%
+    .city
+      font-size: 18px
+      line-height: 110%
+
+@media (max-width: 575px)
+  footer
+    h2, .h2
+      font-size: 25px

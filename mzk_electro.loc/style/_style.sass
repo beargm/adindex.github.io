@@ -1,0 +1,654 @@
+input:focus, a:focus, input:active, a:active
+  outline: none
+@media (min-width: 992px)
+  /* START скрол*/
+  ::-webkit-scrollbar-button
+    background-image: url('')
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar-track
+    background-color: transparent
+
+  ::-webkit-scrollbar-thumb
+    -webkit-border-radius: 0px
+    border-radius: 0px
+    background-color: #c8c8c8
+    cursor: pointer
+    background-size: 100% 100%
+
+  ::-webkit-scrollbar-thumb:hover
+    background-color: #b4b2b2
+
+
+  ::-webkit-resizer
+    background-image: url('')
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar
+    width: 10px
+
+
+  ::-webkit-scrollbar:horizontal
+    height: 10px
+
+  ::-webkit-scrollbar-button
+    display: none
+/* END скрол */
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+
+*
+  &:active, &:focus
+    outline: none !important
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+
+body
+  padding: 0 0 0 0
+  font-family: 'Roboto'
+  font-size: 18px
+  line-height: 24px
+  font-weight: 400
+  color: #000
+  background: #ffffff
+  position: relative
+  min-height: 100vh
+
+strong, b
+  font-weight: 700
+  color: $black
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  font-weight: 500
+  font-family: 'Roboto'
+h1, .h1, h2, .h2
+  color: #000
+  @extend %after-clear
+  @include fonts(32px, 110%, 500)
+  letter-spacing: 0
+  text-transform: none
+  margin-bottom: 30px
+
+
+.clearfix
+  clear: both
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+a
+  @include transition-dr(300ms)
+p
+  @include fonts(20px, 160%, 500)
+  color: $black
+
+@media (max-width: 1199px)
+  h1, .h1, h2, .h2
+    @include fonts(30px, 110%, 500)
+
+@media (max-width: 991px)
+
+  body
+    padding: 60px 0 0 0
+  h1, .h1, h2, .h2
+    @include fonts(28px, 110%, 600)
+    margin-bottom: 20px
+
+
+@media (max-width: 575px)
+  h1, .h1, h2, .h2
+    @include fonts(25px, 110%, 600)
+
+
+.form-control::-webkit-input-placeholder
+  color: #333
+
+.form-control::-moz-placeholder
+  color: #333
+
+.form-control:-ms-input-placeholder
+  color: #333
+
+.form-control:-moz-placeholder
+  color: #333
+
+
+
+
+
+.form-control:focus, .form-control:active
+  box-shadow: none !important
+  outline: none !important
+
+input.form-control
+  border: 1px solid #E1E4EC
+  background: #fff !important
+  padding: 0 10px 0 15px
+  color: #3a404c
+  @include fonts(14px, 50px)
+  height: 50px
+  +border-radius(6px)
+  box-shadow: none
+  &:focus, &:active
+    border: 1px solid #E1E4EC
+    box-shadow: none !important
+    color: #000
+
+textarea.form-control
+  border: 1px solid #E1E4EC
+  background: #fff !important
+  padding: 20px 15px
+  color: #3a404c
+  @include fonts(14px, 18px)
+  min-height: 145px
+  +border-radius(6px)
+  overflow: hidden
+  resize: vertical
+  box-shadow: none
+  &:focus, &:active
+    border: 1px solid #E1E4EC
+    box-shadow: none !important
+    color: #000
+    &+.label-title
+      color: #09A675
+
+.jq-file__browse
+  font-size: 0
+  cursor: pointer !important
+.jq-file__name
+  cursor: pointer !important
+.jq-file
+  &.form-control
+    cursor: pointer !important
+    height: 67px
+    border: 2px solid #dddddd
+    background: #fff url(../img/file.svg) 96% center no-repeat !important
+    padding: 0 20px 0 20px
+    color: #898791
+    @include fonts(18px, 65px)
+    +border-radius(8px)
+    &:focus, &:active
+      border: 2px solid #09A675
+      box-shadow: none !important
+      color: #000
+      &+.label-title
+        color: #09A675
+    input
+      cursor: pointer !important
+
+
+.form-group
+  margin-bottom: 15px
+  .label
+    color: #3a404c
+    @include fonts(14px, 16px, 400)
+    margin-bottom: 10px
+    span
+      color: $red
+
+label.error
+  margin: 5px 0 0 0
+  color: $red
+  @include fonts(14px, 16px)
+  display: block
+
+.table-block
+  width: 100%
+  display: table
+  .td
+    display: table-cell
+    vertical-align: top
+
+.mb-45
+  margin-bottom: 45px
+.mb-40
+  margin-bottom: 40px
+.mt-50
+  margin-top: 50px
+.float-100
+  float: left
+  width: 100%
+
+.scroll-up
+  display: none
+  @include transition-dr(300ms)
+  position: fixed
+  width: 40px
+  height: 40px
+  +border-radius(5px)
+  background: $color1 url("../img/scroll.svg") center center no-repeat
+  -webkit-background-size: 12px auto
+  background-size: 12px auto
+  transform: rotate(90deg)
+  bottom: 65px
+  right: 30px
+  cursor: pointer
+  z-index: 400
+  &:hover
+    opacity: 0.8
+
+
+@media (max-width: 767px)
+  .scroll-up
+    right: 15px
+    bottom: 30px
+
+.tab-content>.active
+  display: block !important
+  height: auto !important
+
+.fade:not(.show)
+  display: block !important
+  height: 0
+  overflow: hidden
+
+.nav-tabs
+  border: none
+  margin-bottom: 25px
+  @extend %after-clear
+  background: #F5F6F9
+  +border-radius(6px)
+  padding: 4px
+  display: inline-block
+  vertical-align: top
+  .nav-item
+    margin: 0 5px 0 0
+    float: left
+    &:last-child
+      margin-right: 0
+  .nav-link
+    border: none
+    color: #7F8694
+    text-decoration: none !important
+    +border-radius(8px)
+    display: block
+    @include fonts(16px, 18px)
+    padding: 10px 22px
+    position: relative
+    +border-radius(6px)
+    &.active, &:hover
+      background: #E1E4EC
+@media (max-width: 767px)
+  .nav-tabs
+    .nav-link
+      font-size: 14px
+      padding: 10px 10px
+
+@media (max-width: 360px)
+  .nav-tabs
+    .nav-link
+      font-size: 12px
+
+
+.margin-10
+  margin-left: -10px
+  margin-right: -10px
+.margin-4
+  margin-left: -4px
+  margin-right: -4px
+  >div
+    padding-left: 4px
+    padding-right: 4px
+.slick-slider
+  opacity: 0
+  &.slick-initialized
+    opacity: 1
+  .slick-dots
+    text-align: center
+    font-size: 0
+    line-height: 0
+    margin: 0 0 0 0
+    padding: 0 0 0 0
+    display: block
+    position: absolute
+    bottom: 20px
+    left: 0
+    right: 0
+    li
+      display: inline-block
+      vertical-align: top
+      &.slick-active
+        button
+          background: $color1
+          opacity: 1
+
+      button
+        font-size: 0
+        padding: 0
+        width: 5px
+        height: 5px
+        +border-radius(50%)
+        margin: 0 5px
+        background: #fff
+        opacity: 1
+        @include transition-dr(300ms)
+        border: none
+        cursor: pointer
+        &:hover
+          background: $color1
+          opacity: 1
+        &:before
+          display: none
+  &.arrow-bottom
+    .slick-arrow
+      bottom: 0
+      top: auto
+      margin: 0 0 0 0
+  .slick-arrow
+    border: none
+    background: #F5F6F9
+    +border-radius(6px)
+    cursor: pointer
+    z-index: 50
+    width: 48px
+    height: 48px
+    padding: 0
+    font-size: 0
+    position: absolute
+    top: -75px
+    margin: 0 0 0 0
+    @include transition-dr(300ms)
+    &:hover
+      border-color: #09A675
+      &:before
+        opacity: 0
+      &:after
+        opacity: 1
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: url(../img/slider-arrow.svg) center center no-repeat
+      @include transition-dr(300ms)
+    &:after
+      opacity: 0
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      background: url(../img/slider-arrow-hover.svg) center center no-repeat
+      width: 100%
+      overflow: hidden
+      @include transition-dr(300ms)
+    &.slick-prev
+      left: auto
+      right: 57px
+      &:before, &:after
+        left: auto
+        right: 0
+        transform: rotate(180deg)
+    &.slick-next
+      right: 4px
+@media (max-width: 991px)
+  .slick-slider
+    &.mob-pd
+      margin-right: -15px
+      .slick-list
+        padding: 0 50px 0 0
+      .slick-arrow
+        display: none !important
+    .slick-arrow
+      width: 40px
+      height: 40px
+      top: -70px
+      &.slick-prev
+        right: 50px
+
+
+.margin-15
+  margin-left: -15px
+  margin-right: -15px
+
+.tab-content>.active
+  display: block !important
+  height: auto !important
+.fade:not(.show)
+  display: block !important
+  height: 0
+  overflow: hidden
+
+
+.parallax-container
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  .parallax
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -1
+    img
+      display: none
+      position: absolute
+      bottom: 0
+      left: 50%
+      min-width: 100%
+      min-height: 100%
+      -webkit-transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0)
+      -webkit-transform: translateX(-50%)
+      transform: translateX(-50%)
+
+.alert-text
+  @include fonts(14px, 20px, 400)
+  +border-radius(16px)
+  padding: 15px 25px
+  background: #F5F6F9
+  color: #3a404c
+  margin: 0 0 45px 0
+  &.bg-red
+    background: rgba(255, 17, 40, 0.08)
+.section-text
+  padding: 30px 0
+  position: relative
+  .ul
+    li
+      padding: 0 0 0 25px
+      margin: 0 0 20px 0
+      @include fonts(14px, 20px)
+  .list-link
+    margin-bottom: 35px
+    .link
+      margin-bottom: 15px
+      position: relative
+      padding: 0 0 0 25px
+      &:before
+        content: ""
+        top: 10px
+        left: 10px
+        width: 4px
+        height: 4px
+        +border-radius(50%)
+        position: absolute
+        background: #102A83
+      a
+        text-decoration: none !important
+        color: #102A83
+        @include fonts(14px, 18px, 500)
+        border-bottom: 1px solid #D1D5DC
+
+  .li-title
+    color: #272A30
+    @include fonts(14px, 20px, 500)
+    position: relative
+    margin-bottom: 15px
+    &:before
+      content: ""
+      top: 6px
+      left: -15px
+      width: 4px
+      height: 4px
+      +border-radius(50%)
+      position: absolute
+      background: #000
+  img
+    +border-radius(24px)
+  .text-formatted
+    @include fonts(14px, 20px, 400)
+    h1
+      @include fonts(32px, 150%, 600)
+      margin-bottom: 40px
+    h4
+      @include fonts(16px, 20px, 500)
+      margin-bottom: 10px
+
+    p
+      @include fonts(14px, 20px, 400)
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
+    a
+      border-bottom: 1px solid #D1D5DC
+      text-decoration: none !important
+      color: #102A83
+      &:hover
+        color: #102A83
+        border-color: transparent
+.text-formatted
+  @include fonts(14px, 20px, 400)
+  p
+    @include fonts(14px, 20px, 400)
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+  a
+    border-bottom: 1px solid #D1D5DC
+    text-decoration: none !important
+    color: #102A83
+    &:hover
+      color: #102A83
+      border-color: transparent
+
+@media (max-width: 991px)
+  .section-text
+    padding: 20px 0
+    img
+      margin-bottom: 15px
+    .list-link
+      .link
+        a
+          @include fonts(18px, 120%, 400)
+    .li-title
+      @include fonts(18px, 120%, 400)
+    .ul
+      li
+        @include fonts(18px, 120%, 400)
+    .text-formatted
+      @include fonts(18px, 120%, 400)
+      p
+        @include fonts(18px, 120%, 400)
+        margin-bottom: 15px
+  .alert-text
+    padding: 15px 15px
+    margin: 0 0 25px 0
+    @include fonts(18px, 120%, 400)
+.social-block
+  font-size: 0
+  @extend %after-clear
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 32px
+    height: 32px
+    background: #eff3fa
+    float: left
+    margin: 0 0 8px 8px
+    +border-radius(6px)
+    &:first-child
+      margin-left: 0
+    &:hover
+      background: #cddbee
+      svg
+        path
+          //fill: #000
+  svg
+    path
+      //@include transition-dr(300ms)
+  .list
+    float: left
+    @extend %after-clear
+  .text
+    color: $black
+    @include fonts(16px, 32px, 700)
+    margin: 0 15px 0 0
+    float: left
+  .text + .social
+    float: left
+
+@media (max-width: 1399px)
+
+@media (max-width: 575px)
+
+.cookie
+  background: #B6997C
+  margin: 0 0
+  padding: 15px 0 10px 0
+  .text
+    @include fonts(14px, 22px)
+    color: #fff
+  .btn-outline
+    height: 29px
+    line-height: 29px
+    font-size: 14px
+    border: 1px solid #ffffff
+    margin: 17px 20px 0 0
+    padding: 0 20px 0 20px
+    &:before
+      display: none
+    &:hover
+      padding-right: 20px
+      border-color: transparent
+  .link
+    display: inline-block
+    vertical-align: top
+    margin: 22px 0 0
+    @include fonts(14px, 16px)
+    text-decoration: none !important
+    color: #ffffff !important
+    border-bottom: 1px solid #fff
+    &:hover
+      border-color: transparent
+@media (max-width: 991px)
+  .cookie
+    padding-bottom: 15px
+    .btn-outline
+      margin-left: 0
+
+
+.page
+  padding: 80px 0 80px 0
+  &.p-90-150
+    padding: 90px 0 155px 0
+  &.p-60
+    padding: 60px 0
+
+@media (max-width: 1300px)
+  .page
+    padding: 100px 0 50px 0
+    &.p-90-150
+      padding: 100px 0 50px 0
+
+@media (max-width: 991px)
+  .page
+    padding: 30px 0 30px 0
+    &.p-90-150
+      padding: 30px 0 30px 0
+
