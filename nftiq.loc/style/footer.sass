@@ -1,0 +1,130 @@
+@import "_settings"
+footer
+  position: relative
+  background: $color1
+  padding: 80px 0 220px 0
+  .line
+    height: auto
+    width: 1px
+    background: #64e5c4
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+  .container
+    position: relative
+  .logo-footer
+    width: 85px
+    margin: 0 0 60px 0
+    &:after
+      content: ""
+      width: auto
+      height: 1px
+      position: absolute
+      top: 10px
+      left: 110px
+      right: 0
+      background: #64e5c4
+  .link-title
+    text-transform: uppercase
+    color: #bfe0d3
+    @include fonts(18px, 18px, bold)
+    letter-spacing: 1px
+    margin: 0 0 40px 0
+  .link
+    margin: 0 0 40px 0
+    &:last-child
+      margin-bottom: 0
+    a
+      text-decoration: none !important
+      color: #ffffff
+      display: inline
+      border-bottom: 1px solid transparent
+      @include fonts(18px, 22px, 400)
+      &:hover
+        border-color: #fff
+  .column-right
+    padding: 0 0 0 130px
+  .form-email
+    margin-bottom: 80px
+    .input
+      background: #c1f5e7
+      color: #b5b5b5
+    .btn-submit
+      background: #fff
+      color: $color1
+      border-color: #fff
+      input
+        color: $color1
+        font-weight: 600
+  .mb-30
+    margin-bottom: 30px
+  .coming-soon
+    margin-bottom: 0
+  .follow-us
+    float: right
+.follow-us
+  a
+    display: block
+    width: 28px
+    height: 28px
+    float: left
+    margin: 0 10px 10px 0
+    &:last-child
+      margin-right: 0
+
+.copyright
+  margin: 80px 0 0 0
+  @extend %after-clear
+  position: relative
+  @include fonts(15px, 15px)
+  color: #bfe0d3
+  letter-spacing: 1px
+  &:after
+    content: ""
+    width: 100%
+    height: 1px
+    position: absolute
+    top: 8px
+    left: 0
+    right: 0
+    background: #64e5c4
+  span
+    float: right
+    position: relative
+    background: $color1
+    padding: 0 0 0 10px
+    color: #bfe0d3
+    display: inline-block
+    vertical-align: top
+    z-index: 1
+    b
+      color: #bfe0d3
+      font-weight: bold
+
+@media (max-width: 1199px)
+  footer
+    .column-right
+      padding-left: 0
+
+@media (max-width: 991px)
+  footer
+    padding: 80px 0 50px 0
+    .form-email
+      margin-top: 30px
+      margin-bottom: 30px
+    .coming-soon
+      margin-bottom: 25px
+    .follow-us
+      float: none
+    .link-title
+      margin-bottom: 15px
+    .link
+      margin-bottom: 15px
+
+@media (max-width: 767px)
+  footer
+    .column-right
+      margin-top: 30px
+  .copyright
+    margin-top: 30px

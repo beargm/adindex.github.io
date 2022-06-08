@@ -1,0 +1,179 @@
+.jq-selectbox
+  height: 50px
+  width: auto
+  display: inline-block
+  vertical-align: top
+  +border-radius(6px)
+  cursor: pointer
+  border: 1px solid #E1E4EC
+  &.select-search
+    .jq-selectbox__select
+      .jq-selectbox__trigger
+        display: none
+  .jq-selectbox__search
+    input
+      display: block
+      width: 100%
+      height: 50px
+      @include fonts(15px, 50px, 600)
+      padding: 0 20px
+      color: #958e8e
+      border: 2px solid #B3B3B3
+      border-bottom: none
+      background: #fff
+  .jq-selectbox__not-found[style] + ul
+    box-shadow: none
+  .jq-selectbox__not-found
+    background: none
+    display: block
+    @include fonts(15px, 50px, 600)
+    padding: 0 20px
+    color: #958e8e
+    opacity: 1
+    background: #fff
+    border: 1px solid #B3B3B3
+
+    margin: 0 0
+  &.opened
+    .jq-selectbox__select
+      .jq-selectbox__trigger
+        .jq-selectbox__trigger-arrow
+          //margin-top: -5px
+          //margin-right: 0
+          transform: rotate(180deg)
+  .jq-selectbox__select
+    .jq-selectbox__select-text
+      height: 48px
+      @include fonts(14px, 48px, 400)
+      color: #44404F
+      padding-right: 45px
+      padding-left: 15px
+      width: auto !important
+      max-width: 100%
+    .jq-selectbox__trigger
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      height: 100%
+      width: 35px
+      .jq-selectbox__trigger-arrow
+        background: url("../img/select.svg") center center no-repeat
+        content: ""
+        position: absolute
+        margin: -5px -5px 0 0
+        top: 50%
+        right: 50%
+        width: 12px
+        height: 7px
+        transform: rotate(0deg)
+        opacity: 1
+  .jq-selectbox__dropdown
+    position: absolute
+    top: 48px !important
+    left: -1px !important
+    right: -1px !important
+    width: auto !important
+    bottom: auto !important
+    ul
+      //box-shadow: 1px 1px 3px 2px rgba(158, 158, 158, 0.2)
+      display: block
+      width: 100%
+      position: absolute
+      min-width: 155px
+      max-height: 365px !important
+      background: #fff
+      border: 1px solid #E1E4EC
+      padding: 0 0
+      margin: 0
+      list-style: none
+      +border-radius(3px)
+      overflow-y: auto
+      &::-webkit-scrollbar-thumb
+        background-color: #DFDFDF
+      &::-webkit-resizer
+        width: 3px
+      &::-webkit-scrollbar
+        width: 3px
+        background: #f6f6f6
+      li
+        @include fonts(14px, 17px, 400)
+        padding: 8px 15px 8px 15px
+        @include transition-dr(300ms)
+        white-space: normal
+        //border-bottom: 1px solid $yellow
+        &:last-child
+          border-bottom: none
+        &:hover
+          background: #DFDFDF
+
+@media (max-width: 991px)
+  .jq-selectbox
+    .jq-selectbox__dropdown
+      ul
+        max-height: 290px !important
+  .jq-selectbox
+    height: 50px
+    .jq-selectbox__dropdown
+      top: 50px !important
+    .jq-selectbox__select
+      .jq-selectbox__select-text
+        height: 50px
+        line-height: 50px
+.qty
+  .jq-number
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 120px
+    border: none
+    background: #fff
+
+    .jq-number__spin
+      width: 28px
+      height: 28px
+      position: absolute
+      top: 0
+      cursor: pointer
+      border: 2px solid $red
+      +border-radius(10px)
+    .minus
+      left: 0
+      &:before
+        content: ""
+        position: absolute
+        top: 11px
+        left: 6px
+        height: 2px
+        background: $red
+        width: 12px
+    .plus
+      right: 0
+      &:before
+        content: ""
+        position: absolute
+        top: 11px
+        left: 6px
+        height: 2px
+        background: $red
+        width: 12px
+      &:after
+        content: ""
+        position: absolute
+        top: 7px
+        left: 11px
+        height: 12px
+        background: $red
+        width: 2px
+    .jq-number__field
+      input
+        opacity: 1 !important
+        width: 100%
+        padding: 0 24px
+        display: block
+        text-align: center
+        @include fonts(20px, 30px, 600)
+        border: none
+        background: none
+

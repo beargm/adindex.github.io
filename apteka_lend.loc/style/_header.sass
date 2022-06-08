@@ -1,0 +1,150 @@
+header.header
+  background: $color1
+  height: 96px
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 900
+  padding: 25px 0 0 0
+  @include transition-dr(300ms)
+
+
+  &.fixed
+    //background: rgba(0,0,0,0.85)
+
+  .container
+    @extend %after-clear
+    //position: relative
+  .logo
+    width: 180px
+    padding: 0 0 0 0
+    float: left
+    opacity: 0
+    @include transition-dr(300ms)
+    transform: scale(1.1)
+    transition-timing-function: ease-in
+    &.active
+      opacity: 1
+      transform: scale(1)
+    a
+      text-decoration: none !important
+      @include fonts(28px, 30px, 500)
+      color: #ffffff !important
+      letter-spacing: 1px
+      font-style: italic
+.header-right
+  margin: 0 0 0 200px
+  @extend %after-clear
+  min-height: 1px
+  padding: 12px 0 0 0
+.header-right-box
+  float: right
+  @extend %after-clear
+.header-link-list
+  @extend %after-clear
+  .link
+    float: left
+    margin: 0 50px 0 0
+    &:last-child
+      margin-right: 0
+    a
+      text-decoration: none !important
+      color: #fff
+      @include fonts(20px, 23px, 500)
+      &:hover
+        color: $color3
+
+
+
+.mobile-menu-trigger, .mobile-menu, .header-mobile
+  display: none
+
+@media (max-width: 991px)
+  .hide-991
+    display: none
+  .header.header
+    height: 60px
+    padding: 14px 0 0 0
+    .logo
+      width: 130px
+  .header-mobile
+    height: 100%
+    display: block
+    padding: 0 15px
+
+  .mobile-menu-close
+    padding: 8px
+    position: absolute
+    top: 15px
+    right: 15px
+    width: 40px
+    height: 40px
+    img
+      width: 100%
+  .mobile-menu-trigger
+    display: block
+    position: absolute
+    top: 15px
+    right: 15px
+    width: 50px
+    span
+      height: 3px
+      background: #fff
+      display: block
+      margin: 0 0 10px 0
+  .mobile-menu-content
+    overflow-y: auto
+    height: 100%
+    margin: 0 -15px 0 0
+    padding: 0 15px 0 0
+  .mobile-menu
+    background: #ffffff
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 900
+    padding: 65px 15px 20px 15px
+    .link-list
+      margin-bottom: 20px
+      .link
+        border-bottom: 1px solid $color1
+        a
+          text-decoration: none !important
+          @include fonts(18px, 20px)
+          color: #43434E
+          display: block
+          padding: 12px 0 10px 0
+    .name
+      color: #43434E
+      @include fonts(18px, 120%)
+      margin-bottom: 15px
+    .tell
+      .link
+        margin-bottom: 10px
+      a
+        text-decoration: none !important
+        color: #000 !important
+        @include fonts(18px, 120%, 500)
+      img
+        margin: -3px 0 0 0
+    .mail
+      margin: 0 0 20px 0
+      a
+        color: #000 !important
+        @include fonts(18px, 20px, 500)
+        text-decoration: none !important
+    .city-title
+      color: #43434E
+      @include fonts(18px, 120%)
+      margin-bottom: 20px
+    .city
+      color: #000000
+      @include fonts(18px, 120%, 500)
+
+
+@media (max-width: 767px)
+
+@media (max-width: 370px)

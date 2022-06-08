@@ -1,0 +1,652 @@
+.category-list
+  padding: 60px 0 30px 0
+  h2
+    text-align: center
+    margin-bottom: 60px
+  .row
+    margin-left: -4px
+    margin-right: -4px
+    >div
+      padding-left: 4px
+      padding-right: 4px
+.category-card
+  position: relative
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+  +border-radius(16px)
+  padding: 45px 15px 25px
+  margin: 0 0 8px 0
+  &:hover
+    color: $color1
+  .link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .img
+    height: 64px
+    width: 64px
+    margin: 0 auto
+    position: absolute
+    left: 0
+    right: 0
+    top: -32px
+  .text
+    @include fonts(16px, 20px, 500)
+    color: #000
+    @include transition-dr(300ms)
+    text-align: center
+@media (max-width: 1199px)
+  .category-card
+    padding: 45px 15px 15px
+    min-height: 130px
+@media (max-width: 991px)
+  .category-card
+    margin-bottom: 55px
+@media (max-width: 575px)
+  .category-card
+    min-height: 10px
+.icon-ru
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+.catalog-card-list
+  padding: 30px 0
+  .row
+    margin-left: -4px
+    margin-right: -4px
+    >div
+      padding-left: 4px
+      padding-right: 4px
+.catalog-card
+  position: relative
+  +border-radius(12px)
+  overflow: hidden
+  height: 205px
+  margin: 0 0 8px 0
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+  border: 8px solid #fff
+  .link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 2
+  .img
+    +border-radius(12px)
+    overflow: hidden
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    background-position: center top
+    -webkit-background-size: cover
+    background-size: cover
+  .text-block
+    padding: 0 20px 20px
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.88) 100%)
+      min-height: 96px
+      +border-radius(0 0 12px 12px)
+  .text
+    @include fonts(16px, 20px, 500)
+    color: #fff
+    position: relative
+    z-index: 1
+    margin-bottom: 5px
+  .price
+    color: #E1E4EC
+    @include fonts(14px, 16px)
+    position: relative
+    z-index: 1
+@media (max-width: 991px)
+  .category-list
+    padding: 15px 0 0 0
+  .catalog-card-list
+    padding: 0 0 20px 0
+  .md-pt-0
+    padding-top: 0 !important
+
+
+.utp-advantages
+  position: relative
+  padding: 30px 0
+  h2
+    margin-bottom: 40px
+
+.utp-adv
+  @extend %after-clear
+  margin: 0 0 35px 0
+  .img
+    width: 48px
+    float: left
+  .text
+    padding: 2px 0 0 0
+    margin: 0 0 0 65px
+    @include fonts(16px, 22px)
+@media (max-width: 991px)
+  .utp-advantages
+    padding: 20px 0 0 0
+    h2
+      margin-bottom: 20px
+  .utp-adv
+    margin: 0 0 25px 0
+
+
+.title-section
+  margin-bottom: 25px
+  @extend %after-clear
+  h2
+    margin: 0 30px 0 0
+    float: left
+    padding: 7px 0 0 0
+
+.object-list
+  position: relative
+  padding: 30px 0
+  .slider
+    .card-object
+      margin: 0 4px 15px
+
+.card-object
+  +border-radius(16px)
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06)
+  background: #fff
+  position: relative
+  .link
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .content
+    padding: 12px 20px 20px
+  .img
+    img
+      +border-radius(16px 16px 0 0)
+      width: 100%
+  .title
+    @include fonts(16px, 20px, 500)
+    margin-bottom: 15px
+  .text
+    min-height: 60px
+    color: #49505F
+    @include fonts(14px, 20px)
+    span
+      color: #7F8694
+@media (max-width: 991px)
+  .object-list
+    padding: 20px 0 0 0
+  .card-object
+    .title
+      min-height: 40px
+@media (max-width: 767px)
+  .card-object
+    .text
+      min-height: 80px
+@media (max-width: 575px)
+  .card-object
+    .title
+      min-height: 10px
+    .text
+
+@media (max-width: 575px)
+  .object-list
+    .title-section
+      .btn
+        float: right
+        font-size: 14px
+        padding: 0 10px
+      h2
+        padding: 0 0
+        margin: 0 0
+        float: left
+        font-size: 22px
+        line-height: 50px
+
+.title-section
+  margin-bottom: 25px
+  h2
+    margin-bottom: 0
+  .text-info
+    padding: 15px 0 0 0
+    text-align: right
+    color: #7f8694
+    @include fonts(14px, 16px, 400)
+@media (max-width: 991px)
+  .title-section
+    margin-bottom: 25px
+    h2
+      float: none
+      margin: 0 0 10px 0
+    .btn
+      float: none
+
+.price-list
+  padding: 30px 0
+
+.card-price
+  position: relative
+  min-height: 115px
+  background: #fff
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+  +border-radius(16px)
+  text-align: center
+  padding: 30px 15px 10px
+  .price
+    margin-bottom: 5px
+    @include fonts(24px, 26px, 500)
+  .size-16
+    @include fonts(16px, 26px, 500)
+  .text
+    @include fonts(16px, 24px)
+@media (max-width: 991px)
+  .price-list
+    padding: 0 0 20px 0
+
+@media (max-width: 575px)
+  .card-price
+    margin: 0 0 20px 0
+
+.calc-section
+  padding: 30px 0
+  position: relative
+  
+.calc-block
+  background: #fff
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+  +border-radius(16px)
+  padding: 20px 25px 30px
+  .bottom-block
+    @extend %after-clear
+  .radiobox-group
+    float: left
+  .btn
+    float: right
+  .form-group
+    margin-bottom: 0
+  .jq-selectbox
+    width: 100%
+  .row
+    margin-left: -8px
+    margin-right: -8px
+    >div
+      padding-left: 8px
+      padding-right: 8px
+
+@media (max-width: 1199px)
+  .calc-block
+    .bottom-block
+      margin: 20px 0 0 0
+@media (max-width: 991px)
+
+
+@media (max-width: 767px)
+  .calc-block
+    padding: 20px 15px 20px
+    .form-group
+      margin-bottom: 15px
+@media (max-width: 400px)
+  .calc-block
+    .radiobox-group
+      float: none
+      margin: 0 0 15px 0
+    .btn
+      float: none
+    .radiobox-group
+      .radiobox
+        width: 50%
+.brand-section
+  position: relative
+  padding: 30px 0
+  .slider
+    .img
+      margin: 10px 4px
+  .img
+    height: 80px
+    +border-radius(16px)
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06)
+    background: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      height: 58px
+@media (max-width: 991px)
+  .brand-section
+    padding: 20px 0
+@media (max-width: 575px)
+  .brand-section
+    .title-section
+      .btn
+        float: right
+        font-size: 14px
+        padding: 0 10px
+      h2
+        padding: 0 0
+        margin: 0 0
+        float: left
+        font-size: 22px
+        line-height: 50px
+
+
+.document-section
+  padding: 30px 0
+  position: relative
+  .doc-item
+    margin: 0 0 8px
+.doc-item
+  background: #fff url(../img/document.svg) 8px center no-repeat
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+  +border-radius(6px)
+  padding: 8px 10px 8px 30px
+  @include fonts(14px, 18px)
+  overflow-x: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+@media (max-width: 991px)
+  .document-section
+    padding: 20px 0
+@media (max-width: 575px)
+  .document-section
+    .title-section
+      .btn
+        float: right
+        font-size: 14px
+        padding: 0 10px
+      h2
+        padding: 0 0
+        margin: 0 0
+        float: left
+        font-size: 22px
+        line-height: 50px
+
+.work-certification
+  position: relative
+  padding: 30px 0
+  .slider
+    .work-c
+      margin: 10px 4px
+.work-c
+  position: relative
+  +border-radius(16px)
+  background: #fff
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06)
+  max-width: 600px
+  .img
+    border: 1px solid #F5F6F9
+    +border-radius(14px 14px 0 0)
+    img
+      width: 100%
+  .text
+    @include fonts(14px, 16px)
+    text-align: center
+    padding: 10px 15px
+    overflow-x: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+@media (max-width: 991px)
+  .work-certification
+    padding: 20px 0
+
+
+.reviews-section
+  position: relative
+  padding: 30px 0
+  .slider
+    .reviews
+      margin: 0 15px
+.reviews
+  position: relative
+  .line
+    @extend %after-clear
+    margin-bottom: 20px
+  .name
+    color: #000
+    @include fonts(16px, 20px, 500)
+    margin-bottom: 10px
+  .date
+    color: #7F8694
+    @include fonts(14px, 20px)
+    display: inline-block
+    vertical-align: top
+  .city
+    display: inline-block
+    vertical-align: top
+    color: #7F8694
+    @include fonts(14px, 20px)
+    padding: 0 0 0 12px
+    position: relative
+    &:before
+      content: ""
+      background: #E1E4EC
+      width: 4px
+      height: 4px
+  .text
+    @include fonts(14px, 20px)
+@media (max-width: 991px)
+  .reviews-section
+    padding: 20px 0
+    .margin-15
+      margin: 0 0  0 -15px
+
+@media (max-width: 575px)
+  .reviews
+    .date
+      display: block
+    .city
+      display: block
+      padding-left: 0
+
+.company-list
+  position: relative
+  padding: 30px 0
+  .img
+    height: 120px
+    text-align: center
+    margin: 0 0 25px 0
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-height: 100%
+@media (max-width: 991px)
+  .company-list
+    padding: 20px 0
+    .img
+      height: 60px
+      margin: 0 0 15px 0
+
+.news-list
+  position: relative
+  padding: 30px 0
+  .title-section
+    @extend %after-clear
+    h2
+      float: left
+    .btn
+      float: right
+
+.news
+  position: relative
+  padding: 8px
+  background: #fff
+  @extend %after-clear
+  +border-radius(16px)
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+  margin: 0 0 8px 0
+  .link
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    width: 100%
+    height: 100%
+  .img
+    width: 192px
+    float: left
+    img
+      +border-radius(12px)
+      overflow: hidden
+  .content
+    margin: 0 0 0 210px
+    padding: 10px 5px 0 0
+  .title
+    @include fonts(16px, 18px, 500)
+    margin-bottom: 10px
+  .text
+    @include fonts(14px, 18px)
+    margin-bottom: 10px
+    min-height: 100px
+  .date
+    color: #7F8694
+    @include fonts(14px, 16px)
+@media (max-width: 991px)
+  .news-list
+    padding: 20px 0
+    .title-section
+      h2
+        line-height: 50px
+        margin: 0 0
+        padding: 0 0
+        font-size: 22px
+      .btn
+        padding: 0 10px
+        font-size: 14px
+  .news
+    .img
+      width: 80px
+    .content
+      margin: 0 0 0 90px
+      padding: 0 0
+    .text
+      min-height: 10px
+
+.video-list
+  position: relative
+  padding: 30px 0
+  .title-section
+    @extend %after-clear
+    h2
+      float: left
+    .btn
+      float: right
+.video
+  position: relative
+  +border-radius(16px)
+  overflow: hidden
+  margin: 0 0 8px 0
+  background: #fff
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06)
+  &:hover
+    .play
+      background: $color2 url(../img/play-hover.svg) center center no-repeat
+  .link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 2
+  .play
+    @include transition-dr(300ms)
+    +border-radius(50%)
+    width: 64px
+    height: 64px
+    background: #fff url(../img/play.svg) center center no-repeat
+    position: absolute
+    top: 50%
+    left: 50%
+    margin: -32px 0 0 -32px
+
+  .img
+    position: relative
+    img
+      +border-radius(16px 16px 0 0)
+      width: 100%
+      display: block
+  .text
+    @include fonts(16px, 20px, 500)
+    padding: 10px 20px
+@media (max-width: 991px)
+  .video-list
+    padding: 20px 0
+    .title-section
+      h2
+        padding: 0 0
+        margin: 0 0
+        line-height: 50px
+  .video
+    margin: 0 0 15px 0
+@media (max-width: 575px)
+  .video-list
+    .title-section
+      .btn
+        font-size: 14px
+        padding: 0 15px
+
+      h2
+        font-size: 22px
+
+.twitter-frame
+  position: relative
+  padding: 30px 0
+@media (max-width: 991px)
+  .twitter-frame
+    padding: 20px 0
+
+.order-section
+  position: relative
+  padding: 30px 0 60px 0
+  .order-box
+    background: radial-gradient(220.83% 220.83% at 52.32% 169.27%, #102A83 0%, #1D3DAB 100%)
+    +border-radius(16px)
+    padding: 25px 25px
+    @extend %after-clear
+  .title
+    color: #fff
+    @include fonts(32px, 110%, 500)
+    padding: 8px 0 0 0
+  .btn-block
+    position: relative
+    padding: 0 0 0 0
+    width: auto
+    float: right
+    &:before
+      content: ""
+      position: absolute
+      top: -5px
+      left: -235px
+      width: 190px
+      height: 60px
+      background: url(../img/vector.png) no-repeat
+      -webkit-background-size: 100% auto
+      background-size: 100% auto
+
+@media (max-width: 991px)
+  .order-section
+    padding: 0px 0 20px 0
+    .title
+      font-size: 25px
+      line-height: 30px
+      padding: 0 0
+      margin: 0 0 15px 0
+    .order-box
+      padding: 25px 15px
+    .btn-block
+      float: none
+      &:before
+        display: none
+    .btn

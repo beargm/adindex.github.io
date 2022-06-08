@@ -1,0 +1,357 @@
+@import "_settings"
+.header-top
+  background: #F5F6F9
+  position: relative
+  font-size: 0
+
+  .container
+    @extend %after-clear
+  .list
+    float: left
+    &:nth-child(1)
+      margin: 0 25px 0 0
+    &:nth-child(2)
+      margin: 0 45px 0 0
+    &:nth-child(3)
+      margin: 0 35px 0 0
+    &:nth-child(4)
+      margin: 0 10px 0 0
+    &:last-child
+      float: right
+  .text
+    color: #7F8694
+    @include fonts(14px, 40px, 400)
+  ul
+    li
+      @include fonts(14px, 40px, 400)
+      float: left
+      margin: 0 5px 0 0
+      span
+        color: #7F8694
+  .link-bg
+    margin: 7px 0 0 0
+  .link-user
+    margin: 0 25px 0 0
+.link-img
+  text-decoration: none !important
+  color: #000
+  @include fonts(14px, 40px, 500)
+  padding: 0 0 0 32px
+  display: inline-block
+  vertical-align: top
+  &:hover
+    color: #1B3899
+.link-city
+  background: url(../img/city.svg) 0px center no-repeat
+  padding: 0 0 0 18px
+.link-user
+  background: url(../img/auth.svg) 0px center no-repeat
+  padding: 0 0 0 32px
+.link-cart
+  background: url(../img/cart.svg) 0px center no-repeat
+  padding: 0 0 0 32px
+.link-bg
+  text-decoration: none !important
+  background: #E1E4EC
+  @include fonts(14px, 25px, 400)
+  padding: 0 10px
+  color: #49505F
+  +border-radius(4px)
+  display: inline-block
+  vertical-align: top
+  &.no-bg
+    background: none
+  &:hover
+    color: #1B3899
+header.header
+  z-index: 900
+  height: auto
+  position: relative
+  top: 0
+  left: 0
+  right: 0
+  z-index: 900
+  padding: 0 0 0 0
+  @include transition-dr(300ms)
+
+
+  &.fixed
+    //background: rgba(0,0,0,0.85)
+
+  .container
+    @extend %after-clear
+    //position: relative
+  .logo
+    width: 240px
+    padding: 0 0 0 0
+    float: left
+    @extend %after-clear
+    &.active
+      .img
+        opacity: 1
+        transform: scale(1)
+    .img
+      width: 64px
+      opacity: 0
+      @include transition-dr(300ms)
+      transform: scale(1.1)
+      transition-timing-function: ease-in
+      float: left
+    .text
+      margin: 0 0 0 100px
+      color: #A2AABB
+      @include fonts(14px, 20px, 400)
+      padding: 15px 0 0 0
+    a
+      text-decoration: none !important
+      @include fonts(28px, 30px, 500)
+      color: #ffffff !important
+      letter-spacing: 1px
+      font-style: italic
+.header-block
+  padding: 15px 0 20px 0
+
+.header-right
+  margin: 0 0 0 265px
+  @extend %after-clear
+  min-height: 1px
+  padding: 0 0 0 0
+  .form-search
+    margin: 20px 0 0 0
+.header-right-info
+  @extend %after-clear
+  .column-left
+    padding: 10px 0 0 0
+    float: left
+  .column-right
+    float: right
+    text-align: right
+    padding: 10px 0 0 0
+.form-search
+  width: 100%
+  height: 48px
+  border: 1px solid #E1E4EC
+  +border-radius(6px)
+  position: relative
+  .text
+    width: 100%
+    @include fonts(14px, 46px, 400)
+    color: #A2AABB
+    border: none
+    box-shadow: none
+    height: 100%
+    display: block
+    background: none
+    padding: 0 50px 0 15px
+  .submit
+    padding: 0 0
+    font-size: 0
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+    width: 40px
+    height: auto
+    background: none
+    border: none
+.link-calc
+  @include fonts(14px, 23px, 500)
+  color: #000
+  text-decoration: none !important
+  display: inline-block
+  vertical-align: top
+  margin-bottom: 20px
+  padding: 0 0 0 30px
+  background: url(../img/calc.svg) 0px center no-repeat
+  &:hover
+    color: $color1
+.link-order
+  @include fonts(14px, 23px, 500)
+  color: #000
+  text-decoration: none !important
+  display: inline-block
+  vertical-align: top
+  margin-bottom: 20px
+  padding: 0 0 0 30px
+  background: url(../img/doc.svg) 0px center no-repeat
+  &:hover
+    color: $color1
+.header-tell
+  text-decoration: none !important
+  display: inline-block
+  vertical-align: top
+  @include fonts(18px, 21px, 500)
+  color: #000 !important
+  text-transform: uppercase
+  margin: 0 0 5px 0
+.header-time
+  color: #49505F
+  @include fonts(14px, 16px, 400)
+  margin-bottom: 5px
+  span
+    color: #A2AABB
+.request-call
+  text-decoration: none !important
+  color: #49505F
+  display: inline-block
+  vertical-align: top
+  @include fonts(14px, 16px, 400)
+  &:hover
+    color: $color1
+
+nav.nav-menu
+  .container
+    @extend %after-clear
+  .link-first
+    float: left
+    margin: 0 0 0 0
+    a
+      height: 48px
+      background: $color1 url(../img/nav.svg) 20px center no-repeat
+      color: #fff
+      text-decoration: none !important
+      padding: 0 20px 0 55px
+      display: inline-block
+      vertical-align: top
+      +border-radius(6px)
+      @include fonts(16px, 48px, 500)
+
+  .link-list
+    @extend %after-clear
+    background: #F5F6F9
+    +border-radius(6px)
+    margin: 0 0 0 208px
+    font-size: 0
+    padding: 0 37px
+  .link
+    float: left
+    a
+      text-decoration: none !important
+      padding: 0 15px
+      @include fonts(16px, 48px, 500)
+      height: 48px
+      display: inline-block
+      vertical-align: top
+      color: #000
+      &:hover
+        color: $color1
+
+@media (max-width: 1199px)
+  nav.nav-menu
+    .link-first
+      a
+        font-size: 14px
+    .link-list
+      padding: 0 5px
+    .link
+      a
+        font-size: 14px
+        padding: 0 15px
+  .header-top
+    .list
+      &:nth-child(3)
+        display: none
+  header.header
+    .logo
+      .text
+        margin: 0 0 0 80px
+  .header-right
+    margin: 0 0 0 225px
+  .header-right-info
+    .column-left
+      //display: none
+@media (max-width: 1050px)
+  nav.nav-menu
+    .link
+      a
+        padding: 0 10px
+
+.mobile-menu-trigger, .mobile-menu, .header-mobile
+  display: none
+
+
+@media (max-width: 991px)
+  nav.nav-menu
+    display: none
+  .hide-991
+    display: none
+  .header.header
+    position: fixed
+    background: #F5F6F9
+    height: 60px
+    padding: 5px 0 0 0
+    .logo
+      width: 37px
+  .header-mobile
+    height: 100%
+    display: block
+    padding: 0 15px
+
+  .mobile-menu-close
+    padding: 8px
+    position: absolute
+    top: 15px
+    right: 15px
+    width: 40px
+    height: 40px
+    img
+      width: 100%
+  .mobile-menu-trigger
+    display: block
+    position: absolute
+    top: 20px
+    right: 15px
+    width: 35px
+    span
+      height: 3px
+      background: #000
+      display: block
+      margin: 0 0 5px 0
+  .mobile-menu-content
+    overflow-y: auto
+    height: 100%
+    margin: 0 -15px 0 0
+    padding: 0 15px 0 0
+  .mobile-menu
+    background: #F5F6F9
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 900
+    padding: 65px 15px 20px 15px
+    .header-right-info
+      margin: 0 0 10px 0
+      .column-left
+        float: none
+        margin: 0 0 15px 0
+      .column-right
+        text-align: left
+        float: none
+    nav.nav-menu
+      display: block
+      .link-first
+        float: none
+        width: 100%
+        max-width: 500px
+        margin: 0 0 20px 0
+        a
+          display: block
+      .link-list
+        margin: 0 0
+        padding: 0 0
+      .link
+        float: none
+        margin: 0 0 10px 0
+        a
+          display: block
+          line-height: 22px
+          height: auto
+          padding: 0 0
+  .mob-header
+    padding: 20px 15px
+
+@media (max-width: 767px)
+
+@media (max-width: 370px)

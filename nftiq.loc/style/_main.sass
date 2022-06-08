@@ -1,0 +1,370 @@
+.banner-main
+  position: relative
+  padding: 0 0 50px 0
+  h1, h2
+    margin-bottom: 15px
+  .text-formatted
+    margin-bottom: 40px
+    font-weight: 600
+.text-green
+  color: $color1
+
+.coming-soon
+  @extend %after-clear
+  margin: 0 0 60px 0
+  .text
+    float: left
+    @include fonts(18px, 33px)
+    margin: 0 53px 0 0
+    color: #4a4a49
+  .img
+    max-width: 245px
+    float: left
+    img
+
+.form-email
+  width: 100%
+  max-width: 450px
+  position: relative
+  .input
+    width: 100%
+    padding: 0 170px 0 15px
+    display: block
+    height: 50px
+    border: none
+    +border-radius(0)
+    background: #fff
+    @include fonts(18px, 50px)
+  .btn-submit
+    width: 160px
+    position: absolute
+    top: 0
+    right: 0
+@media (max-width: 991px)
+  .banner-main
+    padding: 0 0 25px 0
+    .image
+      margin-top: 30px
+    .coming-soon
+      margin: 0 0 30px 0
+@media (max-width: 575px)
+  .banner-main
+    .text-formatted
+      margin-bottom: 30px
+@media (max-width: 575px)
+  .form-email
+    .btn-submit
+      width: 110px
+      @include fonts(12px, 50px)
+
+    .input
+      padding: 0 120px 0 15px
+      @include fonts(15px, 50px)
+
+
+.nft-list-img
+  padding: 50px 0 65px 0
+  border-bottom: 1px solid #e9e9e9
+  overflow: hidden
+  h5
+    @include fonts(18px, 20px, 600)
+    text-align: center
+    margin: 0 0 35px 0
+    color: #575756
+  .text-formatted
+    margin: 20px 0 0 0
+    text-align: center
+    color: #575756
+  .list
+    font-size: 0
+    text-align: center
+  .img-c
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 70px
+  .img
+    display: inline-block
+    vertical-align: top
+    margin: 0 18px 25px
+    img
+      max-width: 100px
+@media (max-width: 991px)
+  .nft-list-img
+    padding: 25px 0
+    .img
+      margin-bottom: 10px
+
+.utp-list
+  position: relative
+  overflow: hidden
+  padding: 55px 0 0 0
+  h2
+    margin-bottom: 150px
+
+.utp
+  position: relative
+  margin: 0 auto 120px
+  max-width: 350px
+  .img
+    height: 45px
+    width: 80px
+    text-align: center
+    margin: 0 auto 20px
+    img
+
+      max-height: 100%
+  .title
+    @include fonts(30px, 120%, 700)
+    text-align: center
+    margin-bottom: 10px
+    color: #575756
+  .text-formatted 
+    color: #575756
+    text-align: center
+    line-height: 160%
+@media (max-width: 991px)
+  .utp-list
+    h2
+      margin-bottom: 40px
+  .utp
+    margin: 0 auto 50px
+    .title
+      font-size: 23px
+.violet-text-image
+  background: #7209b7
+  padding: 30px 0
+  position: relative
+  overflow: hidden
+  .container
+    @extend %after-clear
+  .text
+    @include fonts(18px, 22px, bold)
+    color: #fff
+  .img
+    max-width: 750px
+@media (max-width: 991px)
+  .violet-text-image
+    .text
+      margin-bottom: 30px
+.pricing-plans
+  background: #f0f2f7
+  padding: 55px 0 130px 0
+  border-bottom: 1px solid #e9eaeb
+  .container
+    max-width: 960px
+.plan-card
+  background: #fff
+  border: 1px solid #9eedda
+  padding: 30px 30px 50px 30px
+  +border-radius(3px)
+  position: relative
+  overflow: hidden
+  &.pro
+    background: $color1
+    color: #fff
+    .top
+      .text
+        color: #fff
+    .text-big
+      color: #fff
+    .price
+      color: #fff
+      border-color: #fff
+    .list
+      li
+        color: #fff
+        background: url(../img/check-3.png) no-repeat
+        -webkit-background-size: 20px 20px
+        background-size: 20px 20px
+    .btn
+      background: #fff
+      color: $color1
+      &:hover
+        background: $color1
+        color: #fff
+        border-color: #fff
+  .top
+    border-bottom: 1px solid #d4d4d4
+    padding: 0 0 40px 0
+    margin-bottom: 30px
+    @extend %after-clear
+    .left
+      float: left
+    .right
+      float: right
+    .text
+      @include fonts(18px, 20px, bold)
+      color: $color1
+  .text-big
+    margin-bottom: 5px
+    color: $color1
+    @include fonts(40px, 40px, bold)
+
+
+  .price
+    width: 170px
+    height: 80px
+    +border-radius(4px)
+    border: 1px solid $color1
+    text-align: center
+    @include fonts(40px, 78px, 400)
+    color: $color1
+    span
+      font-size: 18px
+  .list
+    margin-bottom: 50px
+    li
+      @include fonts(18px, 22px, 400)
+      color: #000
+      padding: 0 0 0 35px
+      margin-bottom: 12px
+      background: url(../img/check-1.png) no-repeat
+      -webkit-background-size: 20px 20px
+      background-size: 20px 20px
+    .not-included
+      color: #a0a0a0
+      background: url(../img/check-2.png) no-repeat
+      -webkit-background-size: 20px 20px
+      background-size: 20px 20px
+@media (max-width: 991px)
+  .pricing-plans
+    padding-bottom: 30px
+    h2.line
+      margin-bottom: 40px
+  .plan-card
+    .top
+      padding: 0 0 20px 0
+      margin-bottom: 20px
+    .text-big
+      font-size: 25px
+      margin-bottom: 5px
+      line-height: 27px
+
+    .price
+      width: 130px
+      font-size: 20px
+      line-height: 48px
+      height: 50px
+@media (max-width: 575px)
+  .plan-card
+    .top
+      .left
+        float: none
+        margin-bottom: 10px
+      .right
+        float: none
+
+@media (min-width: 1200px)
+  .learn-connect
+    .row
+      margin-left: -35px
+      margin-right: -35px
+      >div
+        padding-left: 35px
+        padding-right: 35px
+.learn-connect
+  padding: 60px 0 120px 0
+
+.connect-card
+  position: relative
+  height: 655px
+  overflow: hidden
+  &:hover
+    .img
+      -webkit-background-size: 110% 110%
+      background-size: 110% 110%
+  &:after
+    content: ""
+    background: url(../img/grad-green.png) no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+    z-index: 1
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .img
+    @include transition-dr(500ms)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+  .btn
+    position: absolute
+    bottom: 35px
+    left: 35px
+    z-index: 3
+  .text-block
+    position: relative
+    padding: 35px 15px 15px 35px
+    z-index: 3
+  .title
+    @include fonts(30px, 32px, bold)
+    color: #ffffff
+    margin-bottom: 10px
+  .text
+    @include fonts(18px, 22px, 400)
+    color: #ffffff
+@media (max-width: 1199px)
+  .connect-card
+    height: 500px
+
+@media (max-width: 991px)
+  .learn-connect
+    padding: 30px 0 30px 0
+  .connect-card
+    height: auto
+    min-height: 400px
+@media (max-width: 767px)
+  .connect-card
+    margin: 0 0 30px 0
+    min-height: 100px
+    .btn
+      position: relative
+      left: auto
+      bottom: auto
+      margin: 0 0 25px 15px
+    .text-block
+      padding: 20px 15px 15px
+      min-height: 200px
+    .title
+      font-size: 25px
+
+    .img
+      -webkit-background-size: cover !important
+      background-size: cover !important
+.join-discord
+  background: url(../img/grad-violet.png) no-repeat
+  -webkit-background-size: 100% 100%
+  background-size: 100% 100%
+  padding: 60px 0
+  .title
+    color: #ffffff
+    @include fonts(50px, 55px, 700)
+  .img
+    float: right
+    max-width: 270px
+    margin: 30px 0 0 0
+
+@media (max-width: 991px)
+  .join-discord
+    padding: 35px 0
+    .title
+      font-size: 25px
+      line-height: 30px
+      margin-bottom: 25px
+    .img
+      margin: 0 0 0
+      float: none
+      max-width: 150px
+@media (max-width: 767px)
+  .join-discord
+    .title
+      br
+        display: none
