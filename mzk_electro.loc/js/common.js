@@ -159,7 +159,7 @@ $(function () {
 
 
     $("input[type=tel], input[type=phone]").inputmask({
-        mask : "+7(999) 999-99-99",
+        mask : "+38(999) 999-99-99",
         clearMaskOnLostFocus: true
     });
 

@@ -103,7 +103,11 @@ header.header {
       opacity: 1;
       transform: scale(1); }
     header.header .logo .img {
-      width: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 85px;
+      height: 75px;
       opacity: 0;
       -webkit-transition-duration: 300ms;
       -moz-transition-duration: 300ms;

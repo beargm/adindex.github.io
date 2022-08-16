@@ -86,12 +86,17 @@ header.header
     padding: 0 0 0 0
     float: left
     @extend %after-clear
+
     &.active
       .img
         opacity: 1
         transform: scale(1)
     .img
-      width: 64px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 85px
+      height: 75px
       opacity: 0
       @include transition-dr(300ms)
       transform: scale(1.1)
