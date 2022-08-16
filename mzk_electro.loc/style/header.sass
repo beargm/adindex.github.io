@@ -83,7 +83,7 @@ header.header
     //position: relative
   .logo
     width: 240px
-    float: left  
+    float: left
     padding: 0 0 0 0
     @extend %after-clear
 
@@ -258,6 +258,8 @@ nav.nav-menu
         display: none
   header.header
     .logo
+      .img
+        width: 65px
       .text
         margin: 0 0 0 80px
   .header-right
@@ -286,7 +288,11 @@ nav.nav-menu
     height: 60px
     padding: 5px 0 0 0
     .logo
-      width: 37px
+      width: 85px
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 45px 
   .header-mobile
     height: 100%
     display: block

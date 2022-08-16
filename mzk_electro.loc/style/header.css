@@ -297,6 +297,8 @@ nav.nav-menu .link {
   .header-top .list:nth-child(3) {
     display: none; }
 
+  header.header .logo .img {
+    width: 65px; }
   header.header .logo .text {
     margin: 0 0 0 80px; }
 
@@ -321,7 +323,11 @@ nav.nav-menu .link {
     height: 60px;
     padding: 5px 0 0 0; }
     .header.header .logo {
-      width: 37px; }
+      width: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px; }
 
   .header-mobile {
     height: 100%;
