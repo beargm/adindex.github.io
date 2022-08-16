@@ -97,8 +97,8 @@ header.header {
   transition-duration: 300ms; }
   header.header .logo {
     width: 240px;
-    padding: 0 0 0 0;
-    float: left; }
+    float: left;
+    padding: 0 0 0 0; }
     header.header .logo.active .img {
       opacity: 1;
       transform: scale(1); }
