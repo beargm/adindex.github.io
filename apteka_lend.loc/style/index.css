@@ -1828,10 +1828,7 @@ footer {
     font-size: 25px; } }
 .banner-main {
   min-height: 660px;
-  position: relative;
-  background: url(../img/map.png) right -85px no-repeat;
-  -webkit-background-size: 610px auto;
-  background-size: 610px auto; }
+  position: relative; }
   .banner-main h1, .banner-main .h1, .banner-main h2, .banner-main .h2 {
     font-size: 52px;
     line-height: 118%;
@@ -1851,21 +1848,15 @@ footer {
     padding: 60px 0 0 0; }
 
 @media (max-width: 1350px) and (min-width: 1200px) {
-  .banner-main {
-    -webkit-background-size: 500px auto;
-    background-size: 500px auto; }
-    .banner-main h1, .banner-main .h1, .banner-main h2, .banner-main .h2 {
-      font-size: 45px;
-      line-height: 118%;
-      font-weight: 500; } }
+  .banner-main h1, .banner-main .h1, .banner-main h2, .banner-main .h2 {
+    font-size: 45px;
+    line-height: 118%;
+    font-weight: 500; } }
 @media (max-width: 1199px) and (min-width: 992px) {
-  .banner-main {
-    -webkit-background-size: 450px auto;
-    background-size: 450px auto; }
-    .banner-main h1, .banner-main .h1, .banner-main h2, .banner-main .h2 {
-      font-size: 40px;
-      line-height: 118%;
-      font-weight: 500; } }
+  .banner-main h1, .banner-main .h1, .banner-main h2, .banner-main .h2 {
+    font-size: 40px;
+    line-height: 118%;
+    font-weight: 500; } }
 @media (max-width: 991px) {
   .banner-main {
     background: none;

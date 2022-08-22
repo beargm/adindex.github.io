@@ -1,5 +1,14 @@
+$(window).on("load",function(){
+    $(".nav-page-scroll a").mPageScroll2id({
+        offset: 100
+        //highlightClass:"highlighted-menu-item"
+    });
+});
 $(function () {
-
+    $(".mobile-menu .nav-page-scroll a").click(function () {
+        //e.stopPropagation();
+        $(".mobile-menu").hide();
+    }); 
     /*setTimeout(function () {
         $(".nav-sub-menu").attr("style", "");
     }, 1);*/
@@ -116,7 +125,7 @@ $(function () {
     );
 
     $("input[type=tel], input[type=phone]").inputmask({
-        mask : "+7(999) 999-99-99",
+        mask : "+38(999) 999-99-99",
         clearMaskOnLostFocus: true
     });
     $("input[type='file']").styler({
