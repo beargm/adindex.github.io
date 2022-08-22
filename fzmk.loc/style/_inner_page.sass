@@ -1,0 +1,152 @@
+.inner-page
+  h2, h1
+    text-align: left
+  .tabs-objects
+    margin-bottom: 30px
+
+  .download-project
+    padding: 0
+    border: none
+    margin-bottom: 40px
+    &.vertical
+      margin-bottom: 0
+  .complex-work
+    padding: 0
+    border: none
+.vertical-menu
+  margin: 35px 0 25px 0
+  .title-menu
+    @include fonts(18px, 23px, 500%)
+    letter-spacing: 0.5px
+    text-decoration: none
+    display: block
+    margin-bottom: 15px
+    color: #000
+    &:hover
+      color: $red
+  .link
+    margin-bottom: 12px
+    a
+      text-decoration: none
+      @include fonts(13px, 15px)
+      letter-spacing: 0.5px
+      color: #000
+      &:hover
+        color: $red
+
+.inner-page-parallax
+  margin: 0 0 40px -65px
+  height: 120px
+  margin-bottom: 40px
+  position: relative
+  overflow: hidden
+  .text, h2, h1
+    text-align: center
+    color: #ffffff
+    @include fonts(27px, 32px)
+  h2, h1
+    margin-bottom: 0
+  .text
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+
+.vertical-menu-block
+  background: #FDFDFD
+  border: 1px solid #F0F0F0
+  padding: 0 15px 15px 15px
+  max-width: 315px
+  margin-bottom: 30px
+
+section.text-block
+  .text-formatted
+    //font-family: 'Ubuntu'
+
+.text-formatted
+  .size-18
+    @include fonts(18px, 27px)
+    margin-bottom: 30px
+  .size-13
+    @include fonts(13px, 22px)
+    p
+      @include fonts(13px, 22px)
+
+.tabs-objects
+  .objects-list
+    background: none
+    padding: 0 0
+  .objects-block
+    border: 1px solid #E6E6E6
+
+.tab-about-block-list
+  @extend %after-clear
+  .tab-about-block
+    float: left
+    width: 33.3333%
+    border-right: 1px solid #869198
+    +border-radius(0)
+    &:last-child
+      border: none
+
+
+
+@media (max-width: 1199px)
+  .inner-page-parallax
+    margin: 0 0 40px 0
+
+  .inner-page
+    .tab-about-block
+      .img
+        width: 70px
+      .text
+        margin-left: 80px
+
+.trigger-vertical-menu
+  display: none
+  background: #f9f9f9
+  padding: 10px 15px
+  text-align: center
+  margin-bottom: 15px
+  position: relative
+  &:after
+    background: url(../img/arrow-blue.svg) no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+    content: ""
+    position: absolute
+    right: 15px
+    top: 15px
+    width: 15px
+    height: 10px
+  &.active
+    &:after
+      transform: rotate(180deg)
+
+@media (max-width: 991px)
+  .trigger-vertical-menu
+    display: block
+  .vertical-menu-block
+    display: none
+    max-width: 100%
+    .vertical-menu
+      margin-top: 15px
+  .download-project.vertical
+    max-width: 575px
+
+
+@media (max-width: 575px)
+  .inner-page-parallax
+    .text
+      padding: 0 10px
+    .text, h2, h1
+      font-size: 18px
+      line-height: 22px
+
+  .nav-tabs
+    margin-bottom: 10px
+    .nav-item
+      margin: 0 20px 10px 0
+      .nav-link
+        font-size: 16px
+        line-height: 20px

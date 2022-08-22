@@ -1,0 +1,383 @@
+header
+  position: relative
+  padding: 23px 0 0 0
+  .btn-outline
+    padding: 0 10px
+  .tell
+    margin-bottom: 5px
+    a
+      color: #000
+      text-decoration: none
+      font-family: 'Ubuntu'
+      padding-left: 27px
+      background: url(../img/tell.svg) left center no-repeat
+      -webkit-background-size: 18px 18px
+      background-size: 18px 18px
+
+  .mail
+    a
+      color: #726F6F
+      text-decoration: none
+      font-family: 'Ubuntu'
+      padding-left: 27px
+      background: url(../img/mail.svg) left center no-repeat
+      -webkit-background-size: 18px 18px
+      background-size: 18px 18px
+
+  .header-link-block
+    float: left
+    margin-top: 18px
+    a
+      text-decoration: none !important
+      display: inline-block
+      float: left
+      @include fonts(13px, 14px)
+      letter-spacing: 0.5px
+      border-bottom: 1px solid transparent
+      color: #000
+      margin-right: 30px
+      &:hover
+        border-color: #000
+
+.header
+  padding: 0 0 23px 0
+.logo
+  width: 200px
+  position: relative
+  @extend %after-clear
+  float: left
+  .link
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .img
+    width: 54px
+    height: 54px
+    float: left
+    img
+      max-height: 100%
+      max-width: 100%
+  .text
+    padding-top: 15px
+    margin-left: 65px
+    @include fonts(11px, 12px)
+    letter-spacing: 1px
+    color: #747474
+    text-transform: uppercase
+
+.header-content
+  @extend %after-clear
+  margin-left: 325px
+
+.header-left
+  float: left
+
+.header-right
+  float: right
+  @extend %after-clear
+
+.nav-menu
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.02)
+  background: #ffffff
+  height: 52px
+  position: relative
+  .container
+    @extend %after-clear
+  .border-top
+    border-top: 2px solid #f9f9f9 !important
+  .link-block
+    float: left
+    &.last
+      float: right
+    .link
+      display: inline-block
+      position: relative
+      @include fonts(13px, 50px)
+      color: #000
+      text-decoration: none
+      text-decoration: none !important
+      margin: 0 0 0 0
+      padding: 0 15px
+      z-index: 2
+      &:before
+        z-index: -1
+        content: ""
+        width: 100%
+        height: 0
+        @include transition-dr(300ms)
+        background: #f9f9f9
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+      &:hover
+        color: #000
+        &:before
+          height: 100%
+  .link-block
+    &:hover
+      .sub-menu
+        top: 52px
+        opacity: 1
+        visibility: visible
+  .sub-menu
+    @include transition-dr(300ms)
+    position: absolute
+    top: 75px
+    opacity: 0
+    visibility: hidden
+    left: 0
+    right: 0
+    z-index: 999
+    .sub-block
+      padding: 25px 20px
+      background: rgb(247, 247, 247)
+      border-bottom: 1px solid rgba(128, 122, 128, 0.4)
+      border-top: 1px solid rgba(128, 122, 128, 0.4)
+      @extend %after-clear
+    .column
+      float: left
+      width: 25%
+      padding-right: 20px
+    .column-title
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 12px
+      font-weight: 600
+      margin: 0px 0px 20px
+    .list
+      margin: 0px 0px 10px
+      a
+        font-size: 15px
+        line-height: 15px
+        color: rgb(0, 0, 0)
+        position: relative
+        display: inline-block
+        font-weight: 500
+        @include transition-dr(300ms)
+        margin: 0px 0px 0px 15px
+        text-decoration: none
+        border-bottom: 1px solid transparent
+        &:hover
+          border-color: $black
+        &:after
+          content: ""
+          position: absolute
+          top: 7px
+          left: -15px
+          width: 4px
+          height: 4px
+          z-index: 2
+          background: rgb(238, 63, 20)
+.nav-link-title
+  display: inline-block
+  position: relative
+  @include fonts(13px, 50px)
+  color: #000
+  text-decoration: none
+  padding-left: 45px
+  text-decoration: none !important
+  margin: 0 80px 0 0
+  &:hover
+    color: $blue
+    span
+      background: $blue
+      &:nth-child(1)
+        top: -3px
+      &:nth-child(3)
+        top: 17px
+  b
+    display: block
+    width: 20px
+    height: 20px
+    position: absolute
+    top: 16px
+    left: 0
+
+  span
+    display: block
+    height: 2px
+    width: 20px
+    position: absolute
+    left: 0
+    @include transition-dr(300ms)
+    background: #000
+    &:nth-child(1)
+      top: 0
+    &:nth-child(2)
+      top: 7px
+    &:nth-child(3)
+      top: 14px
+
+.search-trigger
+  position: relative
+  width: 22px
+  height: 22px
+  cursor: pointer
+  margin: 12px 0 0 0
+  &:hover
+    svg
+      path
+        fill: $red
+  svg
+    display: inline-block
+
+    path
+      fill: #000
+      @include transition-dr(300ms)
+
+
+.mobile-nav-trigger
+  display: none
+  position: absolute
+  right: 15px
+  top: 20px
+  height: 36px
+  width: 35px
+.sandwich
+  width: 35px
+  height: 36px
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: 0 auto
+  z-index: 200
+  display: block
+
+.sw-topper
+  position: relative
+  top: 0
+  width: 35px
+  height: 3px
+  background: $blue
+  border: none
+  transition: transform 0.5s, top 0.2s
+  display: block
+
+
+.sw-bottom
+  display: block
+  position: relative
+  width: 35px
+  height: 3px
+  top: 10px
+  background: $blue
+  border: none
+  transition: transform 0.5s, top 0.2s
+  transition-delay: 0.2s, 0s
+
+.sw-footer
+  display: block
+  position: relative
+  width: 35px
+  height: 3px
+  top: 20px
+  background: $blue
+  border: none
+  transition: all 0.5s
+  transition-delay: 0.1s
+
+.mobile-nav-trigger.active
+  .sandwich
+    .sw-topper
+      width: 40px
+      top: 16px
+      left: -3px
+      transform: rotate(132deg)
+      border-radius: 4px
+      height: 3px
+    .sw-bottom
+      width: 40px
+      top: 13px
+      left: -3px
+      height: 3px
+      transform: rotate(-132deg)
+      border-radius: 4px
+    .sw-footer
+      opacity: 0
+      top: 0
+      transform: rotate(180deg)
+
+
+.header-mobile
+  display: none
+
+.mobile-close-menu
+  width: 30px
+  height: 30px
+  position: absolute
+  right: 22px
+  top: 20px
+.mobile-menu
+  display: none
+  position: fixed
+  top: 0
+  background: #fff
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 999
+  padding: 80px 15px 20px 15px
+  overflow: auto
+  height: 100%
+  .btn-outline
+    margin-top: 15px
+.nav-menu-mobile
+  margin-bottom: 20px
+  .list-block
+    .list
+      border-bottom: 1px solid $blue
+      a
+        text-decoration: none !important
+        @include fonts(15px, 18px)
+        text-transform: uppercase
+        color: $blue !important
+        display: block
+        padding: 10px 0 10px 0
+
+
+@media (max-width: 991px)
+  header
+    padding: 0
+    height: 70px
+    .hide-mobile
+      display: none
+  .header-mobile
+    display: block
+    .logo
+      margin: 10px 0 0 0
+      .img
+        width: 45px
+        height: 45px
+      .text
+        padding-top: 10px
+        margin-left: 55px
+    .search-trigger
+      position: absolute
+      right: 80px
+      top: 17px
+      width: 35px
+      height: 35px
+      margin: 0
+      svg
+        width: 35px
+        height: 35px
+
+  .search-trigger
+
+  .mobile-nav-trigger
+    display: block
+
+@media (max-width: 370px)
+  .header-mobile
+    .search-trigger
+      right: 67px
+  .header-mobile
+    .logo
+      .text
+        font-size: 9px

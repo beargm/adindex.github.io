@@ -1,0 +1,68 @@
+.modal-wrapper
+  display: none
+.modal
+  .close
+    position: absolute
+    top: 15px
+    right: 15px
+    margin: 0 0 0 0
+    padding: 0
+    font-size: 32px
+    font-weight: 500
+  .modal-header
+    @include fonts(24px, 26px, 800)
+    display: block
+    border: none
+    margin: 0
+    padding: 50px 0 60px 0
+  .modal-content
+    position: relative
+    +border-radius(10px)
+    padding: 0 45px 60px
+  .modal-body
+    padding: 0
+  .agree-block
+    margin: 20px 0 40px 0
+    label
+      color: #000
+      @include fonts(14px, 20px)
+      padding-left: 42px
+      &:after
+        width: 24px
+        height: 24px
+        +border-radius(5px)
+        border: 2px solid #c3d3df
+      a
+        @include fonts(14px, 20px)
+        border-bottom: 1px solid #000000
+        color: #000
+        &:hover
+          border-bottom: 1px solid transparent
+          color: #000
+  .btn-submit
+    width: 240px
+    text-align: center
+    input
+      display: block
+      padding-left: 0
+      padding-right: 0
+      text-align: center
+#modal-callback
+  .modal-dialog
+    max-width: 510px
+  form
+    .form-control
+      height: 50px
+      @include fonts(18px, 50px)
+      +border-radius(5px)
+      border: 1px solid #c3d3df
+    .form-group
+      margin-bottom: 20px
+
+
+@media (max-width: 575px)
+  .modal
+    .modal-content
+      padding: 0 15px 20px 15px
+    .modal-header
+      padding: 50px 0 30px 0

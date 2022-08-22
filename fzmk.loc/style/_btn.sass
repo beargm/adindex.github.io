@@ -1,0 +1,133 @@
+.btn
+  background: $blue
+  color: #fff
+  @include fonts(14px, 50px)
+  position: relative
+  padding: 0 40px
+  height: 50px
+  border: none
+  +border-radius(0px)
+  //@include transition-dr(300ms)
+  z-index: 1
+  overflow: hidden
+  text-transform: uppercase
+  letter-spacing: 0.5px
+  font-family: 'Ubuntu'
+  &:before
+    z-index: -1
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    @include transition-dr(300ms)
+    height: 0
+    background: $red
+    content: ""
+
+  &:hover
+    //background: #ff5c00
+    color: #ffffff
+    &:before
+      height: 100%
+  &.btn-submit
+    padding: 0
+  input, button
+    text-transform: uppercase
+    background: none
+    border: none
+    outline: none
+    padding: 0
+    width: 100%
+    display: block
+    color: #fff
+    cursor: pointer
+  &.blue
+    background: $blue
+    &:hover
+      color: #ffffff
+  &.red
+    background: $red
+    &:before
+      background: $blue
+    &:hover
+      color: #ffffff
+
+
+
+.btn-outline
+  @include fonts(14px, 50px)
+  position: relative
+  padding: 0 40px
+  height: 50px
+  border: 1px solid #FF6A6A
+  +border-radius(10px)
+  @include transition-dr(300ms)
+  z-index: 1
+  display: inline-block
+  overflow: hidden
+  text-transform: uppercase
+  color: $red
+  &:before
+    z-index: -1
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    @include transition-dr(300ms)
+    height: 0
+    background: $red
+    content: ""
+  &:hover
+    color: #ffffff
+    text-decoration: none
+    &:before
+      height: 100%
+
+
+
+input.btn.btn-grey
+  &:hover
+    background: #697177
+
+
+
+
+.btn.focus, .btn:focus, btn:active
+  box-shadow: none !important
+
+
+.read-more
+  color: $blue
+  text-decoration: none
+  @include fonts(15px, 20px, 500)
+  padding-right: 20px
+  display: inline-block
+  @include transition-dr(300ms)
+  position: relative
+  &:hover
+    color: #eb0a0a
+    text-decoration: none
+    svg
+      right: -10px
+      path
+        fill: #eb0a0a
+  svg
+    transform: rotate(-90deg)
+    position: absolute
+    right: 0
+    top: 7px
+    @include transition-dr(300ms)
+
+
+.link-read-more
+  @include fonts(18px, 20px, 900)
+  color: $blue
+  padding: 0 0 0 0
+  display: inline-block
+  position: relative
+  border-bottom: 1px solid #89a9d8
+  &:hover
+    text-decoration: none
+    color: $blue
+    border-color: transparent
+

@@ -1,0 +1,1027 @@
+input:focus, a:focus, input:active, a:active
+  outline: none
+*
+  &:focus, &:active
+    outline: none !important
+@media (min-width: 992px)
+  /* START скрол*/
+  ::-webkit-scrollbar-button
+    background-image: url('')
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar-track
+    background-color: transparent
+
+  ::-webkit-scrollbar-thumb
+    -webkit-border-radius: 0px
+    border-radius: 0px
+    background-color: #c8c8c8
+    cursor: pointer
+    background-size: 100% 100%
+
+  ::-webkit-scrollbar-thumb:hover
+    background-color: #b4b2b2
+
+
+  ::-webkit-resizer
+    background-image: url('')
+    background-repeat: no-repeat
+    width: 10px
+    height: 0px
+
+  ::-webkit-scrollbar
+    width: 10px
+
+
+  ::-webkit-scrollbar:horizontal
+    height: 10px
+
+  ::-webkit-scrollbar-button
+    display: none
+  /* END скрол */
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+
+
+body
+  font-family: 'FuturaDemiC'
+  font-size: 16px
+  line-height: 22px
+  font-weight: 400
+  color: $black
+  background: #ffffff
+  position: relative
+  min-height: 100vh
+strong, b
+  font-weight: 900
+  color: $black
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  font-weight: 700
+h1, .h1
+  margin-bottom: 25px
+  @include fonts(24px, 30px, 500)
+  font-family: 'Ubuntu'
+h2
+  margin-bottom: 25px
+  @include fonts(24px, 30px, 500)
+  font-family: 'Ubuntu'
+
+.clearfix
+  clear: both
+p
+  @include fonts(18px, 27px, 400)
+  color: $black
+
+a
+  @include transition-dr(300ms)
+
+.form-control::-webkit-input-placeholder
+  color: #726F6F
+
+.form-control::-moz-placeholder
+  color: #726F6F
+
+.form-control:-ms-input-placeholder
+  color: #726F6F
+
+.form-control:-moz-placeholder
+  color: #726F6F
+
+.form-control:focus, .form-control:active
+  box-shadow: none !important
+  outline: none !important
+
+.form-group
+  margin-bottom: 15px
+  .form-control
+    height: 50px
+    display: block
+    width: 100%
+    @include fonts(14px, 50px, 400)
+    letter-spacing: 0.5px
+    padding: 0 20px
+    background: #F9F9F9
+    border: none
+    +border-radius(0)
+    font-family: "Ubuntu"
+
+label.error
+  color: $red !important
+  padding-left: 0 !important
+  font-size: 13px
+  &:before, &:after
+    display: none !important
+.checkbox-block
+  position: relative
+  margin-bottom: 15px
+  label.error
+    position: absolute
+    bottom: -15px
+    left: 0
+    line-height: 13px
+    padding-left: 40px !important
+.jq-file
+  padding-left: 30px
+  background: url(../img/file.svg) left center no-repeat
+  -webkit-background-size: 25px 25px
+  background-size: 25px 25px
+  input
+    cursor: pointer
+  .jq-file__browse
+    display: none
+  .jq-file__name
+    @include fonts(12px, 50px, 400)
+    color: #000
+    overflow: hidden
+    text-overflow: ellipsis
+    max-width: 215px
+
+
+.table-block
+  width: 100%
+  display: table
+  .td
+    display: table-cell
+    vertical-align: top
+
+.jq-selectbox
+  height: 50px
+  width: 185px
+  display: inline-block
+  border: none
+  +border-radius(30px)
+  cursor: pointer
+  &:hover
+    border-color: #b5d8b3
+  &.opened
+    .jq-selectbox__select
+      .jq-selectbox__trigger
+        .jq-selectbox__trigger-arrow
+          //margin-top: -5px
+          //margin-right: 0
+          transform: rotate(180deg)
+  .jq-selectbox__select
+    .jq-selectbox__select-text
+      height: 50px
+      border-bottom: 1px solid #e8e8e8
+      @include fonts(16px, 49px, 400)
+      color: $black
+      padding-right: 30px
+      padding-left: 0
+      width: auto !important
+      max-width: 205px
+    .jq-selectbox__trigger
+      position: absolute
+      top: 0
+      right: 0
+      height: 49px
+      width: 30px
+      .jq-selectbox__trigger-arrow
+        background: url("../img/arrow-black.svg") center center no-repeat
+        -webkit-background-size: 12px auto
+        background-size: 12px auto
+        content: ""
+        position: absolute
+        margin: -5px -6px 0 0
+        top: 50%
+        right: 50%
+        width: 18px
+        height: 10px
+        transform: rotate(0deg)
+  .jq-selectbox__dropdown
+    position: absolute
+    top: 50px !important
+    left: 0px !important
+    right: 0px !important
+    width: auto !important
+    bottom: auto !important
+    ul
+      display: block
+      width: 100%
+      position: absolute
+      max-height: inherit!important
+      background: #fff
+      border-top: none
+      padding: 0 0
+      margin: 0
+      list-style: none
+      +border-radius(0 0 15px 15px)
+      border: none
+      box-shadow: 0px 17px 18px 0px rgba(223, 226, 230, 0.4)
+      li
+        @include fonts(15px, 18px, 400)
+        padding: 5px 10px 7px 10px
+        @include transition-dr(300ms)
+        white-space: normal
+        border-bottom: 1px solid #e9eaee
+        &:last-child
+          border-bottom: none
+        &:hover
+          background: #e8e8e8
+
+
+.float-100
+  float: left
+  width: 100%
+
+.scroll-up
+  @include transition-dr(300ms)
+  position: fixed
+  width: 50px
+  height: 50px
+  +border-radius(5px)
+  background: $red url("../img/scroll.svg") center center no-repeat
+  transform: rotate(90deg)
+  bottom: 30px
+  right: 30px
+  cursor: pointer
+  z-index: 998
+  &:hover
+    background: $black url("../img/scroll.svg") center center no-repeat
+
+
+.social-block
+  &.blue-light
+    a
+      &:hover
+        background: #afc2d7
+        opacity: 1
+    a
+      background: #c6d4e3
+  .fb
+    background: #3b5998
+  .vk
+    background: #4c6c91
+  a
+    text-align: center
+    width: 32px
+    height: 32px
+    vertical-align: top
+    margin-right: 15px
+    text-decoration: none
+    +border-radius(50%)
+    display: flex
+    align-items: center
+    flex-direction: column
+    float: left
+    justify-content: center
+    @include transition-dr(300ms)
+    &:last-child
+      margin-right: 0
+    &:hover
+      opacity: 0.8
+    svg
+      max-width: 17px
+      max-height: 17px
+      width: 100%
+      height: 100%
+
+      &:hover
+        path
+          fill: #fff
+      path
+        fill: #fff
+        stroke: #fff
+        @include transition-dr(300ms)
+    img
+      display: inline-block
+
+
+.slick-slider
+  opacity: 0
+  &.slick-initialized
+    opacity: 1
+  .slick-prev, .slick-next
+    -webkit-transform: translate(0)
+    -ms-transform: translate(0)
+    transform: translate(0)
+    right: 0
+    top: -50px
+    width: 30px
+    height: 30px
+    background: -moz-linear-gradient(top, #84caf1 0%,#48b0ea 30%,#219fe5 50%, #219fe5 80%, #219fe5 100%)
+    background: -webkit-linear-gradient(top, #84caf1 0%,#48b0ea 30%,#219fe5 50%, #219fe5 80%, #219fe5 100%)
+    background: -o-linear-gradient(top, #84caf1 0%,#48b0ea 30%,#219fe5 50%, #219fe5 80%, #219fe5 100%)
+    background: -ms-linear-gradient(top, #84caf1 0%,#48b0ea 30%,#219fe5 50%, #219fe5 80%, #219fe5 100%)
+    background: linear-gradient(top, #84caf1 0%,#48b0ea 30%,#219fe5 50%, #219fe5 80%, #219fe5 100%)
+    +border-radius(50%)
+    font-size: 0
+    @include transition-dr(300ms)
+    box-shadow: 0px 3px 3px 0px rgba(21, 21, 21, 0.17)
+
+    &:hover
+      opacity: 0.7
+    &:before
+      display: none
+    &:after
+      transform: rotate(90deg)
+      background: url(../img/arrow-white.svg) center center no-repeat
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      content: ""
+  .slick-prev
+    right: 60px
+    left: auto
+  .slick-next
+    right: 20px
+    &:after
+      transform: rotate(-90deg)
+
+.breadcrumb
+  +border-radius(0)
+  display: block
+  background: none
+  margin: 0
+  padding: 25px 0 0 0
+  border-top: 1px solid #c6d4e3
+  @extend %after-clear
+
+.breadcrumb-block
+  margin: 15px 0 0 0
+  padding: 0
+  font-size: 0
+  line-height: 0
+  &.mb-55
+    margin-bottom: 50px
+  .container
+    @extend %after-clear
+
+  .breadcrumb-item
+    float: left
+    font-size: 0
+    margin-bottom: 10px
+    margin-right: 32px
+    padding-left: 0
+    font-size: 0
+    &:before
+      display: none
+    &:last-child
+      .icon
+        display: none
+    span.active
+      display: inline
+      margin: 0 0
+    a
+      position: relative
+      text-decoration: none
+      font-size: 14px
+      line-height: 16px
+      font-weight: 700
+      color: $blue
+      @include transition-dr(300ms)
+      display: inline-block
+      border-bottom: 1px solid transparent
+      &:before
+        content: ""
+        position: absolute
+        bottom: -2px
+        left: 0
+        right: 0
+        width: 0
+        @include transition-dr(300ms)
+        height: 1px
+        background: $blue
+      &:hover
+        color: $blue
+        &:before
+          width: 100%
+      &:after
+        width: 10px
+        height: 1px
+        background: $blue
+        position: absolute
+        top: 6px
+        right: -20px
+        content: ""
+    span
+      font-size: 14px
+      line-height: 16px
+      font-weight: 700
+      color: #a3a3a3
+      margin: 0 0
+
+
+.checkbox-block
+  @extend %after-clear
+
+  input
+    margin: 0 0 0 0
+    width: 24px
+    height: 24px
+    background: none
+    display: block
+    opacity: 0
+    float: left
+    &:checked + label:before
+      opacity: 1
+      height: 10px
+      width: 10px
+      top: 7px
+      left: 7px
+      right: 3px
+      bottom: 3px
+
+  label
+    cursor: pointer
+    padding: 0 0 0 40px
+    @include fonts(11px, 14px)
+    color: #726F6F
+    margin: 0
+    position: relative
+    display: block
+    max-width: 250px
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 24px
+      height: 24px
+      border: 1px solid #000
+      display: block
+      z-index: 2
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 24px
+      height: 24px
+      border: 1px solid #000
+      display: block
+      z-index: 2
+      opacity: 0
+      @include transition-dr(300ms)
+      background: $blue
+    a
+      color: #ffffff
+      border-bottom: 1px solid #000
+      text-decoration: none
+      &:hover
+        border-color: transparent
+  .valid + label + label
+    &:before
+      opacity: 1
+      height: 10px
+      width: 10px
+      top: 7px
+      left: 7px
+      right: 3px
+      bottom: 3px
+
+.checkbox-input
+  @extend %after-clear
+  input[type=checkbox]
+    width: 15px
+    height: 60px
+    background: none
+    display: block
+    opacity: 0
+    float: left
+    &:checked + label
+      border-color: transparent
+      box-shadow: 0px 10px 7px 0px rgba(32, 148, 226, 0.06)
+    &:checked + label:after
+      background: #0d66bd url("../img/check.png") center center no-repeat
+      -webkit-background-size: 13px 9px
+      background-size: 13px 9px
+  label
+    height: 60px
+    background: #ffffff
+    border: 1px solid #d3dde7
+    +border-radius(3px)
+    cursor: pointer
+    padding: 0 0 0 65px
+    @include fonts(18px, 60px)
+    color: #747474
+    margin: 0
+    position: relative
+    display: block
+    @include transition-dr(300ms)
+    &:after
+      content: ""
+      position: absolute
+      top: 20px
+      left: 20px
+      width: 20px
+      height: 20px
+      background-color: #e9edf2
+      +border-radius(3px)
+      display: block
+    input
+      margin-top: 6px
+      height: 45px
+      @include fonts(18px, 45px)
+      padding-left: 20px
+      display: block
+      background: none
+      border: none
+      border-left: 1px solid #d3dde7
+    a
+      color: #cbe6fa
+      border-bottom: 1px solid #cbe6fa
+      text-decoration: none
+      &:hover
+        border-color: transparent
+
+
+.slick-slider
+  .slick-dots
+    text-align: center
+    font-size: 0
+    margin: 0 0 0 0
+    li
+      display: inline-block
+      vertical-align: top
+      width: 10px
+      height: 10px
+      +border-radius(50%)
+      margin: 0 5px
+      background: none
+      border: none
+      background: #88888b
+      @include transition-dr(300ms)
+      &.slick-active
+        background: $blue
+      &:hover
+        background: $blue
+      button
+        padding: 0
+        margin: 0
+        background: none
+        font-size: 0
+        &:before
+          display: none
+
+
+.tab-content>.active
+  display: block !important
+  height: auto !important
+
+.fade:not(.show)
+  display: block !important
+  height: 0
+  overflow: hidden
+
+
+.nav-tabs
+  display: block
+  margin-bottom: 25px
+  border: none
+  @extend %after-clear
+  .nav-item.show .nav-link, .nav-link.active
+    border: none
+  .nav-item
+    float: left
+    margin: 0 50px 0 0
+    border: none
+    padding: 0 0
+    &:last-child
+      margin-right: 0
+    .nav-link
+      display: block
+      position: relative
+      @include fonts(18px, 20px)
+      color: #869198
+      text-decoration: none
+      padding: 0 0
+      border: none
+      +border-radius(0)
+      @include transition-dr(300ms)
+      &.active, &:hover
+        border: none
+        color: #000
+
+
+.parallax-container
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  .parallax
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -1
+
+    img
+      display: none
+      position: absolute
+      bottom: 0
+      left: 50%
+      width: 100%
+      min-width: 100%
+      min-height: 100%
+      -webkit-transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0)
+      -webkit-transform: translateX(-50%)
+      transform: translateX(-50%)
+
+
+.pagination
+  display: block
+  font-size: 0
+  .page-item
+    display: inline-block
+    vertical-align: top
+    margin: 0 5px 5px 0
+    font-size: 0
+    .page-link
+      display: inline-block
+      +border-radius(50%)
+      border: 1px solid #dde8f6
+      width: 55px
+      height: 55px
+      @include fonts(16px, 55px)
+      padding: 0
+      text-align: center
+      &.active, &:hover
+        background: #dde8f6
+        text-decoration: none
+        border-color: $blue
+
+
+
+.feedback-form
+  .btn
+    width: 100%
+    padding-left: 0
+    padding-right: 0
+    text-align: center
+    max-width: 380px
+
+.category-list
+  background: #f9f9f9
+  padding: 40px 0
+  
+.category-block
+  background: #ffffff
+  +border-radius(5px)
+  overflow: hidden
+  position: relative
+  &:hover
+    .text
+      color: $red
+  .link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: block
+    z-index: 2
+  .img
+    +border-radius(5px)
+    overflow: hidden
+    img
+      display: block
+      width: 100%
+  .text-block
+    padding: 20px 15px
+  .text
+    @include fonts(18px, 20px)
+    letter-spacing: 0.5px
+    height: 40px
+    overflow: hidden
+    @include transition-dr(300ms)
+
+
+.download-project
+  padding: 45px 0 40px 0
+  border-bottom: 10px solid #f9f9f9
+  h2
+    text-align: center
+    margin-bottom: 40px
+  .checkbox-block
+    margin: 14px 0 25px 0
+  &.vertical
+    padding: 0 0 0 0
+    h2
+      @include fonts(17px, 23px, 500)
+      margin-bottom: 15px
+      text-align: left
+.complex-work
+  border-bottom: 10px solid #f9f9f9
+  padding: 60px 0
+  h2
+    max-width: 720px
+    text-align: center
+    margin: 0 auto 40px
+  .block
+    position: relative
+    &:hover
+      .img
+        img
+          //-webkit-filter: grayscale(0)
+          //filter: grayscale(0)
+          opacity: 1
+      .text
+        color: #000
+  .img
+    height: 75px
+    width: 100px
+    margin: 0 auto 20px
+    text-align: center
+    img
+      max-height: 100%
+      max-width: 100%
+      display: block
+      margin: 0 auto
+      @include transition-dr(300ms)
+      //-webkit-filter: grayscale(100%)
+      //filter: grayscale(100%)
+      opacity: 0.35
+  .text
+    color: #9C9C9C
+    @include fonts(13px, 18px)
+    @include transition-dr(300ms)
+    text-align: center
+    letter-spacing: 0.5px
+  .block
+
+
+.category-list-small
+  padding: 55px 0 0 0
+  border-bottom: 10px solid #f9f9f9
+  h2
+    text-align: center
+    margin: 0 auto 40px
+
+.category-block-small
+  @extend %after-clear
+  position: relative
+  margin: 0 0 55px 0
+
+  &:hover
+    .text
+      color: $red
+  .link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: block
+    z-index: 2
+  .img
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    overflow: hidden
+    +border-radius(20px)
+    width: 100px
+    height: 100px
+    float: left
+  .text-block
+    margin-left: 130px
+    padding: 25px 0 0 0
+  .text
+    height: 40px
+    overflow: hidden
+    @include transition-dr(300ms)
+    @include fonts(18px, 20px)
+    color: #000
+
+.utp-block
+  padding: 55px 0
+  h2
+    text-align: center
+    margin: 0 auto 40px
+.utp
+  .img
+    height: 75px
+    width: 85px
+    margin: 0 auto 25px
+    img
+      max-height: 100%
+      max-width: 100%
+      display: block
+      margin: 0 auto
+  .text
+    text-align: center
+    @include fonts(13px, 20px)
+
+.objects-list
+  background: #f9f9f9
+  padding: 40px 0 10px 0
+  h2
+    text-align: center
+    margin: 0 auto 40px
+
+.objects-block
+  background: #ffffff
+  +border-radius(5px)
+  overflow: hidden
+  position: relative
+  margin: 0 0 30px 0
+  &:hover
+    .text
+      color: $red
+  .link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: block
+    z-index: 2
+  .img
+    +border-radius(10px)
+    overflow: hidden
+    img
+      display: block
+      width: 100%
+  .text-block
+    padding: 20px 15px
+  .text
+    @include fonts(18px, 20px)
+    letter-spacing: 0.5px
+    height: 40px
+    overflow: hidden
+    @include transition-dr(300ms)
+
+.about-main
+  padding: 55px 0
+  h1
+    text-align: center
+    margin: 0 0 60px
+  .text-formatted
+    margin-bottom: 15px
+    @include fonts(13px, 22px)
+    letter-spacing: 0.5px
+    p
+      margin-bottom: 15px
+      @include fonts(13px, 22px)
+      letter-spacing: 0.5px
+      &:last-child
+        margin-bottom: 0
+  .img
+    img
+      max-width: 100%
+.text-formatted
+  margin-bottom: 15px
+  @include fonts(16px, 24px)
+  letter-spacing: 0.5px
+  a
+    text-decoration: none !important
+    display: inline
+    border-bottom: 1px solid $blue
+    color: $blue
+    &:hover
+      border-color: transparent
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    li
+      @include fonts(13px, 22px)
+      margin-bottom: 10px
+      padding-left: 20px
+      position: relative
+      &:before
+        content: ""
+        width: 8px
+        height: 2px
+        position: absolute
+        top: 10px
+        left: 0
+        background: #000
+      &:after
+        background: #000
+        height: 8px
+        width: 2px
+        position: absolute
+        top: 7px
+        left: 3px
+        content: ""
+
+.tab-about-block
+  background: #F9F9F9
+  +border-radius(6px)
+  margin-bottom: 20px
+
+  .img
+    width: 90px
+    height: 85px
+    display: flex
+    align-items: center
+    justify-content: center
+    float: left
+  .text
+    @include fonts(13px, 18px)
+    letter-spacing: 0.5px
+    min-height: 85px
+    margin-left: 100px
+    display: flex
+    align-items: center
+
+@media (max-width: 1199px)
+  .nav-link-title
+    margin: 0 25px 0 0
+
+  .category-block-small
+    .text-block
+      margin-left: 115px
+  .tab-about-block
+    margin-top: 30px
+
+@media (max-width: 991px)
+  h2
+    font-size: 22px
+  .category-list
+    padding-top: 30px
+    padding-bottom: 10px
+  .category-block
+    margin-bottom: 30px
+
+  .download-project
+    padding: 20px 0 0 0
+    h2
+      margin-bottom: 20px
+
+  .complex-work
+    padding: 30px 0 0 0
+    h2
+      margin-bottom: 20px
+    .block
+      margin-bottom: 30px
+
+  .category-list-small
+    padding-top: 30px
+
+  .category-block-small
+    margin-bottom: 30px
+    .img
+      width: 70px
+      height: 70px
+    .text-block
+      margin-left: 85px
+      padding: 14px 0 0 0
+    .text
+      font-size: 16px
+
+  .utp-block
+    padding-top: 30px
+    padding-bottom: 0
+  .utp
+    margin-bottom: 30px
+
+  .objects-list
+    padding-top: 30px
+    h2
+      margin-bottom: 20px
+
+  .about-main
+    padding-top: 30px
+    padding-bottom: 20px
+    h1
+      margin-bottom: 20px
+  .tab-about-block
+    width: 100%
+
+@media (max-width: 767px)
+  .download-project
+    .checkbox-block
+      margin: 0 0 25px 0
+
+  .tab-about-block
+    display: none
+  .about-main
+    .img
+      margin-bottom: 20px
+
+  footer
+    .link
+      display: none
+
+  .scroll-up
+    bottom: 60px
+    right: 20px
+    width: 35px
+    height: 35px
+    -webkit-background-size: 12px auto
+    background-size: 12px auto
+    &:hover
+      -webkit-background-size: 12px auto
+      background-size: 12px auto
+
+@media (max-width: 575px)
+  .category-block-small
+    .img
+      float: none
+      margin: 0 auto 10px
+    .text-block
+      text-align: center
+      margin: 0
+      padding: 0

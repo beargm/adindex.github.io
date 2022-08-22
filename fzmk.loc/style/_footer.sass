@@ -1,0 +1,97 @@
+footer
+  background: #869198
+  .left
+    @include fonts(13px, 15px)
+    color: #DEDEDE
+    padding: 10px 0 10px 0
+    div
+      display: inline-block
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+    a
+      text-decoration: none !important
+      color: #DEDEDE
+      border-bottom: 1px solid transparent
+      &:hover
+        color: #ffffff
+        border-color: #ffffff
+  .btn
+    margin-bottom: 40px
+  .link
+    margin-bottom: 20px
+    a
+      color: #ffffff
+      display: inline
+      text-decoration: none !important
+      border-bottom: 1px solid transparent
+      &:hover
+        border-color: #ffffff
+  .tell
+    margin-bottom: 20px
+    a
+      color: #ffffff
+      text-decoration: none
+      font-family: 'Ubuntu'
+      padding-left: 27px
+      background: url(../img/tell-white.svg) left center no-repeat
+      -webkit-background-size: 18px 18px
+      background-size: 18px 18px
+
+  .mail
+    a
+      color: #ffffff
+      text-decoration: none
+      font-family: 'Ubuntu'
+      padding-left: 27px
+      background: url(../img/mail-white.svg) left center no-repeat
+      -webkit-background-size: 18px 18px
+      background-size: 18px 18px
+  .bottom
+    @extend %after-clear
+    .left
+      float: left
+.logo-footer
+  float: right
+  @extend %after-clear
+  background: $blue
+  width: 260px
+  height: 50px
+  a
+    display: block
+    text-decoration: none !important
+  .img
+    float: left
+    width: 75px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+  img
+    width: 35px
+    display: block
+    margin: 0 auto
+
+  .text
+    margin-left: 80px
+    height: 50px
+    color: #ffffff
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    @include fonts(11px, 13px)
+
+
+@media (max-width: 767px)
+  .scroll-up
+    width: 35px
+    height: 35px
+  footer
+    .btn
+      margin-bottom: 15px
+    .bottom
+      .left
+        display: none
+  .logo-footer
+    float: none
+    margin-top: 15px
