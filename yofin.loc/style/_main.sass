@@ -1,0 +1,543 @@
+.banner-main
+  background: linear-gradient(135.68deg, #FFD531 32.83%, #FFB311 92.27%)
+  min-height: 500px
+  .container
+    height: 100%
+  .text-block
+    padding: 95px 0 20px 0
+  h2, h1
+    @include fonts(56px, 108%, 300)
+    color: #070709
+    margin-bottom: 25px
+  .text
+    @include fonts(20px, 180%)
+    margin: 0 0 50px 0
+  .img
+    min-height: 500px
+    height: 100%
+    display: flex
+    align-items: center
+  .slick-slider
+    .slick-arrow
+      top: auto
+      bottom: 95px
+      margin: 0
+      border-color: transparent
+
+@media (max-width: 991px)
+  .banner-main
+    min-height: 400px
+    .slick-slider
+      .slick-arrow
+        bottom: 25px
+    h1, h2
+      font-size: 40px
+    .text-block
+      padding: 50px 0 20px 0
+    .img
+      min-height: 400px
+      margin: 0 0 20px 0
+@media (max-width: 767px)
+  .banner-main
+    min-height: 10px
+    .text-block
+      padding-top: 40px
+    .text
+      margin-bottom: 25px
+    h1, h2
+      font-size: 28px
+      br
+        display: none
+    .img
+      min-height: 10px
+
+
+.utp-text
+  padding: 60px 0 80px 0
+  overflow: hidden
+@media (min-width: 992px)
+  .utp-text
+    .row
+      >div
+        -ms-flex: 0 0 20%
+        flex: 0 0 20%
+        max-width: 20%
+.utp-text-item
+  margin: 0 0 30px 0
+  .num
+    @include fonts(40px, 108%)
+    margin: 0 0 15px 0
+    height: 45px
+    vertical-align: top
+    span
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+      display: inline-block
+      vertical-align: top
+      line-height: 28px
+  .text
+    @include fonts(20px, 140%)
+
+@media (max-width: 991px)
+  .utp-text-item
+    .num
+      height: 35px
+@media (max-width: 767px)
+  .utp-text
+    padding: 50px 0 30px 0
+  .utp-text-item
+    .num
+      height: 35px
+      text-align: center
+    .text
+      text-align: center
+@media (max-width: 575px)
+  .utp-text-item
+    .num
+      font-size: 30px
+      height: 27px
+      span
+        line-height: 23px
+    .text
+      font-size: 19px
+
+
+
+.financial-product
+  border: 2px solid #F5F5F9
+  +border-radius(48px)
+  padding: 48px 60px 60px
+  @include transition-dr(300ms)
+  background: #fff
+  margin: 0 0 30px 0
+  &:hover
+    border-color: #E4E4E7
+  .img
+    width: 198px
+    height: 198px
+    margin: 0 0 25px 0
+    display: flex
+    align-items: center
+  .title
+    @include fonts(31px, 132%, 300)
+    margin: 0 0 25px 0
+  li
+    @include fonts(24px, 132%, 300)
+    margin: 0 0 25px 0
+    padding: 0 0 0 45px
+    background: url(../img/list.png) 0px 0px no-repeat
+    -webkit-background-size: 32px 32px
+    background-size: 32px 32px
+    &:last-child
+      margin-bottom: 0
+@media (max-width: 1199px)
+  .financial-product
+    padding: 40px 30px 40px
+    .title
+      font-size: 30px
+    li
+      font-size: 22px
+@media (max-width: 991px)
+  .financial-product
+    .img
+      width: 160px
+      height: 160px
+    li
+      font-size: 20px
+      margin: 0 0 15px 0
+      padding: 0 0 0 35px
+      -webkit-background-size: 25px auto
+      background-size: 25px auto
+@media (max-width: 575px)
+  .financial-product
+    padding: 20px 15px 30px
+    +border-radius(15px)
+    .title
+      font-size: 25px
+      margin: 0 0 20px 0
+
+
+.utp-list
+  padding: 70px 0 60px 0
+  overflow: hidden
+.utp
+  .img
+    width: 95px
+    height: 90px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 20px
+    text-align: center
+  .text
+    @include fonts(20px, 158%)
+    text-align: center
+@media (max-width: 991px)
+  .utp-list
+    padding: 30px 0 30px 0
+@media (max-width: 767px)
+  .utp-list
+    padding: 30px 0 0 0
+  .utp
+    margin: 0 0 30px 0
+    .text
+      font-size: 18px
+      line-height: 130%
+
+
+.specials
+  padding: 60px 0 50px 0
+  h2
+    img
+      max-width: 64px
+
+.special-card
+  background: #fff
+  border: 2px solid #F5F5F9
+  +border-radius(48px)
+  @include transition-dr(300ms)
+  padding: 55px 50px 45px 50px
+  min-height: 450px
+  &:hover
+    border-color: #E4E4E7
+  .img
+    height: 65px
+    margin: 0 0 30px 0
+    img
+      max-height: 100%
+  .title
+    @include fonts(24px, 132%, 300)
+    margin: 0 0 20px 0
+    color: #070709
+  .text
+    @include fonts(20px, 158%, 300)
+    color: #66666E
+    margin: 0 0 35px 0
+
+.slider
+  .special-card
+    margin-left: 15px
+    margin-right: 15px
+@media (max-width: 1199px)
+  .special-card
+    padding: 30px 30px 40px 30px
+@media (max-width: 991px)
+  .specials
+    padding: 25px 0
+    h2
+      img
+        display: none
+  .special-card
+    +border-radius(15px)
+  .slider-specials
+    .slick-list
+      padding-right: 80px
+@media (max-width: 767px)
+  .special-card
+    padding: 30px 15px 20px 15px
+    min-height: 410px
+    .img
+      margin: 0 0 15px 0
+    .title
+      font-size: 20px
+@media (max-width: 575px)
+  .special-card
+    min-height: 300px
+  .slider-specials
+    .slick-list
+      padding-right: 50px
+
+
+
+.price
+  span
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+
+.calculate-box
+  border: 2px solid #F5F5F9
+  +border-radius(48px)
+  background: #fff
+  padding: 80px 90px 90px
+.calculate
+  padding: 50px 0 50px 0
+  .line-block
+    padding: 0 0 0 100px
+  .form-group
+    margin-bottom: 50px
+  .jq-selectbox
+    width: 100%
+  .text
+    color: #66666E
+    @include fonts(16px, 20px)
+    margin-bottom: 25px
+  .line
+    margin-bottom: 35px
+  .label
+    @include fonts(20px, 22px, 300)
+    margin-bottom: 15px
+  .price
+    @include fonts(40px, 40px, 400)
+    span
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+
+  .size-55
+    @include fonts(55px, 55px, 400)
+
+.range-block
+  position: relative
+  height: 80px
+  background: #fff
+  +border-radius(4px 4px 0 0)
+  border: 2px solid #F5F5F9
+  margin: 0 0 70px 0
+.irs--flat
+  font-family: "Navigo"
+  margin: 48px -2px 0 -2px
+  .irs-single
+    color: #070709
+    @include fonts(24px, 24px)
+    background: none
+    +border-radius(0)
+    left: auto !important
+    right: 0
+    top: -25px
+    padding: 0 20px 0 0
+    &:before
+      display: none
+  .irs-min, .irs-max
+    color: #66666E
+    @include fonts(16px, 18px, 300)
+    background: none
+    top: 55px
+    visibility: visible !important
+    padding: 0 0
+  .irs-handle
+    top: 8px
+    cursor: pointer
+    width: 40px
+    height: 40px
+    +border-radius(50%)
+    background: #fff
+    border: 4px solid #FFD015
+    i
+      display: none !important
+  .irs-line
+    height: 4px
+    background: #D0D0DA
+  .irs-bar
+    height: 4px
+    background: #FFD015
+@media (max-width: 1199px)
+  .calculate-box
+    padding: 50px 30px 30px
+  .calculate
+    .line-block
+      padding: 0 0 0 40px
+@media (max-width: 991px)
+  .calculate-box
+    +border-radius(15px)
+  .calculate
+    padding: 25px 0
+    .line-block
+      padding-left: 0
+    .form-group
+      margin-bottom: 30px
+    .price
+      font-size: 30px
+      line-height: 30px
+
+    .size-55
+      font-size: 40px
+      line-height: 40px
+    .label
+      margin-bottom: 10px
+      font-size: 16px
+      line-height: 16px
+    .line
+      margin-bottom: 20px
+@media (max-width: 575px)
+  .calculate-box
+    padding: 30px 15px 30px
+
+
+.online-deals
+  padding: 50px 0 50px 0
+  .title-text
+    max-width: 490px
+    @include fonts(20px, 158%)
+    margin-bottom: 60px
+
+.deal-card
+  border: 2px solid #F5F5F9
+  +border-radius(48px)
+  background: #fff
+  padding: 40px 55px 35px 40px
+  .img
+    float: left
+    width: 64px
+    height: 64px
+    display: flex
+    align-items: center
+    justify-content: center
+  .right
+    margin-left: 80px
+  .price
+    min-width: 145px
+    text-align: center
+    @include fonts(20px, 64px)
+    background: url(../img/bg-price.svg) no-repeat
+    -webkit-background-size: 100% 100%
+    background-size: 100% 100%
+    height: 64px
+    padding: 0 30px
+    display: inline-block
+  .deal-card-content
+    clear: both
+    margin-top: 25px
+  .name
+    overflow: hidden
+    text-overflow: ellipsis
+    max-width: 100%
+    white-space: nowrap
+    margin-bottom: 20px
+  .text
+    margin-bottom: 30px
+    color: #66666E
+    @include fonts(20px, 158%, 300)
+  .date
+    color: #A8A8BA
+    @include fonts(16px, 158%)
+.slider-deals
+  .slick-arrow
+    top: -120px
+    margin: 0 0
+    &.slick-next
+      right: 15px
+    &.slick-prev
+      right: 87px
+.slider
+  .deal-card
+    margin: 0 15px
+@media (max-width: 991px)
+  .online-deals
+    padding: 25px 0
+    .title-text
+      max-width: 100%
+      margin-bottom: 80px
+  .slider-deals
+    .slick-arrow
+      top: -65px
+    .slick-list
+      padding-right: 80px
+  .deal-card
+    padding: 30px 30px 30px 30px
+    +border-radius(15px)
+    .img
+      width: 50px
+    .right
+      margin-left: 55px
+    .price
+      font-size: 15px
+      padding: 0 5px
+      min-width: 120px
+@media (max-width: 767px)
+  .deal-card
+    padding: 30px 15px 30px 15px
+
+.bank-guarantee
+  padding: 50px 0
+  overflow: hidden
+.utp-guarantee
+  .img
+    width: 164px
+    height: 164px
+    margin: 0 auto 25px
+    display: flex
+    align-items: center
+    justify-content: center
+  .text
+    @include fonts(24px, 132%)
+    text-align: center
+@media (max-width: 991px)
+  .bank-guarantee
+    padding: 25px 0
+  .utp-guarantee
+    margin: 0 0 40px 0
+    .text
+      font-size: 20px
+
+    .img
+      height: 140px
+
+
+
+.personal-supervisor
+  padding: 50px 0
+  .text-formatted
+    @include fonts(24px, 132%)
+    margin: 0 auto 65px
+    max-width: 890px
+  .message
+    margin-right: 90px
+.ps-box
+  background: url(../img/ps.png) right bottom no-repeat
+  -webkit-background-size: contain
+  background-size: contain 
+.message
+  margin-bottom: 25px
+  .img
+    width: 64px
+    height: 64px
+    float: left
+    img
+      +border-radius(50%)
+      overflow: hidden
+  .right
+    margin: 0 0 0 80px
+  .text
+    background: #fff
+    display: inline-block
+    border: 2px solid #F5F5F9
+    +border-radius(4px 32px 32px 32px)
+    padding: 20px
+    @include fonts(20px, 140%)
+    p
+      @include fonts(20px, 140%)
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
+.message-answer
+  background: #fff
+  margin: 0 0 0 160px
+  border: 2px solid #F5F5F9
+  +border-radius(32px 4px 32px 32px)
+  padding: 20px
+  @include fonts(20px, 140%)
+  margin-bottom: 25px
+  .img
+    width: 64px
+    height: 64px
+    text-align: center
+    float: left
+  .text
+    margin: 0 0 0 65px
+    padding: 5px 0 0 0
+  p
+    @include fonts(20px, 140%)
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0
+
+@media (max-width: 991px)
+  .personal-supervisor
+    padding: 25px 0
+  .message
+    .text
+      +border-radius(4px 15px 15px 15px)
+@media (max-width: 767px)
+  .personal-supervisor
+    .message
+      margin-right: 15px
+  .message-answer
+    margin-right: 15px
+    padding: 15px
+    margin-left: 15px

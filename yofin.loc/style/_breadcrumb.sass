@@ -1,0 +1,53 @@
+.breadcrumbs
+  margin: 35px 0 40px 0
+  padding: 0 0 0 0
+  font-size: 0
+  line-height: 0
+  background: none
+  .breadcrumb
+    background: none
+    padding: 0 0
+    display: block
+    text-align: left
+    margin: 0 0
+  .container
+    @extend %after-clear
+
+  .breadcrumb-item
+    display: inline-block
+    vertical-align: top
+    float: none
+    font-size: 0
+    margin: 0 10px 10px 0
+    padding-left: 0
+
+    &:before
+      display: none
+    &:last-child
+      margin-right: 0
+      .icon
+        display: none
+    .separator
+      margin: 0 0
+      @include fonts(12px, 15px, 500)
+      color: #4E4F52
+    span.active
+      display: inline
+      margin: 0 0
+    a
+      position: relative
+      text-decoration: none
+      @include fonts(12px, 15px, 500)
+      color: #4E4F52
+      @include transition-dr(300ms)
+      display: inline-block
+      border-bottom: 1px solid transparent
+      &:hover
+        color: #4E4F52
+        border-color: #4E4F52
+    span
+      @include fonts(12px, 15px, 500)
+      color: #082D66
+      margin: 0 0
+      border-bottom: 1px solid transparent
+
