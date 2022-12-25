@@ -6,8 +6,9 @@ $(window).on("load",function(){
 });
 $(function () {
     $(".mobile-menu .nav-page-scroll a").click(function () {
-        //e.stopPropagation();
+        
         $(".mobile-menu").hide();
+        //e.stopPropagation();
     });
     /*setTimeout(function () {
         $(".nav-sub-menu").attr("style", "");
